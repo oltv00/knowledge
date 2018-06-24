@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XA6-su-gU1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vdK-jt-Yah">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="XA6-su-gU1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v5d-fl-ACq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EtE-S4-Acv" kind="relationship" relationship="rootViewController" id="zy4-rW-bLP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ndl-uy-3iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H1g-lO-K6A">
+            <objects>
+                <viewController id="EtE-S4-Acv" customClass="ASViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1mc-fF-amb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dve-HH-g57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="otH-Ha-cKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQA-pL-Fal">
+                                <rect key="frame" x="81" y="244" width="159" height="79"/>
+                                <state key="normal" title="Press me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionPressMe:" destination="EtE-S4-Acv" eventType="touchUpInside" id="3m7-X2-4xv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pBl-DF-tM2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="slc-q1-4m7">
+                            <connections>
+                                <action selector="actionAdd:" destination="EtE-S4-Acv" id="9FF-vs-YdF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpX-VX-L3U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="69"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="DPq-UF-xSy">
+            <objects>
+                <viewController storyboardIdentifier="ASDetailsViewController" id="3pu-FR-6Rb" customClass="ASDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EDj-u3-8ea"/>
+                        <viewControllerLayoutGuide type="bottom" id="dl4-XK-Cs6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWH-sk-NXF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sv-XW-ivt">
+                                <rect key="frame" x="20" y="20" width="280" height="440"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9P9-4K-4Ox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="69"/>
+        </scene>
+    </scenes>
+</document>

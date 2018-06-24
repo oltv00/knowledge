@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2923E71C40300B00C6BEBA /* MRQCourse+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2923E41C40300B00C6BEBA /* MRQCourse+CoreDataProperties.m */; };
+		3A2923E81C40300B00C6BEBA /* MRQCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2923E61C40300B00C6BEBA /* MRQCourse.m */; };
+		3A3EB0641C3315FE00573BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB0631C3315FE00573BCB /* main.m */; };
+		3A3EB0671C3315FE00573BCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB0661C3315FE00573BCB /* AppDelegate.m */; };
+		3A3EB06A1C3315FE00573BCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB0691C3315FE00573BCB /* ViewController.m */; };
+		3A3EB06D1C3315FE00573BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EB06B1C3315FE00573BCB /* Main.storyboard */; };
+		3A3EB0701C3315FE00573BCB /* _1_CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB06E1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodeld */; };
+		3A3EB0721C3315FE00573BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EB0711C3315FE00573BCB /* Assets.xcassets */; };
+		3A3EB0751C3315FE00573BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EB0731C3315FE00573BCB /* LaunchScreen.storyboard */; };
+		3A3EB0801C332B0B00573BCB /* MRQStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB07D1C332B0B00573BCB /* MRQStudent+CoreDataProperties.m */; };
+		3A3EB0811C332B0B00573BCB /* MRQStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EB07F1C332B0B00573BCB /* MRQStudent.m */; };
+		3A4AEEF41C42915400DE5224 /* MRQDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AEEF31C42915400DE5224 /* MRQDataManager.m */; };
+		3A4AEF201C429F3A00DE5224 /* MRQCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AEF1F1C429F3A00DE5224 /* MRQCoreDataTableViewController.m */; };
+		3A4AEF241C42A07000DE5224 /* MRQUniversityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AEF231C42A07000DE5224 /* MRQUniversityTableViewController.m */; };
+		3A4AEF271C42C7F800DE5224 /* MRQCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AEF261C42C7F800DE5224 /* MRQCoursesTableViewController.m */; };
+		3A4AEF2A1C42D19500DE5224 /* MRQStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AEF291C42D19500DE5224 /* MRQStudentsTableViewController.m */; };
+		3A58EB4D1C35706A008C8EB1 /* MRQCar+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB4A1C35706A008C8EB1 /* MRQCar+CoreDataProperties.m */; };
+		3A58EB4E1C35706A008C8EB1 /* MRQCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB4C1C35706A008C8EB1 /* MRQCar.m */; };
+		3A58EB531C35A600008C8EB1 /* MRQObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB501C35A600008C8EB1 /* MRQObject+CoreDataProperties.m */; };
+		3A58EB541C35A600008C8EB1 /* MRQObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB521C35A600008C8EB1 /* MRQObject.m */; };
+		3A58EB591C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB561C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.m */; };
+		3A58EB5A1C35A87B008C8EB1 /* MRQUniversity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A58EB581C35A87B008C8EB1 /* MRQUniversity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2923E31C40300B00C6BEBA /* MRQCourse+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRQCourse+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3A2923E41C40300B00C6BEBA /* MRQCourse+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRQCourse+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3A2923E51C40300B00C6BEBA /* MRQCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQCourse.h; sourceTree = "<group>"; };
+		3A2923E61C40300B00C6BEBA /* MRQCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQCourse.m; sourceTree = "<group>"; };
+		3A3EB05F1C3315FE00573BCB /* 41_CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 41_CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3EB0631C3315FE00573BCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A3EB0651C3315FE00573BCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A3EB0661C3315FE00573BCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A3EB0681C3315FE00573BCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A3EB0691C3315FE00573BCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A3EB06C1C3315FE00573BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3EB06F1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _1_CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
+		3A3EB0711C3315FE00573BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3EB0741C3315FE00573BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A3EB0761C3315FE00573BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3EB07C1C332B0B00573BCB /* MRQStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRQStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3A3EB07D1C332B0B00573BCB /* MRQStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRQStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3A3EB07E1C332B0B00573BCB /* MRQStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudent.h; sourceTree = "<group>"; };
+		3A3EB07F1C332B0B00573BCB /* MRQStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudent.m; sourceTree = "<group>"; };
+		3A3EB0831C33376E00573BCB /* MRQStaticData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRQStaticData.h; sourceTree = "<group>"; };
+		3A4AEEF21C42915400DE5224 /* MRQDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQDataManager.h; sourceTree = "<group>"; };
+		3A4AEEF31C42915400DE5224 /* MRQDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQDataManager.m; sourceTree = "<group>"; };
+		3A4AEF1E1C429F3A00DE5224 /* MRQCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQCoreDataTableViewController.h; sourceTree = "<group>"; };
+		3A4AEF1F1C429F3A00DE5224 /* MRQCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQCoreDataTableViewController.m; sourceTree = "<group>"; };
+		3A4AEF221C42A07000DE5224 /* MRQUniversityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQUniversityTableViewController.h; sourceTree = "<group>"; };
+		3A4AEF231C42A07000DE5224 /* MRQUniversityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQUniversityTableViewController.m; sourceTree = "<group>"; };
+		3A4AEF251C42C7F800DE5224 /* MRQCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQCoursesTableViewController.h; sourceTree = "<group>"; };
+		3A4AEF261C42C7F800DE5224 /* MRQCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQCoursesTableViewController.m; sourceTree = "<group>"; };
+		3A4AEF281C42D19500DE5224 /* MRQStudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudentsTableViewController.h; sourceTree = "<group>"; };
+		3A4AEF291C42D19500DE5224 /* MRQStudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudentsTableViewController.m; sourceTree = "<group>"; };
+		3A58EB491C35706A008C8EB1 /* MRQCar+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRQCar+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3A58EB4A1C35706A008C8EB1 /* MRQCar+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRQCar+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3A58EB4B1C35706A008C8EB1 /* MRQCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQCar.h; sourceTree = "<group>"; };
+		3A58EB4C1C35706A008C8EB1 /* MRQCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQCar.m; sourceTree = "<group>"; };
+		3A58EB4F1C35A600008C8EB1 /* MRQObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRQObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3A58EB501C35A600008C8EB1 /* MRQObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRQObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3A58EB511C35A600008C8EB1 /* MRQObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQObject.h; sourceTree = "<group>"; };
+		3A58EB521C35A600008C8EB1 /* MRQObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQObject.m; sourceTree = "<group>"; };
+		3A58EB551C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRQUniversity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3A58EB561C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRQUniversity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3A58EB571C35A87B008C8EB1 /* MRQUniversity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQUniversity.h; sourceTree = "<group>"; };
+		3A58EB581C35A87B008C8EB1 /* MRQUniversity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQUniversity.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3EB05C1C3315FE00573BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A3EB0561C3315FD00573BCB = {
+			isa = PBXGroup;
+			children = (
+				3A3EB0611C3315FE00573BCB /* 41_CoreDataTest */,
+				3A3EB0601C3315FE00573BCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3EB0601C3315FE00573BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A3EB05F1C3315FE00573BCB /* 41_CoreDataTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3EB0611C3315FE00573BCB /* 41_CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				3A3EB0821C332BAB00573BCB /* Model-CoreData */,
+				3A4AEF211C429F4100DE5224 /* ViewControllers */,
+				3A3EB0831C33376E00573BCB /* MRQStaticData.h */,
+				3A4AEEF21C42915400DE5224 /* MRQDataManager.h */,
+				3A4AEEF31C42915400DE5224 /* MRQDataManager.m */,
+				3A3EB0651C3315FE00573BCB /* AppDelegate.h */,
+				3A3EB0661C3315FE00573BCB /* AppDelegate.m */,
+				3A3EB0621C3315FE00573BCB /* Supporting Files */,
+			);
+			path = 41_CoreDataTest;
+			sourceTree = "<group>";
+		};
+		3A3EB0621C3315FE00573BCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A3EB0681C3315FE00573BCB /* ViewController.h */,
+				3A3EB0691C3315FE00573BCB /* ViewController.m */,
+				3A3EB06B1C3315FE00573BCB /* Main.storyboard */,
+				3A3EB0711C3315FE00573BCB /* Assets.xcassets */,
+				3A3EB0731C3315FE00573BCB /* LaunchScreen.storyboard */,
+				3A3EB0761C3315FE00573BCB /* Info.plist */,
+				3A3EB0631C3315FE00573BCB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A3EB0821C332BAB00573BCB /* Model-CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3A3EB06E1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodeld */,
+				3A3EB07C1C332B0B00573BCB /* MRQStudent+CoreDataProperties.h */,
+				3A3EB07D1C332B0B00573BCB /* MRQStudent+CoreDataProperties.m */,
+				3A3EB07E1C332B0B00573BCB /* MRQStudent.h */,
+				3A3EB07F1C332B0B00573BCB /* MRQStudent.m */,
+				3A58EB491C35706A008C8EB1 /* MRQCar+CoreDataProperties.h */,
+				3A58EB4A1C35706A008C8EB1 /* MRQCar+CoreDataProperties.m */,
+				3A58EB4B1C35706A008C8EB1 /* MRQCar.h */,
+				3A58EB4C1C35706A008C8EB1 /* MRQCar.m */,
+				3A58EB4F1C35A600008C8EB1 /* MRQObject+CoreDataProperties.h */,
+				3A58EB501C35A600008C8EB1 /* MRQObject+CoreDataProperties.m */,
+				3A58EB511C35A600008C8EB1 /* MRQObject.h */,
+				3A58EB521C35A600008C8EB1 /* MRQObject.m */,
+				3A58EB551C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.h */,
+				3A58EB561C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.m */,
+				3A58EB571C35A87B008C8EB1 /* MRQUniversity.h */,
+				3A58EB581C35A87B008C8EB1 /* MRQUniversity.m */,
+				3A2923E31C40300B00C6BEBA /* MRQCourse+CoreDataProperties.h */,
+				3A2923E41C40300B00C6BEBA /* MRQCourse+CoreDataProperties.m */,
+				3A2923E51C40300B00C6BEBA /* MRQCourse.h */,
+				3A2923E61C40300B00C6BEBA /* MRQCourse.m */,
+			);
+			name = "Model-CoreData";
+			sourceTree = "<group>";
+		};
+		3A4AEF211C429F4100DE5224 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A4AEF1E1C429F3A00DE5224 /* MRQCoreDataTableViewController.h */,
+				3A4AEF1F1C429F3A00DE5224 /* MRQCoreDataTableViewController.m */,
+				3A4AEF221C42A07000DE5224 /* MRQUniversityTableViewController.h */,
+				3A4AEF231C42A07000DE5224 /* MRQUniversityTableViewController.m */,
+				3A4AEF251C42C7F800DE5224 /* MRQCoursesTableViewController.h */,
+				3A4AEF261C42C7F800DE5224 /* MRQCoursesTableViewController.m */,
+				3A4AEF281C42D19500DE5224 /* MRQStudentsTableViewController.h */,
+				3A4AEF291C42D19500DE5224 /* MRQStudentsTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A3EB05E1C3315FE00573BCB /* 41_CoreDataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3EB0791C3315FE00573BCB /* Build configuration list for PBXNativeTarget "41_CoreDataTest" */;
+			buildPhases = (
+				3A3EB05B1C3315FE00573BCB /* Sources */,
+				3A3EB05C1C3315FE00573BCB /* Frameworks */,
+				3A3EB05D1C3315FE00573BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 41_CoreDataTest;
+			productName = 41_CoreDataTest;
+			productReference = 3A3EB05F1C3315FE00573BCB /* 41_CoreDataTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A3EB0571C3315FD00573BCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Oleg Tverdokhleb";
+				TargetAttributes = {
+					3A3EB05E1C3315FE00573BCB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3A3EB05A1C3315FD00573BCB /* Build configuration list for PBXProject "41_CoreDataTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A3EB0561C3315FD00573BCB;
+			productRefGroup = 3A3EB0601C3315FE00573BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A3EB05E1C3315FE00573BCB /* 41_CoreDataTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A3EB05D1C3315FE00573BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3EB0751C3315FE00573BCB /* LaunchScreen.storyboard in Resources */,
+				3A3EB0721C3315FE00573BCB /* Assets.xcassets in Resources */,
+				3A3EB06D1C3315FE00573BCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A3EB05B1C3315FE00573BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A58EB5A1C35A87B008C8EB1 /* MRQUniversity.m in Sources */,
+				3A3EB0801C332B0B00573BCB /* MRQStudent+CoreDataProperties.m in Sources */,
+				3A58EB4E1C35706A008C8EB1 /* MRQCar.m in Sources */,
+				3A58EB591C35A87B008C8EB1 /* MRQUniversity+CoreDataProperties.m in Sources */,
+				3A4AEF241C42A07000DE5224 /* MRQUniversityTableViewController.m in Sources */,
+				3A3EB06A1C3315FE00573BCB /* ViewController.m in Sources */,
+				3A2923E71C40300B00C6BEBA /* MRQCourse+CoreDataProperties.m in Sources */,
+				3A4AEF271C42C7F800DE5224 /* MRQCoursesTableViewController.m in Sources */,
+				3A4AEEF41C42915400DE5224 /* MRQDataManager.m in Sources */,
+				3A58EB4D1C35706A008C8EB1 /* MRQCar+CoreDataProperties.m in Sources */,
+				3A4AEF2A1C42D19500DE5224 /* MRQStudentsTableViewController.m in Sources */,
+				3A3EB0811C332B0B00573BCB /* MRQStudent.m in Sources */,
+				3A58EB541C35A600008C8EB1 /* MRQObject.m in Sources */,
+				3A4AEF201C429F3A00DE5224 /* MRQCoreDataTableViewController.m in Sources */,
+				3A3EB0671C3315FE00573BCB /* AppDelegate.m in Sources */,
+				3A3EB0701C3315FE00573BCB /* _1_CoreDataTest.xcdatamodeld in Sources */,
+				3A2923E81C40300B00C6BEBA /* MRQCourse.m in Sources */,
+				3A3EB0641C3315FE00573BCB /* main.m in Sources */,
+				3A58EB531C35A600008C8EB1 /* MRQObject+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A3EB06B1C3315FE00573BCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3EB06C1C3315FE00573BCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3EB0731C3315FE00573BCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3EB0741C3315FE00573BCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A3EB0771C3315FE00573BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A3EB0781C3315FE00573BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3EB07A1C3315FE00573BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 41_CoreDataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MRQResto.-1-CoreDataTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A3EB07B1C3315FE00573BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 41_CoreDataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MRQResto.-1-CoreDataTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3EB05A1C3315FD00573BCB /* Build configuration list for PBXProject "41_CoreDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3EB0771C3315FE00573BCB /* Debug */,
+				3A3EB0781C3315FE00573BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3EB0791C3315FE00573BCB /* Build configuration list for PBXNativeTarget "41_CoreDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3EB07A1C3315FE00573BCB /* Debug */,
+				3A3EB07B1C3315FE00573BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A3EB06E1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A3EB06F1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodel */,
+			);
+			currentVersion = 3A3EB06F1C3315FE00573BCB /* _1_CoreDataTest.xcdatamodel */;
+			path = _1_CoreDataTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A3EB0571C3315FD00573BCB /* Project object */;
+}

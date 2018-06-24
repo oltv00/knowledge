@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6802DDCB514DAA4D992CAE319CBB58C3188A95B3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6802DDCB514DAA4D992CAE319CBB58C3188A95B3" : 9223372036854775807,
+    "5E7BA61BA704827F827FD576B14582F27943A5D1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "13BE5F46-6827-4672-BBA9-D822A75FB513",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6802DDCB514DAA4D992CAE319CBB58C3188A95B3" : "BDD&TDD\/",
+    "5E7BA61BA704827F827FD576B14582F27943A5D1" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjCTDD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ObjCTDD\/ObjCTDD.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oltv00\/Learning-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E7BA61BA704827F827FD576B14582F27943A5D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oltv00\/BDD-TDD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6802DDCB514DAA4D992CAE319CBB58C3188A95B3"
+    }
+  ]
+}

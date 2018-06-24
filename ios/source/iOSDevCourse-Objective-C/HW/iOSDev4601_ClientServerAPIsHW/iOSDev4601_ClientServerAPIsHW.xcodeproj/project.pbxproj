@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C075D5A1D23CCA000849138 /* OLTVDetailedPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C075D591D23CCA000849138 /* OLTVDetailedPostViewController.m */; };
+		3C075D5D1D23D03F00849138 /* OLTVCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C075D5C1D23D03F00849138 /* OLTVCommentTableViewCell.m */; };
+		3C075D601D23DDEA00849138 /* OLTVComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C075D5F1D23DDEA00849138 /* OLTVComment.m */; };
+		3C203F7A1D2D101E00181E6F /* OLTVPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C203F791D2D101E00181E6F /* OLTVPhotoAlbum.m */; };
+		3C38006C1D342F0500CBD67E /* OLTVVideoAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C38006B1D342F0500CBD67E /* OLTVVideoAlbumsViewController.m */; };
+		3C38006F1D34301600CBD67E /* OLTVVideoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C38006E1D34301600CBD67E /* OLTVVideoAlbum.m */; };
+		3C3800721D343CE900CBD67E /* OLTVVIdeoAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3800711D343CE900CBD67E /* OLTVVIdeoAlbumTableViewCell.m */; };
+		3C39D6941D195C7800FEC082 /* OLTVMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D6931D195C7800FEC082 /* OLTVMessage.m */; };
+		3C6654451D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6654441D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.m */; };
+		3C6654481D36959500DF09CB /* OLTVVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6654471D36959500DF09CB /* OLTVVideo.m */; };
+		3C7E21071D2E66F600733ADC /* OLTVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E21061D2E66F600733ADC /* OLTVPhoto.m */; };
+		3C7E210A1D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E21091D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.m */; };
+		3C93FA281D2BBDB800F02362 /* OLTVGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93FA271D2BBDB800F02362 /* OLTVGroup.m */; };
+		3C93FA2B1D2BCAFE00F02362 /* OLTVGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93FA2A1D2BCAFE00F02362 /* OLTVGroupTableViewCell.m */; };
+		3C93FA2E1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93FA2D1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.m */; };
+		3C93FA311D2BFEBD00F02362 /* UIView+UICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93FA301D2BFEBD00F02362 /* UIView+UICollectionViewCell.m */; };
+		3CA0C7001D1885C900796A37 /* UIView+UITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0C6FF1D1885C900796A37 /* UIView+UITableViewCell.m */; };
+		3CA0C7031D18891E00796A37 /* OLTVMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0C7021D18891E00796A37 /* OLTVMessagesViewController.m */; };
+		3CA0C7061D18924200796A37 /* UIViewController+HideBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0C7051D18924200796A37 /* UIViewController+HideBackBarButtonItem.m */; };
+		3CB3E5631D1678EE006AC3E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5621D1678EE006AC3E0 /* main.m */; };
+		3CB3E5661D1678EE006AC3E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5651D1678EE006AC3E0 /* AppDelegate.m */; };
+		3CB3E56C1D1678EE006AC3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3E56A1D1678EE006AC3E0 /* Main.storyboard */; };
+		3CB3E56E1D1678EE006AC3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3E56D1D1678EE006AC3E0 /* Assets.xcassets */; };
+		3CB3E5711D1678EE006AC3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3E56F1D1678EE006AC3E0 /* LaunchScreen.storyboard */; };
+		3CB3E57B1D167AC9006AC3E0 /* OLTVAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E57A1D167AC9006AC3E0 /* OLTVAPIManager.m */; };
+		3CB3E57F1D167AF6006AC3E0 /* OLTVGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E57E1D167AF6006AC3E0 /* OLTVGroupViewController.m */; };
+		3CB3E5841D167C2E006AC3E0 /* OLTVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5831D167C2E006AC3E0 /* OLTVUser.m */; };
+		3CB3E5871D167E00006AC3E0 /* OLTVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5861D167E00006AC3E0 /* OLTVLoginViewController.m */; };
+		3CB3E58D1D167F4E006AC3E0 /* OLTVAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E58C1D167F4E006AC3E0 /* OLTVAccessToken.m */; };
+		3CB3E5B21D168D06006AC3E0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5911D168D06006AC3E0 /* AFHTTPSessionManager.m */; };
+		3CB3E5B31D168D06006AC3E0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5941D168D06006AC3E0 /* AFNetworkReachabilityManager.m */; };
+		3CB3E5B41D168D06006AC3E0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5961D168D06006AC3E0 /* AFSecurityPolicy.m */; };
+		3CB3E5B51D168D06006AC3E0 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5981D168D06006AC3E0 /* AFURLRequestSerialization.m */; };
+		3CB3E5B61D168D06006AC3E0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E59A1D168D06006AC3E0 /* AFURLResponseSerialization.m */; };
+		3CB3E5B71D168D06006AC3E0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E59C1D168D06006AC3E0 /* AFURLSessionManager.m */; };
+		3CB3E5B81D168D06006AC3E0 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E59F1D168D06006AC3E0 /* AFAutoPurgingImageCache.m */; };
+		3CB3E5B91D168D06006AC3E0 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5A11D168D06006AC3E0 /* AFImageDownloader.m */; };
+		3CB3E5BA1D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5A31D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.m */; };
+		3CB3E5BB1D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5A51D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.m */; };
+		3CB3E5BC1D168D06006AC3E0 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5A71D168D06006AC3E0 /* UIButton+AFNetworking.m */; };
+		3CB3E5BD1D168D06006AC3E0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5AA1D168D06006AC3E0 /* UIImageView+AFNetworking.m */; };
+		3CB3E5BE1D168D06006AC3E0 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5AD1D168D06006AC3E0 /* UIProgressView+AFNetworking.m */; };
+		3CB3E5BF1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5AF1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.m */; };
+		3CB3E5C01D168D06006AC3E0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5B11D168D06006AC3E0 /* UIWebView+AFNetworking.m */; };
+		3CB3E5C91D169ACD006AC3E0 /* OLTVPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5C81D169ACD006AC3E0 /* OLTVPostTableViewCell.m */; };
+		3CB3E5CC1D169B61006AC3E0 /* OLTVPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5CB1D169B61006AC3E0 /* OLTVPost.m */; };
+		3CB3E5CF1D16C6DC006AC3E0 /* OLTVPostMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3E5CE1D16C6DC006AC3E0 /* OLTVPostMessageViewController.m */; };
+		3CB50D531D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB50D521D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.m */; };
+		3CB50D561D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB50D551D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.m */; };
+		3CF034871D2C37B70005DADA /* OLTVPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF034861D2C37B70005DADA /* OLTVPhotosViewController.m */; };
+		3CF0348A1D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF034891D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.m */; };
+		3CFEA6171D36CFEB001016EB /* OLTVVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEA6161D36CFEB001016EB /* OLTVVideoTableViewCell.m */; };
+		3CFEA61A1D36DF51001016EB /* OLTVDetailedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEA6191D36DF51001016EB /* OLTVDetailedVideoViewController.m */; };
+		3CFEA61D1D36E017001016EB /* OLTVDetailedVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEA61C1D36E017001016EB /* OLTVDetailedVideoTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C075D581D23CCA000849138 /* OLTVDetailedPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedPostViewController.h; path = Controller/OLTVDetailedPostViewController.h; sourceTree = "<group>"; };
+		3C075D591D23CCA000849138 /* OLTVDetailedPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedPostViewController.m; path = Controller/OLTVDetailedPostViewController.m; sourceTree = "<group>"; };
+		3C075D5B1D23D03F00849138 /* OLTVCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCommentTableViewCell.h; path = Cells/OLTVCommentTableViewCell.h; sourceTree = "<group>"; };
+		3C075D5C1D23D03F00849138 /* OLTVCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCommentTableViewCell.m; path = Cells/OLTVCommentTableViewCell.m; sourceTree = "<group>"; };
+		3C075D5E1D23DDEA00849138 /* OLTVComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVComment.h; path = Model/OLTVComment.h; sourceTree = "<group>"; };
+		3C075D5F1D23DDEA00849138 /* OLTVComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVComment.m; path = Model/OLTVComment.m; sourceTree = "<group>"; };
+		3C203F781D2D101E00181E6F /* OLTVPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPhotoAlbum.h; path = Model/OLTVPhotoAlbum.h; sourceTree = "<group>"; };
+		3C203F791D2D101E00181E6F /* OLTVPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPhotoAlbum.m; path = Model/OLTVPhotoAlbum.m; sourceTree = "<group>"; };
+		3C38006A1D342F0400CBD67E /* OLTVVideoAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVVideoAlbumsViewController.h; path = Controller/OLTVVideoAlbumsViewController.h; sourceTree = "<group>"; };
+		3C38006B1D342F0500CBD67E /* OLTVVideoAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVVideoAlbumsViewController.m; path = Controller/OLTVVideoAlbumsViewController.m; sourceTree = "<group>"; };
+		3C38006D1D34301600CBD67E /* OLTVVideoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVVideoAlbum.h; path = Model/OLTVVideoAlbum.h; sourceTree = "<group>"; };
+		3C38006E1D34301600CBD67E /* OLTVVideoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVVideoAlbum.m; path = Model/OLTVVideoAlbum.m; sourceTree = "<group>"; };
+		3C3800701D343CE900CBD67E /* OLTVVideoAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVVideoAlbumTableViewCell.h; path = Cells/OLTVVideoAlbumTableViewCell.h; sourceTree = "<group>"; };
+		3C3800711D343CE900CBD67E /* OLTVVIdeoAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVVIdeoAlbumTableViewCell.m; path = Cells/OLTVVIdeoAlbumTableViewCell.m; sourceTree = "<group>"; };
+		3C39D6921D195C7800FEC082 /* OLTVMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVMessage.h; path = Model/OLTVMessage.h; sourceTree = "<group>"; };
+		3C39D6931D195C7800FEC082 /* OLTVMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVMessage.m; path = Model/OLTVMessage.m; sourceTree = "<group>"; };
+		3C6654431D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedVideoAlbumViewController.h; path = Controller/OLTVDetailedVideoAlbumViewController.h; sourceTree = "<group>"; };
+		3C6654441D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedVideoAlbumViewController.m; path = Controller/OLTVDetailedVideoAlbumViewController.m; sourceTree = "<group>"; };
+		3C6654461D36959500DF09CB /* OLTVVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVVideo.h; path = Model/OLTVVideo.h; sourceTree = "<group>"; };
+		3C6654471D36959500DF09CB /* OLTVVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVVideo.m; path = Model/OLTVVideo.m; sourceTree = "<group>"; };
+		3C7E21051D2E66F600733ADC /* OLTVPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPhoto.h; path = Model/OLTVPhoto.h; sourceTree = "<group>"; };
+		3C7E21061D2E66F600733ADC /* OLTVPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPhoto.m; path = Model/OLTVPhoto.m; sourceTree = "<group>"; };
+		3C7E21081D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPhotoCollectionViewCell.h; path = Cells/OLTVPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		3C7E21091D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPhotoCollectionViewCell.m; path = Cells/OLTVPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		3C93FA261D2BBDB800F02362 /* OLTVGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVGroup.h; path = Model/OLTVGroup.h; sourceTree = "<group>"; };
+		3C93FA271D2BBDB800F02362 /* OLTVGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVGroup.m; path = Model/OLTVGroup.m; sourceTree = "<group>"; };
+		3C93FA291D2BCAFE00F02362 /* OLTVGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVGroupTableViewCell.h; path = Cells/OLTVGroupTableViewCell.h; sourceTree = "<group>"; };
+		3C93FA2A1D2BCAFE00F02362 /* OLTVGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVGroupTableViewCell.m; path = Cells/OLTVGroupTableViewCell.m; sourceTree = "<group>"; };
+		3C93FA2C1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVGroupMenuCollectionViewCell.h; path = Cells/OLTVGroupMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		3C93FA2D1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVGroupMenuCollectionViewCell.m; path = Cells/OLTVGroupMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		3C93FA2F1D2BFEBD00F02362 /* UIView+UICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UICollectionViewCell.h"; path = "Categories/UIView+UICollectionViewCell.h"; sourceTree = "<group>"; };
+		3C93FA301D2BFEBD00F02362 /* UIView+UICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UICollectionViewCell.m"; path = "Categories/UIView+UICollectionViewCell.m"; sourceTree = "<group>"; };
+		3CA0C6FE1D1885C900796A37 /* UIView+UITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UITableViewCell.h"; path = "Categories/UIView+UITableViewCell.h"; sourceTree = "<group>"; };
+		3CA0C6FF1D1885C900796A37 /* UIView+UITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UITableViewCell.m"; path = "Categories/UIView+UITableViewCell.m"; sourceTree = "<group>"; };
+		3CA0C7011D18891E00796A37 /* OLTVMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVMessagesViewController.h; path = Controller/OLTVMessagesViewController.h; sourceTree = "<group>"; };
+		3CA0C7021D18891E00796A37 /* OLTVMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVMessagesViewController.m; path = Controller/OLTVMessagesViewController.m; sourceTree = "<group>"; };
+		3CA0C7041D18924200796A37 /* UIViewController+HideBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HideBackBarButtonItem.h"; path = "Categories/UIViewController+HideBackBarButtonItem.h"; sourceTree = "<group>"; };
+		3CA0C7051D18924200796A37 /* UIViewController+HideBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HideBackBarButtonItem.m"; path = "Categories/UIViewController+HideBackBarButtonItem.m"; sourceTree = "<group>"; };
+		3CB3E55E1D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev4601_ClientServerAPIsHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB3E5621D1678EE006AC3E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CB3E5641D1678EE006AC3E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CB3E5651D1678EE006AC3E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CB3E56B1D1678EE006AC3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CB3E56D1D1678EE006AC3E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CB3E5701D1678EE006AC3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CB3E5721D1678EE006AC3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB3E5791D167AC9006AC3E0 /* OLTVAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVAPIManager.h; path = API/OLTVAPIManager.h; sourceTree = "<group>"; };
+		3CB3E57A1D167AC9006AC3E0 /* OLTVAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVAPIManager.m; path = API/OLTVAPIManager.m; sourceTree = "<group>"; };
+		3CB3E57D1D167AF6006AC3E0 /* OLTVGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVGroupViewController.h; path = Controller/OLTVGroupViewController.h; sourceTree = "<group>"; };
+		3CB3E57E1D167AF6006AC3E0 /* OLTVGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVGroupViewController.m; path = Controller/OLTVGroupViewController.m; sourceTree = "<group>"; };
+		3CB3E5821D167C2E006AC3E0 /* OLTVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVUser.h; path = Model/OLTVUser.h; sourceTree = "<group>"; };
+		3CB3E5831D167C2E006AC3E0 /* OLTVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVUser.m; path = Model/OLTVUser.m; sourceTree = "<group>"; };
+		3CB3E5851D167E00006AC3E0 /* OLTVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVLoginViewController.h; path = Controller/OLTVLoginViewController.h; sourceTree = "<group>"; };
+		3CB3E5861D167E00006AC3E0 /* OLTVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVLoginViewController.m; path = Controller/OLTVLoginViewController.m; sourceTree = "<group>"; };
+		3CB3E58B1D167F4E006AC3E0 /* OLTVAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVAccessToken.h; path = API/OLTVAccessToken.h; sourceTree = "<group>"; };
+		3CB3E58C1D167F4E006AC3E0 /* OLTVAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVAccessToken.m; path = API/OLTVAccessToken.m; sourceTree = "<group>"; };
+		3CB3E5901D168D06006AC3E0 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3CB3E5911D168D06006AC3E0 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3CB3E5921D168D06006AC3E0 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		3CB3E5931D168D06006AC3E0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3CB3E5941D168D06006AC3E0 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3CB3E5951D168D06006AC3E0 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		3CB3E5961D168D06006AC3E0 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3CB3E5971D168D06006AC3E0 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3CB3E5981D168D06006AC3E0 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		3CB3E5991D168D06006AC3E0 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		3CB3E59A1D168D06006AC3E0 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3CB3E59B1D168D06006AC3E0 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		3CB3E59C1D168D06006AC3E0 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		3CB3E59E1D168D06006AC3E0 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		3CB3E59F1D168D06006AC3E0 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		3CB3E5A01D168D06006AC3E0 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		3CB3E5A11D168D06006AC3E0 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		3CB3E5A21D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		3CB3E5A31D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		3CB3E5A41D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5A51D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5A61D168D06006AC3E0 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5A71D168D06006AC3E0 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5A81D168D06006AC3E0 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5A91D168D06006AC3E0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5AA1D168D06006AC3E0 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5AB1D168D06006AC3E0 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5AC1D168D06006AC3E0 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5AD1D168D06006AC3E0 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5AE1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5AF1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5B01D168D06006AC3E0 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		3CB3E5B11D168D06006AC3E0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		3CB3E5C71D169ACD006AC3E0 /* OLTVPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPostTableViewCell.h; path = Cells/OLTVPostTableViewCell.h; sourceTree = "<group>"; };
+		3CB3E5C81D169ACD006AC3E0 /* OLTVPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPostTableViewCell.m; path = Cells/OLTVPostTableViewCell.m; sourceTree = "<group>"; };
+		3CB3E5CA1D169B61006AC3E0 /* OLTVPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPost.h; path = Model/OLTVPost.h; sourceTree = "<group>"; };
+		3CB3E5CB1D169B61006AC3E0 /* OLTVPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPost.m; path = Model/OLTVPost.m; sourceTree = "<group>"; };
+		3CB3E5CD1D16C6DC006AC3E0 /* OLTVPostMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPostMessageViewController.h; path = Controller/OLTVPostMessageViewController.h; sourceTree = "<group>"; };
+		3CB3E5CE1D16C6DC006AC3E0 /* OLTVPostMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPostMessageViewController.m; path = Controller/OLTVPostMessageViewController.m; sourceTree = "<group>"; };
+		3CB50D511D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedPhotoAlbumViewController.h; path = Controller/OLTVDetailedPhotoAlbumViewController.h; sourceTree = "<group>"; };
+		3CB50D521D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedPhotoAlbumViewController.m; path = Controller/OLTVDetailedPhotoAlbumViewController.m; sourceTree = "<group>"; };
+		3CB50D541D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedPhotoCollectionViewCell.h; path = Cells/OLTVDetailedPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		3CB50D551D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedPhotoCollectionViewCell.m; path = Cells/OLTVDetailedPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		3CF034851D2C37B70005DADA /* OLTVPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPhotosViewController.h; path = Controller/OLTVPhotosViewController.h; sourceTree = "<group>"; };
+		3CF034861D2C37B70005DADA /* OLTVPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPhotosViewController.m; path = Controller/OLTVPhotosViewController.m; sourceTree = "<group>"; };
+		3CF034881D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVPhotoAlbumTableViewCell.h; path = Cells/OLTVPhotoAlbumTableViewCell.h; sourceTree = "<group>"; };
+		3CF034891D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVPhotoAlbumTableViewCell.m; path = Cells/OLTVPhotoAlbumTableViewCell.m; sourceTree = "<group>"; };
+		3CFEA6151D36CFEB001016EB /* OLTVVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVVideoTableViewCell.h; path = Cells/OLTVVideoTableViewCell.h; sourceTree = "<group>"; };
+		3CFEA6161D36CFEB001016EB /* OLTVVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVVideoTableViewCell.m; path = Cells/OLTVVideoTableViewCell.m; sourceTree = "<group>"; };
+		3CFEA6181D36DF51001016EB /* OLTVDetailedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedVideoViewController.h; path = Controller/OLTVDetailedVideoViewController.h; sourceTree = "<group>"; };
+		3CFEA6191D36DF51001016EB /* OLTVDetailedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedVideoViewController.m; path = Controller/OLTVDetailedVideoViewController.m; sourceTree = "<group>"; };
+		3CFEA61B1D36E017001016EB /* OLTVDetailedVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedVideoTableViewCell.h; path = Cells/OLTVDetailedVideoTableViewCell.h; sourceTree = "<group>"; };
+		3CFEA61C1D36E017001016EB /* OLTVDetailedVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedVideoTableViewCell.m; path = Cells/OLTVDetailedVideoTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB3E55B1D1678EE006AC3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CA0C6FA1D18855F00796A37 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3CA0C6FE1D1885C900796A37 /* UIView+UITableViewCell.h */,
+				3CA0C6FF1D1885C900796A37 /* UIView+UITableViewCell.m */,
+				3C93FA2F1D2BFEBD00F02362 /* UIView+UICollectionViewCell.h */,
+				3C93FA301D2BFEBD00F02362 /* UIView+UICollectionViewCell.m */,
+				3CA0C7041D18924200796A37 /* UIViewController+HideBackBarButtonItem.h */,
+				3CA0C7051D18924200796A37 /* UIViewController+HideBackBarButtonItem.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		3CB3E5551D1678EE006AC3E0 = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5601D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW */,
+				3CB3E55F1D1678EE006AC3E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CB3E55F1D1678EE006AC3E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E55E1D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CB3E5601D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW */ = {
+			isa = PBXGroup;
+			children = (
+				3CA0C6FA1D18855F00796A37 /* Categories */,
+				3CB3E58E1D168D06006AC3E0 /* Libs */,
+				3CB3E57C1D167ACD006AC3E0 /* API */,
+				3CB3E5811D167C16006AC3E0 /* Model */,
+				3CB3E5801D167AFA006AC3E0 /* Controller */,
+				3CB3E5781D167902006AC3E0 /* UI */,
+				3CB3E5611D1678EE006AC3E0 /* Supporting Files */,
+			);
+			path = iOSDev4601_ClientServerAPIsHW;
+			sourceTree = "<group>";
+		};
+		3CB3E5611D1678EE006AC3E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5641D1678EE006AC3E0 /* AppDelegate.h */,
+				3CB3E5651D1678EE006AC3E0 /* AppDelegate.m */,
+				3CB3E5721D1678EE006AC3E0 /* Info.plist */,
+				3CB3E5621D1678EE006AC3E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CB3E5781D167902006AC3E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5C11D1699F1006AC3E0 /* Cells */,
+				3CB3E56D1D1678EE006AC3E0 /* Assets.xcassets */,
+				3CB3E56A1D1678EE006AC3E0 /* Main.storyboard */,
+				3CB3E56F1D1678EE006AC3E0 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3CB3E57C1D167ACD006AC3E0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5791D167AC9006AC3E0 /* OLTVAPIManager.h */,
+				3CB3E57A1D167AC9006AC3E0 /* OLTVAPIManager.m */,
+				3CB3E58B1D167F4E006AC3E0 /* OLTVAccessToken.h */,
+				3CB3E58C1D167F4E006AC3E0 /* OLTVAccessToken.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		3CB3E5801D167AFA006AC3E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5851D167E00006AC3E0 /* OLTVLoginViewController.h */,
+				3CB3E5861D167E00006AC3E0 /* OLTVLoginViewController.m */,
+				3CB3E5CD1D16C6DC006AC3E0 /* OLTVPostMessageViewController.h */,
+				3CB3E5CE1D16C6DC006AC3E0 /* OLTVPostMessageViewController.m */,
+				3CB3E57D1D167AF6006AC3E0 /* OLTVGroupViewController.h */,
+				3CB3E57E1D167AF6006AC3E0 /* OLTVGroupViewController.m */,
+				3CA0C7011D18891E00796A37 /* OLTVMessagesViewController.h */,
+				3CA0C7021D18891E00796A37 /* OLTVMessagesViewController.m */,
+				3C075D581D23CCA000849138 /* OLTVDetailedPostViewController.h */,
+				3C075D591D23CCA000849138 /* OLTVDetailedPostViewController.m */,
+				3CF034851D2C37B70005DADA /* OLTVPhotosViewController.h */,
+				3CF034861D2C37B70005DADA /* OLTVPhotosViewController.m */,
+				3CB50D511D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.h */,
+				3CB50D521D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.m */,
+				3C38006A1D342F0400CBD67E /* OLTVVideoAlbumsViewController.h */,
+				3C38006B1D342F0500CBD67E /* OLTVVideoAlbumsViewController.m */,
+				3C6654431D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.h */,
+				3C6654441D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.m */,
+				3CFEA6181D36DF51001016EB /* OLTVDetailedVideoViewController.h */,
+				3CFEA6191D36DF51001016EB /* OLTVDetailedVideoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3CB3E5811D167C16006AC3E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C6654461D36959500DF09CB /* OLTVVideo.h */,
+				3C6654471D36959500DF09CB /* OLTVVideo.m */,
+				3CB3E5821D167C2E006AC3E0 /* OLTVUser.h */,
+				3CB3E5831D167C2E006AC3E0 /* OLTVUser.m */,
+				3CB3E5CA1D169B61006AC3E0 /* OLTVPost.h */,
+				3CB3E5CB1D169B61006AC3E0 /* OLTVPost.m */,
+				3C39D6921D195C7800FEC082 /* OLTVMessage.h */,
+				3C39D6931D195C7800FEC082 /* OLTVMessage.m */,
+				3C075D5E1D23DDEA00849138 /* OLTVComment.h */,
+				3C075D5F1D23DDEA00849138 /* OLTVComment.m */,
+				3C93FA261D2BBDB800F02362 /* OLTVGroup.h */,
+				3C93FA271D2BBDB800F02362 /* OLTVGroup.m */,
+				3C203F781D2D101E00181E6F /* OLTVPhotoAlbum.h */,
+				3C203F791D2D101E00181E6F /* OLTVPhotoAlbum.m */,
+				3C7E21051D2E66F600733ADC /* OLTVPhoto.h */,
+				3C7E21061D2E66F600733ADC /* OLTVPhoto.m */,
+				3C38006D1D34301600CBD67E /* OLTVVideoAlbum.h */,
+				3C38006E1D34301600CBD67E /* OLTVVideoAlbum.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3CB3E58E1D168D06006AC3E0 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E58F1D168D06006AC3E0 /* AFNetworking */,
+				3CB3E59D1D168D06006AC3E0 /* UIKit+AFNetworking */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		3CB3E58F1D168D06006AC3E0 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5901D168D06006AC3E0 /* AFHTTPSessionManager.h */,
+				3CB3E5911D168D06006AC3E0 /* AFHTTPSessionManager.m */,
+				3CB3E5921D168D06006AC3E0 /* AFNetworking.h */,
+				3CB3E5931D168D06006AC3E0 /* AFNetworkReachabilityManager.h */,
+				3CB3E5941D168D06006AC3E0 /* AFNetworkReachabilityManager.m */,
+				3CB3E5951D168D06006AC3E0 /* AFSecurityPolicy.h */,
+				3CB3E5961D168D06006AC3E0 /* AFSecurityPolicy.m */,
+				3CB3E5971D168D06006AC3E0 /* AFURLRequestSerialization.h */,
+				3CB3E5981D168D06006AC3E0 /* AFURLRequestSerialization.m */,
+				3CB3E5991D168D06006AC3E0 /* AFURLResponseSerialization.h */,
+				3CB3E59A1D168D06006AC3E0 /* AFURLResponseSerialization.m */,
+				3CB3E59B1D168D06006AC3E0 /* AFURLSessionManager.h */,
+				3CB3E59C1D168D06006AC3E0 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		3CB3E59D1D168D06006AC3E0 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E59E1D168D06006AC3E0 /* AFAutoPurgingImageCache.h */,
+				3CB3E59F1D168D06006AC3E0 /* AFAutoPurgingImageCache.m */,
+				3CB3E5A01D168D06006AC3E0 /* AFImageDownloader.h */,
+				3CB3E5A11D168D06006AC3E0 /* AFImageDownloader.m */,
+				3CB3E5A21D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.h */,
+				3CB3E5A31D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.m */,
+				3CB3E5A41D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.h */,
+				3CB3E5A51D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.m */,
+				3CB3E5A61D168D06006AC3E0 /* UIButton+AFNetworking.h */,
+				3CB3E5A71D168D06006AC3E0 /* UIButton+AFNetworking.m */,
+				3CB3E5A81D168D06006AC3E0 /* UIImage+AFNetworking.h */,
+				3CB3E5A91D168D06006AC3E0 /* UIImageView+AFNetworking.h */,
+				3CB3E5AA1D168D06006AC3E0 /* UIImageView+AFNetworking.m */,
+				3CB3E5AB1D168D06006AC3E0 /* UIKit+AFNetworking.h */,
+				3CB3E5AC1D168D06006AC3E0 /* UIProgressView+AFNetworking.h */,
+				3CB3E5AD1D168D06006AC3E0 /* UIProgressView+AFNetworking.m */,
+				3CB3E5AE1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.h */,
+				3CB3E5AF1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.m */,
+				3CB3E5B01D168D06006AC3E0 /* UIWebView+AFNetworking.h */,
+				3CB3E5B11D168D06006AC3E0 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		3CB3E5C11D1699F1006AC3E0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3E5C71D169ACD006AC3E0 /* OLTVPostTableViewCell.h */,
+				3CB3E5C81D169ACD006AC3E0 /* OLTVPostTableViewCell.m */,
+				3C075D5B1D23D03F00849138 /* OLTVCommentTableViewCell.h */,
+				3C075D5C1D23D03F00849138 /* OLTVCommentTableViewCell.m */,
+				3C93FA291D2BCAFE00F02362 /* OLTVGroupTableViewCell.h */,
+				3C93FA2A1D2BCAFE00F02362 /* OLTVGroupTableViewCell.m */,
+				3C93FA2C1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.h */,
+				3C93FA2D1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.m */,
+				3CF034881D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.h */,
+				3CF034891D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.m */,
+				3C7E21081D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.h */,
+				3C7E21091D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.m */,
+				3CB50D541D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.h */,
+				3CB50D551D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.m */,
+				3C3800701D343CE900CBD67E /* OLTVVideoAlbumTableViewCell.h */,
+				3C3800711D343CE900CBD67E /* OLTVVIdeoAlbumTableViewCell.m */,
+				3CFEA6151D36CFEB001016EB /* OLTVVideoTableViewCell.h */,
+				3CFEA6161D36CFEB001016EB /* OLTVVideoTableViewCell.m */,
+				3CFEA61B1D36E017001016EB /* OLTVDetailedVideoTableViewCell.h */,
+				3CFEA61C1D36E017001016EB /* OLTVDetailedVideoTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB3E55D1D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB3E5751D1678EE006AC3E0 /* Build configuration list for PBXNativeTarget "iOSDev4601_ClientServerAPIsHW" */;
+			buildPhases = (
+				3CB3E55A1D1678EE006AC3E0 /* Sources */,
+				3CB3E55B1D1678EE006AC3E0 /* Frameworks */,
+				3CB3E55C1D1678EE006AC3E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDev4601_ClientServerAPIsHW;
+			productName = iOSDev4601_ClientServerAPIsHW;
+			productReference = 3CB3E55E1D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CB3E5561D1678EE006AC3E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oltv00;
+				TargetAttributes = {
+					3CB3E55D1D1678EE006AC3E0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3CB3E5591D1678EE006AC3E0 /* Build configuration list for PBXProject "iOSDev4601_ClientServerAPIsHW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CB3E5551D1678EE006AC3E0;
+			productRefGroup = 3CB3E55F1D1678EE006AC3E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CB3E55D1D1678EE006AC3E0 /* iOSDev4601_ClientServerAPIsHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CB3E55C1D1678EE006AC3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB3E5711D1678EE006AC3E0 /* LaunchScreen.storyboard in Resources */,
+				3CB3E56E1D1678EE006AC3E0 /* Assets.xcassets in Resources */,
+				3CB3E56C1D1678EE006AC3E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CB3E55A1D1678EE006AC3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C93FA281D2BBDB800F02362 /* OLTVGroup.m in Sources */,
+				3C075D601D23DDEA00849138 /* OLTVComment.m in Sources */,
+				3C6654481D36959500DF09CB /* OLTVVideo.m in Sources */,
+				3C075D5D1D23D03F00849138 /* OLTVCommentTableViewCell.m in Sources */,
+				3CF0348A1D2C3BB70005DADA /* OLTVPhotoAlbumTableViewCell.m in Sources */,
+				3CB3E57B1D167AC9006AC3E0 /* OLTVAPIManager.m in Sources */,
+				3C6654451D36917C00DF09CB /* OLTVDetailedVideoAlbumViewController.m in Sources */,
+				3CB3E5B31D168D06006AC3E0 /* AFNetworkReachabilityManager.m in Sources */,
+				3CB50D561D30B255005B1D43 /* OLTVDetailedPhotoCollectionViewCell.m in Sources */,
+				3C38006C1D342F0500CBD67E /* OLTVVideoAlbumsViewController.m in Sources */,
+				3CB3E5BC1D168D06006AC3E0 /* UIButton+AFNetworking.m in Sources */,
+				3CB3E5B91D168D06006AC3E0 /* AFImageDownloader.m in Sources */,
+				3CB3E5BE1D168D06006AC3E0 /* UIProgressView+AFNetworking.m in Sources */,
+				3C203F7A1D2D101E00181E6F /* OLTVPhotoAlbum.m in Sources */,
+				3C93FA2B1D2BCAFE00F02362 /* OLTVGroupTableViewCell.m in Sources */,
+				3CB3E5CF1D16C6DC006AC3E0 /* OLTVPostMessageViewController.m in Sources */,
+				3CB3E5871D167E00006AC3E0 /* OLTVLoginViewController.m in Sources */,
+				3CFEA61A1D36DF51001016EB /* OLTVDetailedVideoViewController.m in Sources */,
+				3C93FA2E1D2BD18900F02362 /* OLTVGroupMenuCollectionViewCell.m in Sources */,
+				3CB3E5BA1D168D06006AC3E0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3CB3E57F1D167AF6006AC3E0 /* OLTVGroupViewController.m in Sources */,
+				3CB50D531D30ADDC005B1D43 /* OLTVDetailedPhotoAlbumViewController.m in Sources */,
+				3CB3E5BF1D168D06006AC3E0 /* UIRefreshControl+AFNetworking.m in Sources */,
+				3CB3E5661D1678EE006AC3E0 /* AppDelegate.m in Sources */,
+				3C075D5A1D23CCA000849138 /* OLTVDetailedPostViewController.m in Sources */,
+				3CA0C7031D18891E00796A37 /* OLTVMessagesViewController.m in Sources */,
+				3C38006F1D34301600CBD67E /* OLTVVideoAlbum.m in Sources */,
+				3CB3E5C91D169ACD006AC3E0 /* OLTVPostTableViewCell.m in Sources */,
+				3C7E21071D2E66F600733ADC /* OLTVPhoto.m in Sources */,
+				3CB3E5B81D168D06006AC3E0 /* AFAutoPurgingImageCache.m in Sources */,
+				3CF034871D2C37B70005DADA /* OLTVPhotosViewController.m in Sources */,
+				3CA0C7001D1885C900796A37 /* UIView+UITableViewCell.m in Sources */,
+				3CB3E5BD1D168D06006AC3E0 /* UIImageView+AFNetworking.m in Sources */,
+				3CB3E5631D1678EE006AC3E0 /* main.m in Sources */,
+				3CB3E5B41D168D06006AC3E0 /* AFSecurityPolicy.m in Sources */,
+				3CB3E5B51D168D06006AC3E0 /* AFURLRequestSerialization.m in Sources */,
+				3C93FA311D2BFEBD00F02362 /* UIView+UICollectionViewCell.m in Sources */,
+				3CFEA61D1D36E017001016EB /* OLTVDetailedVideoTableViewCell.m in Sources */,
+				3CB3E5841D167C2E006AC3E0 /* OLTVUser.m in Sources */,
+				3C39D6941D195C7800FEC082 /* OLTVMessage.m in Sources */,
+				3CB3E5C01D168D06006AC3E0 /* UIWebView+AFNetworking.m in Sources */,
+				3CB3E5CC1D169B61006AC3E0 /* OLTVPost.m in Sources */,
+				3CB3E5BB1D168D06006AC3E0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				3CB3E58D1D167F4E006AC3E0 /* OLTVAccessToken.m in Sources */,
+				3CA0C7061D18924200796A37 /* UIViewController+HideBackBarButtonItem.m in Sources */,
+				3CB3E5B61D168D06006AC3E0 /* AFURLResponseSerialization.m in Sources */,
+				3CFEA6171D36CFEB001016EB /* OLTVVideoTableViewCell.m in Sources */,
+				3C7E210A1D2E6B3700733ADC /* OLTVPhotoCollectionViewCell.m in Sources */,
+				3CB3E5B71D168D06006AC3E0 /* AFURLSessionManager.m in Sources */,
+				3C3800721D343CE900CBD67E /* OLTVVIdeoAlbumTableViewCell.m in Sources */,
+				3CB3E5B21D168D06006AC3E0 /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CB3E56A1D1678EE006AC3E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB3E56B1D1678EE006AC3E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CB3E56F1D1678EE006AC3E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB3E5701D1678EE006AC3E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CB3E5731D1678EE006AC3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CB3E5741D1678EE006AC3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CB3E5761D1678EE006AC3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev4601_ClientServerAPIsHW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev4601-ClientServerAPIsHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3CB3E5771D1678EE006AC3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev4601_ClientServerAPIsHW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev4601-ClientServerAPIsHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB3E5591D1678EE006AC3E0 /* Build configuration list for PBXProject "iOSDev4601_ClientServerAPIsHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB3E5731D1678EE006AC3E0 /* Debug */,
+				3CB3E5741D1678EE006AC3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB3E5751D1678EE006AC3E0 /* Build configuration list for PBXNativeTarget "iOSDev4601_ClientServerAPIsHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB3E5761D1678EE006AC3E0 /* Debug */,
+				3CB3E5771D1678EE006AC3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CB3E5561D1678EE006AC3E0 /* Project object */;
+}

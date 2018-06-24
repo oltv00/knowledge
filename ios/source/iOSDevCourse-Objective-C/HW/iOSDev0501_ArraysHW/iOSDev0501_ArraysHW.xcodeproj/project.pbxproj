@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8BE6571CAB1879003EEC68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6561CAB1879003EEC68 /* main.m */; };
+		3A8BE65A1CAB1879003EEC68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6591CAB1879003EEC68 /* AppDelegate.m */; };
+		3A8BE65D1CAB1879003EEC68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE65C1CAB1879003EEC68 /* ViewController.m */; };
+		3A8BE6601CAB1879003EEC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BE65E1CAB1879003EEC68 /* Main.storyboard */; };
+		3A8BE6621CAB1879003EEC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BE6611CAB1879003EEC68 /* Assets.xcassets */; };
+		3A8BE6651CAB1879003EEC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BE6631CAB1879003EEC68 /* LaunchScreen.storyboard */; };
+		3A8BE66E1CAB18F8003EEC68 /* OTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE66D1CAB18F8003EEC68 /* OTPerson.m */; };
+		3A8BE6711CAB1A49003EEC68 /* OTCyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6701CAB1A49003EEC68 /* OTCyclist.m */; };
+		3A8BE6741CAB1ACF003EEC68 /* OTRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6731CAB1ACF003EEC68 /* OTRunner.m */; };
+		3A8BE6771CAB1B08003EEC68 /* OTSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6761CAB1B08003EEC68 /* OTSwimmer.m */; };
+		3A8BE67A1CAB1E4E003EEC68 /* OTAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6791CAB1E4E003EEC68 /* OTAddition.m */; };
+		3A8BE67F1CAB243F003EEC68 /* OTAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE67E1CAB243F003EEC68 /* OTAnimal.m */; };
+		3A8BE6821CAB2545003EEC68 /* OTCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6811CAB2545003EEC68 /* OTCat.m */; };
+		3A8BE6851CAB2586003EEC68 /* OTDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6841CAB2586003EEC68 /* OTDog.m */; };
+		3A8BE6881CAB2599003EEC68 /* OTMonkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BE6871CAB2599003EEC68 /* OTMonkey.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A8BE6521CAB1879003EEC68 /* iOSDev0501_ArraysHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev0501_ArraysHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8BE6561CAB1879003EEC68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A8BE6581CAB1879003EEC68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A8BE6591CAB1879003EEC68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A8BE65B1CAB1879003EEC68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A8BE65C1CAB1879003EEC68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A8BE65F1CAB1879003EEC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8BE6611CAB1879003EEC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8BE6641CAB1879003EEC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8BE6661CAB1879003EEC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8BE66C1CAB18F8003EEC68 /* OTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPerson.h; sourceTree = "<group>"; };
+		3A8BE66D1CAB18F8003EEC68 /* OTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPerson.m; sourceTree = "<group>"; };
+		3A8BE66F1CAB1A49003EEC68 /* OTCyclist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCyclist.h; sourceTree = "<group>"; };
+		3A8BE6701CAB1A49003EEC68 /* OTCyclist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCyclist.m; sourceTree = "<group>"; };
+		3A8BE6721CAB1ACF003EEC68 /* OTRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRunner.h; sourceTree = "<group>"; };
+		3A8BE6731CAB1ACF003EEC68 /* OTRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRunner.m; sourceTree = "<group>"; };
+		3A8BE6751CAB1B08003EEC68 /* OTSwimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSwimmer.h; sourceTree = "<group>"; };
+		3A8BE6761CAB1B08003EEC68 /* OTSwimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSwimmer.m; sourceTree = "<group>"; };
+		3A8BE6781CAB1E4E003EEC68 /* OTAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAddition.h; sourceTree = "<group>"; };
+		3A8BE6791CAB1E4E003EEC68 /* OTAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAddition.m; sourceTree = "<group>"; };
+		3A8BE67D1CAB243F003EEC68 /* OTAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAnimal.h; sourceTree = "<group>"; };
+		3A8BE67E1CAB243F003EEC68 /* OTAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAnimal.m; sourceTree = "<group>"; };
+		3A8BE6801CAB2545003EEC68 /* OTCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCat.h; sourceTree = "<group>"; };
+		3A8BE6811CAB2545003EEC68 /* OTCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCat.m; sourceTree = "<group>"; };
+		3A8BE6831CAB2586003EEC68 /* OTDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTDog.h; sourceTree = "<group>"; };
+		3A8BE6841CAB2586003EEC68 /* OTDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTDog.m; sourceTree = "<group>"; };
+		3A8BE6861CAB2599003EEC68 /* OTMonkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMonkey.h; sourceTree = "<group>"; };
+		3A8BE6871CAB2599003EEC68 /* OTMonkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMonkey.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8BE64F1CAB1879003EEC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8BE6491CAB1879003EEC68 = {
+			isa = PBXGroup;
+			children = (
+				3A8BE6541CAB1879003EEC68 /* iOSDev0501_ArraysHW */,
+				3A8BE6531CAB1879003EEC68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8BE6531CAB1879003EEC68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BE6521CAB1879003EEC68 /* iOSDev0501_ArraysHW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8BE6541CAB1879003EEC68 /* iOSDev0501_ArraysHW */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BE6581CAB1879003EEC68 /* AppDelegate.h */,
+				3A8BE6591CAB1879003EEC68 /* AppDelegate.m */,
+				3A8BE67B1CAB2402003EEC68 /* Persons */,
+				3A8BE67C1CAB2409003EEC68 /* Animals */,
+				3A8BE6551CAB1879003EEC68 /* Supporting Files */,
+			);
+			name = iOSDev0501_ArraysHW;
+			path = 5_Arrays;
+			sourceTree = "<group>";
+		};
+		3A8BE6551CAB1879003EEC68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BE65B1CAB1879003EEC68 /* ViewController.h */,
+				3A8BE65C1CAB1879003EEC68 /* ViewController.m */,
+				3A8BE65E1CAB1879003EEC68 /* Main.storyboard */,
+				3A8BE6611CAB1879003EEC68 /* Assets.xcassets */,
+				3A8BE6631CAB1879003EEC68 /* LaunchScreen.storyboard */,
+				3A8BE6661CAB1879003EEC68 /* Info.plist */,
+				3A8BE6561CAB1879003EEC68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A8BE67B1CAB2402003EEC68 /* Persons */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BE66C1CAB18F8003EEC68 /* OTPerson.h */,
+				3A8BE66D1CAB18F8003EEC68 /* OTPerson.m */,
+				3A8BE66F1CAB1A49003EEC68 /* OTCyclist.h */,
+				3A8BE6701CAB1A49003EEC68 /* OTCyclist.m */,
+				3A8BE6721CAB1ACF003EEC68 /* OTRunner.h */,
+				3A8BE6731CAB1ACF003EEC68 /* OTRunner.m */,
+				3A8BE6751CAB1B08003EEC68 /* OTSwimmer.h */,
+				3A8BE6761CAB1B08003EEC68 /* OTSwimmer.m */,
+				3A8BE6781CAB1E4E003EEC68 /* OTAddition.h */,
+				3A8BE6791CAB1E4E003EEC68 /* OTAddition.m */,
+			);
+			name = Persons;
+			sourceTree = "<group>";
+		};
+		3A8BE67C1CAB2409003EEC68 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BE67D1CAB243F003EEC68 /* OTAnimal.h */,
+				3A8BE67E1CAB243F003EEC68 /* OTAnimal.m */,
+				3A8BE6801CAB2545003EEC68 /* OTCat.h */,
+				3A8BE6811CAB2545003EEC68 /* OTCat.m */,
+				3A8BE6831CAB2586003EEC68 /* OTDog.h */,
+				3A8BE6841CAB2586003EEC68 /* OTDog.m */,
+				3A8BE6861CAB2599003EEC68 /* OTMonkey.h */,
+				3A8BE6871CAB2599003EEC68 /* OTMonkey.m */,
+			);
+			name = Animals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8BE6511CAB1879003EEC68 /* iOSDev0501_ArraysHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8BE6691CAB1879003EEC68 /* Build configuration list for PBXNativeTarget "iOSDev0501_ArraysHW" */;
+			buildPhases = (
+				3A8BE64E1CAB1879003EEC68 /* Sources */,
+				3A8BE64F1CAB1879003EEC68 /* Frameworks */,
+				3A8BE6501CAB1879003EEC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDev0501_ArraysHW;
+			productName = 5_Arrays;
+			productReference = 3A8BE6521CAB1879003EEC68 /* iOSDev0501_ArraysHW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8BE64A1CAB1879003EEC68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Oleg Tverdokhleb";
+				TargetAttributes = {
+					3A8BE6511CAB1879003EEC68 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3A8BE64D1CAB1879003EEC68 /* Build configuration list for PBXProject "iOSDev0501_ArraysHW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8BE6491CAB1879003EEC68;
+			productRefGroup = 3A8BE6531CAB1879003EEC68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8BE6511CAB1879003EEC68 /* iOSDev0501_ArraysHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8BE6501CAB1879003EEC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8BE6651CAB1879003EEC68 /* LaunchScreen.storyboard in Resources */,
+				3A8BE6621CAB1879003EEC68 /* Assets.xcassets in Resources */,
+				3A8BE6601CAB1879003EEC68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8BE64E1CAB1879003EEC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8BE67F1CAB243F003EEC68 /* OTAnimal.m in Sources */,
+				3A8BE6711CAB1A49003EEC68 /* OTCyclist.m in Sources */,
+				3A8BE65D1CAB1879003EEC68 /* ViewController.m in Sources */,
+				3A8BE6821CAB2545003EEC68 /* OTCat.m in Sources */,
+				3A8BE65A1CAB1879003EEC68 /* AppDelegate.m in Sources */,
+				3A8BE6571CAB1879003EEC68 /* main.m in Sources */,
+				3A8BE6741CAB1ACF003EEC68 /* OTRunner.m in Sources */,
+				3A8BE6881CAB2599003EEC68 /* OTMonkey.m in Sources */,
+				3A8BE6851CAB2586003EEC68 /* OTDog.m in Sources */,
+				3A8BE6771CAB1B08003EEC68 /* OTSwimmer.m in Sources */,
+				3A8BE67A1CAB1E4E003EEC68 /* OTAddition.m in Sources */,
+				3A8BE66E1CAB18F8003EEC68 /* OTPerson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A8BE65E1CAB1879003EEC68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8BE65F1CAB1879003EEC68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8BE6631CAB1879003EEC68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8BE6641CAB1879003EEC68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8BE6671CAB1879003EEC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A8BE6681CAB1879003EEC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8BE66A1CAB1879003EEC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = 5_Arrays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.--Arrays";
+				PRODUCT_NAME = iOSDev0501_ArraysHW;
+			};
+			name = Debug;
+		};
+		3A8BE66B1CAB1879003EEC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = 5_Arrays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.--Arrays";
+				PRODUCT_NAME = iOSDev0501_ArraysHW;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8BE64D1CAB1879003EEC68 /* Build configuration list for PBXProject "iOSDev0501_ArraysHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8BE6671CAB1879003EEC68 /* Debug */,
+				3A8BE6681CAB1879003EEC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8BE6691CAB1879003EEC68 /* Build configuration list for PBXNativeTarget "iOSDev0501_ArraysHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8BE66A1CAB1879003EEC68 /* Debug */,
+				3A8BE66B1CAB1879003EEC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A8BE64A1CAB1879003EEC68 /* Project object */;
+}

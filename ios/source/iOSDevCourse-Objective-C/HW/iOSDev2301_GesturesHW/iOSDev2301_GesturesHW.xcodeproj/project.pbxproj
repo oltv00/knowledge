@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C02C4A91CC2A0E50024DE38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C02C4A81CC2A0E50024DE38 /* main.m */; };
+		3C02C4AC1CC2A0E50024DE38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C02C4AB1CC2A0E50024DE38 /* AppDelegate.m */; };
+		3C02C4AF1CC2A0E50024DE38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C02C4AE1CC2A0E50024DE38 /* ViewController.m */; };
+		3C02C4B21CC2A0E50024DE38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C02C4B01CC2A0E50024DE38 /* Main.storyboard */; };
+		3C02C4B41CC2A0E50024DE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C02C4B31CC2A0E50024DE38 /* Assets.xcassets */; };
+		3C02C4B71CC2A0E50024DE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C02C4B51CC2A0E50024DE38 /* LaunchScreen.storyboard */; };
+		3C02C4F11CC2B89C0024DE38 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C02C4F01CC2B89C0024DE38 /* giphy.gif */; };
+		848A7A8F1EA5BD3F63E7884E /* libPods-23_GesturesHW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D37CBC115626088E430241C /* libPods-23_GesturesHW.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BF7A7E32D75BA90980F0639 /* Pods-23_GesturesHW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-23_GesturesHW.release.xcconfig"; path = "Pods/Target Support Files/Pods-23_GesturesHW/Pods-23_GesturesHW.release.xcconfig"; sourceTree = "<group>"; };
+		3C02C4A41CC2A0E50024DE38 /* iOSDev2301_GesturesHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev2301_GesturesHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C02C4A81CC2A0E50024DE38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C02C4AA1CC2A0E50024DE38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C02C4AB1CC2A0E50024DE38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C02C4AD1CC2A0E50024DE38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C02C4AE1CC2A0E50024DE38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C02C4B11CC2A0E50024DE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C02C4B31CC2A0E50024DE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C02C4B61CC2A0E50024DE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C02C4B81CC2A0E50024DE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C02C4F01CC2B89C0024DE38 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = SOURCE_ROOT; };
+		6D37CBC115626088E430241C /* libPods-23_GesturesHW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-23_GesturesHW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36B0BF137FE192D20115481 /* Pods-23_GesturesHW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-23_GesturesHW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-23_GesturesHW/Pods-23_GesturesHW.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C02C4A11CC2A0E50024DE38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A7A8F1EA5BD3F63E7884E /* libPods-23_GesturesHW.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CDF86FFD5E259E9C65C39A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A36B0BF137FE192D20115481 /* Pods-23_GesturesHW.debug.xcconfig */,
+				0BF7A7E32D75BA90980F0639 /* Pods-23_GesturesHW.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B2E57F8007F01F3C643E01F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D37CBC115626088E430241C /* libPods-23_GesturesHW.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C02C49B1CC2A0E50024DE38 = {
+			isa = PBXGroup;
+			children = (
+				3C02C4A61CC2A0E50024DE38 /* 23_GesturesHW */,
+				3C02C4A51CC2A0E50024DE38 /* Products */,
+				2CDF86FFD5E259E9C65C39A5 /* Pods */,
+				3B2E57F8007F01F3C643E01F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C02C4A51CC2A0E50024DE38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C02C4A41CC2A0E50024DE38 /* iOSDev2301_GesturesHW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C02C4A61CC2A0E50024DE38 /* 23_GesturesHW */ = {
+			isa = PBXGroup;
+			children = (
+				3C02C4F01CC2B89C0024DE38 /* giphy.gif */,
+				3C02C4AA1CC2A0E50024DE38 /* AppDelegate.h */,
+				3C02C4AB1CC2A0E50024DE38 /* AppDelegate.m */,
+				3C02C4AD1CC2A0E50024DE38 /* ViewController.h */,
+				3C02C4AE1CC2A0E50024DE38 /* ViewController.m */,
+				3C02C4B01CC2A0E50024DE38 /* Main.storyboard */,
+				3C02C4B31CC2A0E50024DE38 /* Assets.xcassets */,
+				3C02C4B51CC2A0E50024DE38 /* LaunchScreen.storyboard */,
+				3C02C4B81CC2A0E50024DE38 /* Info.plist */,
+				3C02C4A71CC2A0E50024DE38 /* Supporting Files */,
+			);
+			path = 23_GesturesHW;
+			sourceTree = "<group>";
+		};
+		3C02C4A71CC2A0E50024DE38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C02C4A81CC2A0E50024DE38 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C02C4A31CC2A0E50024DE38 /* iOSDev2301_GesturesHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C02C4BB1CC2A0E50024DE38 /* Build configuration list for PBXNativeTarget "iOSDev2301_GesturesHW" */;
+			buildPhases = (
+				E6A2032CED20241FB540AB36 /* Check Pods Manifest.lock */,
+				3C02C4A01CC2A0E50024DE38 /* Sources */,
+				3C02C4A11CC2A0E50024DE38 /* Frameworks */,
+				3C02C4A21CC2A0E50024DE38 /* Resources */,
+				9C129896DCB2626E7292E8DD /* Embed Pods Frameworks */,
+				175970194DD246AA43DE3C87 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDev2301_GesturesHW;
+			productName = 23_GesturesHW;
+			productReference = 3C02C4A41CC2A0E50024DE38 /* iOSDev2301_GesturesHW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C02C49C1CC2A0E50024DE38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Oleg Tverdokhleb";
+				TargetAttributes = {
+					3C02C4A31CC2A0E50024DE38 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3C02C49F1CC2A0E50024DE38 /* Build configuration list for PBXProject "iOSDev2301_GesturesHW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C02C49B1CC2A0E50024DE38;
+			productRefGroup = 3C02C4A51CC2A0E50024DE38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C02C4A31CC2A0E50024DE38 /* iOSDev2301_GesturesHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C02C4A21CC2A0E50024DE38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C02C4B71CC2A0E50024DE38 /* LaunchScreen.storyboard in Resources */,
+				3C02C4B41CC2A0E50024DE38 /* Assets.xcassets in Resources */,
+				3C02C4F11CC2B89C0024DE38 /* giphy.gif in Resources */,
+				3C02C4B21CC2A0E50024DE38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		175970194DD246AA43DE3C87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-23_GesturesHW/Pods-23_GesturesHW-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C129896DCB2626E7292E8DD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-23_GesturesHW/Pods-23_GesturesHW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A2032CED20241FB540AB36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C02C4A01CC2A0E50024DE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C02C4AF1CC2A0E50024DE38 /* ViewController.m in Sources */,
+				3C02C4AC1CC2A0E50024DE38 /* AppDelegate.m in Sources */,
+				3C02C4A91CC2A0E50024DE38 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C02C4B01CC2A0E50024DE38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C02C4B11CC2A0E50024DE38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C02C4B51CC2A0E50024DE38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C02C4B61CC2A0E50024DE38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C02C4B91CC2A0E50024DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C02C4BA1CC2A0E50024DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C02C4BC1CC2A0E50024DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36B0BF137FE192D20115481 /* Pods-23_GesturesHW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 23_GesturesHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.-3-GesturesHW";
+				PRODUCT_NAME = iOSDev2301_GesturesHW;
+			};
+			name = Debug;
+		};
+		3C02C4BD1CC2A0E50024DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF7A7E32D75BA90980F0639 /* Pods-23_GesturesHW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 23_GesturesHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.-3-GesturesHW";
+				PRODUCT_NAME = iOSDev2301_GesturesHW;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C02C49F1CC2A0E50024DE38 /* Build configuration list for PBXProject "iOSDev2301_GesturesHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C02C4B91CC2A0E50024DE38 /* Debug */,
+				3C02C4BA1CC2A0E50024DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C02C4BB1CC2A0E50024DE38 /* Build configuration list for PBXNativeTarget "iOSDev2301_GesturesHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C02C4BC1CC2A0E50024DE38 /* Debug */,
+				3C02C4BD1CC2A0E50024DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C02C49C1CC2A0E50024DE38 /* Project object */;
+}

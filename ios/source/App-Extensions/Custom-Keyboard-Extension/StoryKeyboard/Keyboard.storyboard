@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XGA-eu-QE8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Story Keyboard View Controller-->
+        <scene sceneID="i3y-T8-i8e">
+            <objects>
+                <viewController id="XGA-eu-QE8" customClass="StoryKeyboardViewController" customModule="StoryKeyboard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kVJ-cp-5TH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ogn-uf-YM9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbY-wY-mnK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1jp-xr-ncA">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-LG-tqx" userLabel="1">
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="y0v-0j-6Ci"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K3-78-TSv" userLabel="2">
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="Btk-i2-MfA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzE-fy-OMQ" userLabel="3">
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="wjr-r8-BSt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McI-BR-cVD" userLabel="4">
+                                        <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="mXF-kI-Fno"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0F-eM-dvo" userLabel="5">
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="gjz-wU-CMC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-Xh-8dE" userLabel="6">
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="F4Q-gi-bqR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7W-B7-KrR" userLabel="7">
+                                        <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="kao-hC-8wQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbi-uX-2Td" userLabel="8">
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="ebe-SZ-nbV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brr-63-hxM" userLabel="9">
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="eIA-D8-Av9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRz-7S-FTZ" userLabel="0">
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="oG8-rW-Xqf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-6c-Bu6">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-Bq-BKx" userLabel="!">
+                                        <state key="normal" title="!"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="hao-3e-bZn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TC-RW-k8u" userLabel="@">
+                                        <state key="normal" title="@"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="okC-WX-F5g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grQ-HD-lac" userLabel="#">
+                                        <state key="normal" title="#"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="aDc-Xz-sqn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-wc-C8r" userLabel="$">
+                                        <state key="normal" title="$"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="pbA-mz-54R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlK-Pc-CjV" userLabel="%">
+                                        <state key="normal" title="%"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="iSQ-13-ja8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcm-vM-C23" userLabel="^">
+                                        <state key="normal" title="^"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="0ZI-SN-3Pm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAl-pX-KGc" userLabel="&amp;">
+                                        <state key="normal" title="&amp;"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="Cbs-3W-aTg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obm-Je-fEP" userLabel="*">
+                                        <state key="normal" title="*"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="OTp-6W-ur9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-tn-hWi" userLabel="(">
+                                        <state key="normal" title="("/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="Hv6-ZI-zDX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-pI-y3V" userLabel=")">
+                                        <state key="normal" title=")"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="UzP-rJ-Oan"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LC0-jB-x0G">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCa-KC-oQp">
+                                        <state key="normal" title="Q"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="RpG-3t-EPb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gch-NR-mBM">
+                                        <state key="normal" title="W"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="Did-S3-Dww"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-a3-Z9L">
+                                        <state key="normal" title="E"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="2ec-XT-GJh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-zd-AR0">
+                                        <state key="normal" title="R"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="rjq-ap-fch"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lto-Mt-qos">
+                                        <state key="normal" title="T"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="wcH-0a-69B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-5m-MQF">
+                                        <state key="normal" title="Y"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="adv-GZ-fwW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFC-SH-SmR">
+                                        <state key="normal" title="U"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="N1i-OO-z0I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA4-Kd-d1y">
+                                        <state key="normal" title="I"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="0sf-sq-VYN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-M1-0Fc">
+                                        <state key="normal" title="O"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="8EF-ic-qey"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce8-5w-ewT">
+                                        <state key="normal" title="P"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="dBv-Ia-34i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qxf-E3-lwR">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T42-Hv-tqI">
+                                        <state key="normal" title="A"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="ZqZ-wV-x9q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-0R-rEh">
+                                        <state key="normal" title="S"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="tLF-LG-FWR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-Hb-LwK">
+                                        <state key="normal" title="D"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="IBG-6O-v3b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG2-2P-wF4">
+                                        <state key="normal" title="F"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="msX-2S-pqg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPc-qy-sz3">
+                                        <state key="normal" title="G"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="HG2-N1-Akn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kg-wL-ZwX">
+                                        <state key="normal" title="H"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="ztm-br-2kE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFY-YX-KWU">
+                                        <state key="normal" title="J"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="VYd-Pf-fct"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTs-S6-yNy">
+                                        <state key="normal" title="K"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="am5-SS-BI6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-Tt-aOt">
+                                        <state key="normal" title="L"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="izd-Ud-YBw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U9H-xZ-7BF">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLS-89-kv4">
+                                        <state key="normal" title="⇧"/>
+                                        <connections>
+                                            <action selector="actionShift:" destination="XGA-eu-QE8" eventType="touchUpInside" id="m1D-5l-8X9"/>
+                                            <outletCollection property="gestureRecognizers" destination="ft6-UN-i51" appends="YES" id="lap-cl-lev"/>
+                                            <outletCollection property="gestureRecognizers" destination="J7Q-XP-v6n" appends="YES" id="n3w-ho-3TA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drR-pY-tkf">
+                                        <state key="normal" title="Z"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="vwL-nR-0RC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT3-Bd-x7e">
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="Gdi-qN-s6P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMD-kV-LZf">
+                                        <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="hWl-i4-m1X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq6-3c-rEn">
+                                        <state key="normal" title="V"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="0rT-r3-xWY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDS-6x-N39">
+                                        <state key="normal" title="B"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="pfF-SK-QNk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-u1-Wjg">
+                                        <state key="normal" title="N"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="y3e-tW-afb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F62-G1-ewX">
+                                        <state key="normal" title="M"/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="d5i-Vd-GUX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-5s-Ptw">
+                                        <state key="normal" title="←"/>
+                                        <connections>
+                                            <action selector="actionBackspace:" destination="XGA-eu-QE8" eventType="touchUpInside" id="HOX-Ua-aOf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-6v-gyx">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-Wl-ma6">
+                                        <state key="normal" title="!@#"/>
+                                        <connections>
+                                            <action selector="actionCharSet:" destination="XGA-eu-QE8" eventType="touchUpInside" id="OaT-Kk-Lwu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-wo-9sz">
+                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                        <state key="normal" title="⌨️"/>
+                                        <connections>
+                                            <action selector="actionNextKeyboard:" destination="XGA-eu-QE8" eventType="touchUpInside" id="iK0-Ka-bsu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-xU-OjJ">
+                                        <state key="normal" title="Space"/>
+                                        <connections>
+                                            <action selector="actionSpace:" destination="XGA-eu-QE8" eventType="touchUpInside" id="dHh-mB-tiW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwZ-u9-e16">
+                                        <state key="normal" title="."/>
+                                        <connections>
+                                            <action selector="actionKey:" destination="XGA-eu-QE8" eventType="touchUpInside" id="o6Z-wB-fmz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-cM-GDt">
+                                        <state key="normal" title="⏎"/>
+                                        <connections>
+                                            <action selector="actionReturn:" destination="XGA-eu-QE8" eventType="touchUpInside" id="ABK-rQ-MXr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qxf-E3-lwR" firstAttribute="top" secondItem="LC0-jB-x0G" secondAttribute="bottom" id="0H1-6z-aem"/>
+                            <constraint firstItem="1jp-xr-ncA" firstAttribute="top" secondItem="kVJ-cp-5TH" secondAttribute="bottom" id="0bJ-J1-n3y"/>
+                            <constraint firstAttribute="trailing" secondItem="j9P-6c-Bu6" secondAttribute="trailing" id="4MW-5D-DzR"/>
+                            <constraint firstItem="1jp-xr-ncA" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="5O8-za-h60"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="Ap7-Si-DMR"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="top" secondItem="j9P-6c-Bu6" secondAttribute="bottom" id="BR2-Sz-8Bd"/>
+                            <constraint firstItem="1jp-xr-ncA" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="ELj-zB-Og9"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="FqO-qS-xu5"/>
+                            <constraint firstItem="qxf-E3-lwR" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="J27-Hm-PaP"/>
+                            <constraint firstItem="j9P-6c-Bu6" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="K2T-zC-LD7"/>
+                            <constraint firstItem="1jp-xr-ncA" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="PWG-uM-m9V"/>
+                            <constraint firstItem="U9H-xZ-7BF" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="Tov-O9-BKO"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="VSr-SE-ZcK"/>
+                            <constraint firstItem="0h9-6v-gyx" firstAttribute="top" secondItem="U9H-xZ-7BF" secondAttribute="bottom" id="WDb-5a-lFc"/>
+                            <constraint firstItem="qxf-E3-lwR" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="WKX-UC-huw"/>
+                            <constraint firstAttribute="trailing" secondItem="U9H-xZ-7BF" secondAttribute="trailing" id="X8w-t3-KjK"/>
+                            <constraint firstAttribute="trailing" secondItem="0h9-6v-gyx" secondAttribute="trailing" id="YGF-dy-12K"/>
+                            <constraint firstItem="1jp-xr-ncA" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="bgz-Zc-7KY"/>
+                            <constraint firstItem="j9P-6c-Bu6" firstAttribute="top" secondItem="kVJ-cp-5TH" secondAttribute="bottom" id="dk9-3N-JuP"/>
+                            <constraint firstItem="U9H-xZ-7BF" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="eLt-zS-ud5"/>
+                            <constraint firstAttribute="trailing" secondItem="qxf-E3-lwR" secondAttribute="trailing" id="exQ-4b-au3"/>
+                            <constraint firstItem="0h9-6v-gyx" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="g0R-wj-Bnp"/>
+                            <constraint firstItem="0h9-6v-gyx" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="jid-0h-ftS"/>
+                            <constraint firstItem="qxf-E3-lwR" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="mDu-tG-sk8"/>
+                            <constraint firstItem="U9H-xZ-7BF" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="njL-7t-Jo0"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="top" secondItem="1jp-xr-ncA" secondAttribute="bottom" id="o2z-hz-PRf"/>
+                            <constraint firstItem="0h9-6v-gyx" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="ooG-VD-YYm"/>
+                            <constraint firstItem="j9P-6c-Bu6" firstAttribute="centerX" secondItem="fbY-wY-mnK" secondAttribute="centerX" id="ozp-Ht-3rk"/>
+                            <constraint firstItem="0h9-6v-gyx" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="p2V-DR-oWz"/>
+                            <constraint firstItem="LC0-jB-x0G" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="r10-2C-IbJ"/>
+                            <constraint firstItem="j9P-6c-Bu6" firstAttribute="height" secondItem="fbY-wY-mnK" secondAttribute="height" multiplier="0.2" id="rPV-WY-uEc"/>
+                            <constraint firstAttribute="trailing" secondItem="LC0-jB-x0G" secondAttribute="trailing" id="sXx-Kg-8nQ"/>
+                            <constraint firstItem="j9P-6c-Bu6" firstAttribute="width" secondItem="fbY-wY-mnK" secondAttribute="width" id="ucp-ZR-e7j"/>
+                            <constraint firstItem="qxf-E3-lwR" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="vHN-AY-daw"/>
+                            <constraint firstItem="U9H-xZ-7BF" firstAttribute="leading" secondItem="fbY-wY-mnK" secondAttribute="leading" id="xht-xE-v5t"/>
+                            <constraint firstItem="U9H-xZ-7BF" firstAttribute="top" secondItem="qxf-E3-lwR" secondAttribute="bottom" id="zXy-lZ-F3E"/>
+                            <constraint firstAttribute="trailing" secondItem="1jp-xr-ncA" secondAttribute="trailing" id="zsw-kl-3s2"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="ASD" destination="qxf-E3-lwR" id="IU2-Vk-nTa"/>
+                        <outlet property="QWE" destination="LC0-jB-x0G" id="X6Y-xc-dtY"/>
+                        <outlet property="System" destination="0h9-6v-gyx" id="eZa-5U-rdC"/>
+                        <outlet property="ZXC" destination="U9H-xZ-7BF" id="npQ-av-AmZ"/>
+                        <outlet property="charSet" destination="j9P-6c-Bu6" id="8ek-O6-zkb"/>
+                        <outlet property="numberSet" destination="1jp-xr-ncA" id="gFV-hj-sm5"/>
+                        <outlet property="shiftButton" destination="NLS-89-kv4" id="qku-Xg-yMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5iz-5g-0Uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="ft6-UN-i51">
+                    <connections>
+                        <action selector="handleDoubleTap:" destination="XGA-eu-QE8" id="8Ow-FX-nVP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="J7Q-XP-v6n">
+                    <connections>
+                        <action selector="handleTrippleTap:" destination="XGA-eu-QE8" id="MWC-43-sc8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1" y="54"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F33140F8351BF45399A3976 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C6050B921AC6984459F1BC /* libPods.a */; };
+		322FA4E61A65820A008CF340 /* Deer_120px.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FA4E51A65820A008CF340 /* Deer_120px.png */; };
+		322FA4E81A658347008CF340 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FA4E71A658347008CF340 /* Triangle.png */; };
+		322FA4EE1A65A530008CF340 /* NBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322FA4ED1A65A530008CF340 /* NBTableViewController.m */; };
+		325BBCF21A686774006246BA /* normal-okButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 325BBCF01A686774006246BA /* normal-okButton.png */; };
+		325BBCF31A686774006246BA /* pressed-okButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 325BBCF11A686774006246BA /* pressed-okButton.png */; };
+		325BBCF61A6868B7006246BA /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BBCF51A6868B7006246BA /* DismissSegue.m */; };
+		3287A2111A65798C009039F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2101A65798C009039F1 /* main.m */; };
+		3287A2141A65798C009039F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287A2131A65798C009039F1 /* AppDelegate.m */; };
+		3287A21A1A65798C009039F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2181A65798C009039F1 /* Main.storyboard */; };
+		3287A21C1A65798C009039F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3287A21B1A65798C009039F1 /* Images.xcassets */; };
+		3287A21F1A65798C009039F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A21D1A65798C009039F1 /* LaunchScreen.xib */; };
+		3287A22B1A65798C009039F1 /* Lesson36_HOmeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287A22A1A65798C009039F1 /* Lesson36_HOmeWorkTests.m */; };
+		3287A2351A657FE2009039F1 /* Deer_30px.png in Resources */ = {isa = PBXBuildFile; fileRef = 3287A2341A657FE2009039F1 /* Deer_30px.png */; };
+		32B4F9DB1A65B31100435C30 /* Holly_120px.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B4F9DA1A65B31100435C30 /* Holly_120px.png */; };
+		32F54F741A6835D500FB521B /* NBPopoverDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F54F731A6835D500FB521B /* NBPopoverDatePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3287A2251A65798C009039F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3287A2031A65798C009039F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3287A20A1A65798C009039F1;
+			remoteInfo = "Lesson36-HOmeWork";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		322FA4E51A65820A008CF340 /* Deer_120px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deer_120px.png; sourceTree = "<group>"; };
+		322FA4E71A658347008CF340 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
+		322FA4EC1A65A530008CF340 /* NBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTableViewController.h; sourceTree = "<group>"; };
+		322FA4ED1A65A530008CF340 /* NBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBTableViewController.m; sourceTree = "<group>"; };
+		325BBCF01A686774006246BA /* normal-okButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal-okButton.png"; sourceTree = "<group>"; };
+		325BBCF11A686774006246BA /* pressed-okButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressed-okButton.png"; sourceTree = "<group>"; };
+		325BBCF41A6868B7006246BA /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		325BBCF51A6868B7006246BA /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		3287A20B1A65798C009039F1 /* Lesson36-HOmeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson36-HOmeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3287A20F1A65798C009039F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3287A2101A65798C009039F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3287A2121A65798C009039F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3287A2131A65798C009039F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3287A2191A65798C009039F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3287A21B1A65798C009039F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3287A21E1A65798C009039F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3287A2241A65798C009039F1 /* Lesson36-HOmeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lesson36-HOmeWorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3287A2291A65798C009039F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3287A22A1A65798C009039F1 /* Lesson36_HOmeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson36_HOmeWorkTests.m; sourceTree = "<group>"; };
+		3287A2341A657FE2009039F1 /* Deer_30px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deer_30px.png; sourceTree = "<group>"; };
+		32B4F9DA1A65B31100435C30 /* Holly_120px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holly_120px.png; sourceTree = "<group>"; };
+		32F54F721A6835D500FB521B /* NBPopoverDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPopoverDatePicker.h; sourceTree = "<group>"; };
+		32F54F731A6835D500FB521B /* NBPopoverDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPopoverDatePicker.m; sourceTree = "<group>"; };
+		3D58F7203451A54646522FA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		64C6050B921AC6984459F1BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC985F470905F13968284FA7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3287A2081A65798C009039F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F33140F8351BF45399A3976 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3287A2211A65798C009039F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3287A2021A65798C009039F1 = {
+			isa = PBXGroup;
+			children = (
+				3287A20D1A65798C009039F1 /* Lesson36-HOmeWork */,
+				3287A2271A65798C009039F1 /* Lesson36-HOmeWorkTests */,
+				3287A20C1A65798C009039F1 /* Products */,
+				A0DF7C02D814DBAFB593E0DE /* Pods */,
+				E526C8EF9B584168834C4ACD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3287A20C1A65798C009039F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3287A20B1A65798C009039F1 /* Lesson36-HOmeWork.app */,
+				3287A2241A65798C009039F1 /* Lesson36-HOmeWorkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3287A20D1A65798C009039F1 /* Lesson36-HOmeWork */ = {
+			isa = PBXGroup;
+			children = (
+				3287A2121A65798C009039F1 /* AppDelegate.h */,
+				3287A2131A65798C009039F1 /* AppDelegate.m */,
+				325BBCF41A6868B7006246BA /* DismissSegue.h */,
+				325BBCF51A6868B7006246BA /* DismissSegue.m */,
+				32F54F721A6835D500FB521B /* NBPopoverDatePicker.h */,
+				32F54F731A6835D500FB521B /* NBPopoverDatePicker.m */,
+				322FA4EC1A65A530008CF340 /* NBTableViewController.h */,
+				322FA4ED1A65A530008CF340 /* NBTableViewController.m */,
+				3287A2181A65798C009039F1 /* Main.storyboard */,
+				3287A21B1A65798C009039F1 /* Images.xcassets */,
+				3287A21D1A65798C009039F1 /* LaunchScreen.xib */,
+				3287A2341A657FE2009039F1 /* Deer_30px.png */,
+				322FA4E51A65820A008CF340 /* Deer_120px.png */,
+				32B4F9DA1A65B31100435C30 /* Holly_120px.png */,
+				322FA4E71A658347008CF340 /* Triangle.png */,
+				325BBCF01A686774006246BA /* normal-okButton.png */,
+				325BBCF11A686774006246BA /* pressed-okButton.png */,
+				3287A20E1A65798C009039F1 /* Supporting Files */,
+			);
+			path = "Lesson36-HOmeWork";
+			sourceTree = "<group>";
+		};
+		3287A20E1A65798C009039F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3287A20F1A65798C009039F1 /* Info.plist */,
+				3287A2101A65798C009039F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3287A2271A65798C009039F1 /* Lesson36-HOmeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3287A22A1A65798C009039F1 /* Lesson36_HOmeWorkTests.m */,
+				3287A2281A65798C009039F1 /* Supporting Files */,
+			);
+			path = "Lesson36-HOmeWorkTests";
+			sourceTree = "<group>";
+		};
+		3287A2281A65798C009039F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3287A2291A65798C009039F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0DF7C02D814DBAFB593E0DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC985F470905F13968284FA7 /* Pods.debug.xcconfig */,
+				3D58F7203451A54646522FA1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E526C8EF9B584168834C4ACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64C6050B921AC6984459F1BC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3287A20A1A65798C009039F1 /* Lesson36-HOmeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3287A22E1A65798C009039F1 /* Build configuration list for PBXNativeTarget "Lesson36-HOmeWork" */;
+			buildPhases = (
+				BCBF3B4775456F7F9B7A2C22 /* Check Pods Manifest.lock */,
+				3287A2071A65798C009039F1 /* Sources */,
+				3287A2081A65798C009039F1 /* Frameworks */,
+				3287A2091A65798C009039F1 /* Resources */,
+				73875E7BCF257382F6D38BCD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lesson36-HOmeWork";
+			productName = "Lesson36-HOmeWork";
+			productReference = 3287A20B1A65798C009039F1 /* Lesson36-HOmeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3287A2231A65798C009039F1 /* Lesson36-HOmeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3287A2311A65798C009039F1 /* Build configuration list for PBXNativeTarget "Lesson36-HOmeWorkTests" */;
+			buildPhases = (
+				3287A2201A65798C009039F1 /* Sources */,
+				3287A2211A65798C009039F1 /* Frameworks */,
+				3287A2221A65798C009039F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3287A2261A65798C009039F1 /* PBXTargetDependency */,
+			);
+			name = "Lesson36-HOmeWorkTests";
+			productName = "Lesson36-HOmeWorkTests";
+			productReference = 3287A2241A65798C009039F1 /* Lesson36-HOmeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3287A2031A65798C009039F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nick Bibikov";
+				TargetAttributes = {
+					3287A20A1A65798C009039F1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3287A2231A65798C009039F1 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3287A20A1A65798C009039F1;
+					};
+				};
+			};
+			buildConfigurationList = 3287A2061A65798C009039F1 /* Build configuration list for PBXProject "Lesson36-HOmeWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3287A2021A65798C009039F1;
+			productRefGroup = 3287A20C1A65798C009039F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3287A20A1A65798C009039F1 /* Lesson36-HOmeWork */,
+				3287A2231A65798C009039F1 /* Lesson36-HOmeWorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3287A2091A65798C009039F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3287A21A1A65798C009039F1 /* Main.storyboard in Resources */,
+				322FA4E81A658347008CF340 /* Triangle.png in Resources */,
+				325BBCF21A686774006246BA /* normal-okButton.png in Resources */,
+				3287A21F1A65798C009039F1 /* LaunchScreen.xib in Resources */,
+				3287A2351A657FE2009039F1 /* Deer_30px.png in Resources */,
+				322FA4E61A65820A008CF340 /* Deer_120px.png in Resources */,
+				325BBCF31A686774006246BA /* pressed-okButton.png in Resources */,
+				32B4F9DB1A65B31100435C30 /* Holly_120px.png in Resources */,
+				3287A21C1A65798C009039F1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3287A2221A65798C009039F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73875E7BCF257382F6D38BCD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBF3B4775456F7F9B7A2C22 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3287A2071A65798C009039F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3287A2141A65798C009039F1 /* AppDelegate.m in Sources */,
+				32F54F741A6835D500FB521B /* NBPopoverDatePicker.m in Sources */,
+				322FA4EE1A65A530008CF340 /* NBTableViewController.m in Sources */,
+				325BBCF61A6868B7006246BA /* DismissSegue.m in Sources */,
+				3287A2111A65798C009039F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3287A2201A65798C009039F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3287A22B1A65798C009039F1 /* Lesson36_HOmeWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3287A2261A65798C009039F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3287A20A1A65798C009039F1 /* Lesson36-HOmeWork */;
+			targetProxy = 3287A2251A65798C009039F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3287A2181A65798C009039F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3287A2191A65798C009039F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3287A21D1A65798C009039F1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3287A21E1A65798C009039F1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3287A22C1A65798C009039F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3287A22D1A65798C009039F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3287A22F1A65798C009039F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC985F470905F13968284FA7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lesson36-HOmeWork/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3287A2301A65798C009039F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D58F7203451A54646522FA1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lesson36-HOmeWork/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3287A2321A65798C009039F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lesson36-HOmeWorkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson36-HOmeWork.app/Lesson36-HOmeWork";
+			};
+			name = Debug;
+		};
+		3287A2331A65798C009039F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lesson36-HOmeWorkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson36-HOmeWork.app/Lesson36-HOmeWork";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3287A2061A65798C009039F1 /* Build configuration list for PBXProject "Lesson36-HOmeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3287A22C1A65798C009039F1 /* Debug */,
+				3287A22D1A65798C009039F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3287A22E1A65798C009039F1 /* Build configuration list for PBXNativeTarget "Lesson36-HOmeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3287A22F1A65798C009039F1 /* Debug */,
+				3287A2301A65798C009039F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3287A2311A65798C009039F1 /* Build configuration list for PBXNativeTarget "Lesson36-HOmeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3287A2321A65798C009039F1 /* Debug */,
+				3287A2331A65798C009039F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3287A2031A65798C009039F1 /* Project object */;
+}

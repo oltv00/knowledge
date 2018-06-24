@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gYi-zb-ddU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="62e-34-PWy">
+            <objects>
+                <navigationController id="gYi-zb-ddU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5yA-Na-Y6J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a9N-oW-Aty" kind="relationship" relationship="rootViewController" id="F4K-0N-gMh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4A-VC-lns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="413"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="pgF-7d-Fxc">
+            <objects>
+                <viewController id="a9N-oW-Aty" customClass="SearchTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzI-ki-oLg"/>
+                        <viewControllerLayoutGuide type="bottom" id="BTP-dL-oLx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCW-7L-KMr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="155-Ga-lPt">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="a9N-oW-Aty" id="que-ov-w1B"/>
+                                </connections>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B7O-eC-jsR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                                <segments>
+                                    <segment title="Birthday"/>
+                                    <segment title="Name"/>
+                                    <segment title="Lastname"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionControlValueChanged:" destination="a9N-oW-Aty" eventType="valueChanged" id="gWw-z6-bxf"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bv9-Hn-4Vf">
+                                <rect key="frame" x="0.0" y="136" width="600" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a9N-oW-Aty" id="a4t-Lr-nkF"/>
+                                    <outlet property="delegate" destination="a9N-oW-Aty" id="nZl-2a-4vb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="155-Ga-lPt" firstAttribute="leading" secondItem="QCW-7L-KMr" secondAttribute="leading" id="5dB-MX-aTm"/>
+                            <constraint firstItem="bv9-Hn-4Vf" firstAttribute="top" secondItem="155-Ga-lPt" secondAttribute="bottom" id="789-zF-T7x"/>
+                            <constraint firstItem="BTP-dL-oLx" firstAttribute="top" secondItem="bv9-Hn-4Vf" secondAttribute="bottom" id="9kG-ob-wuM"/>
+                            <constraint firstItem="bv9-Hn-4Vf" firstAttribute="leading" secondItem="QCW-7L-KMr" secondAttribute="leading" id="NCb-TX-qPB"/>
+                            <constraint firstAttribute="trailing" secondItem="B7O-eC-jsR" secondAttribute="trailing" id="Wb3-AA-leg"/>
+                            <constraint firstItem="B7O-eC-jsR" firstAttribute="leading" secondItem="QCW-7L-KMr" secondAttribute="leading" id="ao1-As-HSK"/>
+                            <constraint firstItem="B7O-eC-jsR" firstAttribute="top" secondItem="wzI-ki-oLg" secondAttribute="bottom" id="i8h-by-c8e"/>
+                            <constraint firstItem="155-Ga-lPt" firstAttribute="top" secondItem="B7O-eC-jsR" secondAttribute="bottom" id="qNz-gs-fgm"/>
+                            <constraint firstAttribute="trailing" secondItem="bv9-Hn-4Vf" secondAttribute="trailing" id="s94-UR-cf7"/>
+                            <constraint firstAttribute="trailing" secondItem="155-Ga-lPt" secondAttribute="trailing" id="u7x-zS-Me4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZZe-BZ-DAr"/>
+                    <connections>
+                        <outlet property="searchBar" destination="155-Ga-lPt" id="DTf-15-KtR"/>
+                        <outlet property="tableSortControl" destination="B7O-eC-jsR" id="GrK-3Q-707"/>
+                        <outlet property="tableView" destination="bv9-Hn-4Vf" id="TT8-B7-J6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysm-eZ-Rce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="413"/>
+        </scene>
+    </scenes>
+</document>

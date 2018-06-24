@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="OLTVCourse" representedClassName="OLTVCourse" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="branch" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OLTVStudent" inverseName="courses" inverseEntity="OLTVStudent" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OLTVTeacher" inverseName="course" inverseEntity="OLTVTeacher" syncable="YES"/>
+    </entity>
+    <entity name="OLTVObject" representedClassName="OLTVObject" syncable="YES"/>
+    <entity name="OLTVStudent" representedClassName="OLTVStudent" parentEntity="OLTVUser" syncable="YES">
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OLTVCourse" inverseName="students" inverseEntity="OLTVCourse" syncable="YES"/>
+    </entity>
+    <entity name="OLTVTeacher" representedClassName="OLTVTeacher" parentEntity="OLTVUser" syncable="YES">
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OLTVCourse" inverseName="teacher" inverseEntity="OLTVCourse" syncable="YES"/>
+    </entity>
+    <entity name="OLTVUser" representedClassName="OLTVUser" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="OLTVCourse" positionX="468" positionY="197" width="128" height="118"/>
+        <element name="OLTVObject" positionX="225" positionY="-81" width="128" height="43"/>
+        <element name="OLTVStudent" positionX="-27" positionY="162" width="128" height="58"/>
+        <element name="OLTVTeacher" positionX="225" positionY="135" width="128" height="58"/>
+        <element name="OLTVUser" positionX="115" positionY="18" width="128" height="88"/>
+    </elements>
+</model>

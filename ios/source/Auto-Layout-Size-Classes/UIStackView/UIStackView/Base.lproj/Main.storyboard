@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8IG-c7-V0P">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hUh-oA-q89">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMO-1W-fUd">
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Add Button"/>
+                                        <connections>
+                                            <action selector="actionAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1L-7a-Py8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-id-gNB">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Remove Button"/>
+                                        <connections>
+                                            <action selector="actionRemoveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUi-CX-KYe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-uv-3D9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165.5" id="Xd4-nH-a4s"/>
+                                    <constraint firstAttribute="height" constant="31.5" id="cVl-dE-2aC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cVl-dE-2aC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cVl-dE-2aC"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-Ob-O7G">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4m-JW-wZX">
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="actionAddImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOQ-dt-cf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdz-4R-FxG">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Remove Image"/>
+                                        <connections>
+                                            <action selector="actionRemoveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtB-mA-WPC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-tv-a5v">
+                                <connections>
+                                    <action selector="actionDurationSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ko6-k3-c1H"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H39-fv-tGa">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H39-fv-tGa" firstAttribute="leading" secondItem="LaO-tv-a5v" secondAttribute="trailing" constant="8" id="5k2-kf-IMr"/>
+                            <constraint firstItem="hUh-oA-q89" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="E8H-Et-Z3I"/>
+                            <constraint firstItem="6sU-Ob-O7G" firstAttribute="top" secondItem="hUh-oA-q89" secondAttribute="bottom" constant="8" id="L2x-pL-5sL"/>
+                            <constraint firstItem="LaO-tv-a5v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="OpR-yt-2aZ"/>
+                            <constraint firstItem="hUh-oA-q89" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="PLf-47-pIh"/>
+                            <constraint firstAttribute="trailing" secondItem="s1j-uv-3D9" secondAttribute="trailing" constant="16" id="RBw-b1-Lrn"/>
+                            <constraint firstItem="hUh-oA-q89" firstAttribute="top" secondItem="LaO-tv-a5v" secondAttribute="bottom" constant="8" id="RxP-Qn-7BG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s1j-uv-3D9" secondAttribute="bottom" constant="20" id="SGZ-z9-3Ya">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="H39-fv-tGa" secondAttribute="trailing" constant="16" id="V9h-8l-SmR"/>
+                            <constraint firstItem="LaO-tv-a5v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dgu-kH-ZAy"/>
+                            <constraint firstItem="H39-fv-tGa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="fYz-JT-BPE"/>
+                            <constraint firstAttribute="trailing" secondItem="hUh-oA-q89" secondAttribute="trailing" constant="16" id="kmD-0j-biL"/>
+                            <constraint firstItem="s1j-uv-3D9" firstAttribute="top" secondItem="6sU-Ob-O7G" secondAttribute="bottom" constant="8" id="mpr-m4-Ing"/>
+                            <constraint firstItem="s1j-uv-3D9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nbz-tv-Hb8"/>
+                            <constraint firstItem="6sU-Ob-O7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uGD-XN-jUy"/>
+                            <constraint firstItem="H39-fv-tGa" firstAttribute="centerY" secondItem="LaO-tv-a5v" secondAttribute="centerY" id="uhg-kg-Kc1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rnN-ha-1Qs"/>
+                    <connections>
+                        <outlet property="durationLabel" destination="H39-fv-tGa" id="BMA-yT-jqK"/>
+                        <outlet property="horizontalStackView" destination="s1j-uv-3D9" id="dnL-J7-SUo"/>
+                        <outlet property="verticalStackView" destination="hUh-oA-q89" id="RCR-mY-v8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r5M-Ob-6Hd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8IG-c7-V0P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ol-02-a7k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p2K-ym-2UH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vb3-Gy-Il2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

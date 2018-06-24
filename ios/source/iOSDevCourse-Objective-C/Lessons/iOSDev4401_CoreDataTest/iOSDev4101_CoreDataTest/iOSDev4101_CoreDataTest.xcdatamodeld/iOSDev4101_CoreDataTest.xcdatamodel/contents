@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="OLTVCar" representedClassName="OLTVCar" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OLTVStudent" inverseName="car" inverseEntity="OLTVStudent" syncable="YES"/>
+    </entity>
+    <entity name="OLTVCourse" representedClassName="OLTVCourse" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OLTVStudent" inverseName="courses" inverseEntity="OLTVStudent" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OLTVUniversity" inverseName="courses" inverseEntity="OLTVUniversity" syncable="YES"/>
+        <fetchedProperty name="bestStudents" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="OLTVStudent" predicateString="score &gt; 3.75"/>
+        </fetchedProperty>
+        <fetchedProperty name="studentsWithManyCourses" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="OLTVStudent" predicateString="courses.@count &gt;= 4"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="OLTVObject" representedClassName="OLTVObject" syncable="YES"/>
+    <entity name="OLTVStudent" representedClassName="OLTVStudent" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="OLTVCar" inverseName="owner" inverseEntity="OLTVCar" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OLTVCourse" inverseName="students" inverseEntity="OLTVCourse" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OLTVUniversity" inverseName="students" inverseEntity="OLTVUniversity" syncable="YES"/>
+    </entity>
+    <entity name="OLTVUniversity" representedClassName="OLTVUniversity" parentEntity="OLTVObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OLTVCourse" inverseName="university" inverseEntity="OLTVCourse" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OLTVStudent" inverseName="university" inverseEntity="OLTVStudent" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchStudents" entity="OLTVStudent" predicateString="firstName CONTAINS &quot;la&quot; AND score &gt; 3 AND score &lt;= 3.5"/>
+    <elements>
+        <element name="OLTVCar" positionX="-3123" positionY="44" width="128" height="73"/>
+        <element name="OLTVCourse" positionX="-3476" positionY="56" width="128" height="131"/>
+        <element name="OLTVObject" positionX="-3278" positionY="-171" width="128" height="45"/>
+        <element name="OLTVStudent" positionX="-3287" positionY="41" width="128" height="148"/>
+        <element name="OLTVUniversity" positionX="-3674" positionY="101" width="128" height="88"/>
+    </elements>
+</model>

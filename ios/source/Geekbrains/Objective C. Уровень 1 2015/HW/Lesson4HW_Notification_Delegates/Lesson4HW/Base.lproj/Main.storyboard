@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-O9-jaC">
+                                <rect key="frame" x="20" y="78" width="280" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-Xy-S5S">
+                                <rect key="frame" x="40" y="225" width="79" height="30"/>
+                                <state key="normal" title="Notification"/>
+                                <connections>
+                                    <action selector="actionNotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXl-Ku-PB2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uib-kL-zgk">
+                                <rect key="frame" x="210" y="225" width="62" height="30"/>
+                                <state key="normal" title="Delegate"/>
+                                <connections>
+                                    <action selector="actionDelegateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjh-PH-2Do"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-HD-0Fn">
+                                <rect key="frame" x="286" y="32" width="22" height="22"/>
+                                <connections>
+                                    <action selector="actionInfoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7np-iA-4aL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uib-kL-zgk" firstAttribute="baseline" secondItem="xvm-Xy-S5S" secondAttribute="baseline" id="16R-SX-4sL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xvm-Xy-S5S" secondAttribute="bottom" constant="225" id="4Wi-NO-g1E"/>
+                            <constraint firstItem="xvm-Xy-S5S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Sc-2F-BrF"/>
+                            <constraint firstItem="xvm-Xy-S5S" firstAttribute="top" secondItem="tI0-O9-jaC" secondAttribute="bottom" constant="78" id="68d-cB-AT9"/>
+                            <constraint firstItem="tI0-O9-jaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Czq-gx-Fmt"/>
+                            <constraint firstItem="tI0-O9-jaC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="EpL-IN-qIv"/>
+                            <constraint firstItem="xvm-Xy-S5S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="Xzg-27-5Kj"/>
+                            <constraint firstItem="tI0-O9-jaC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="sHi-nX-DqS"/>
+                            <constraint firstItem="uib-kL-zgk" firstAttribute="leading" secondItem="xvm-Xy-S5S" secondAttribute="trailing" constant="91" id="vep-pI-8xy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="tI0-O9-jaC" id="Eqr-1a-OHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="452"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="3Ru-cD-hjW">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="cQ8-2Z-kAe" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyu-LD-eNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="rsH-Ai-lm7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iQm-GP-6J5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMk-aR-AV8">
+                                <rect key="frame" x="133" y="225" width="54" height="30"/>
+                                <state key="normal" title="Dissmis"/>
+                                <connections>
+                                    <action selector="actionDismissButton:" destination="cQ8-2Z-kAe" eventType="touchUpInside" id="yjT-bn-oge"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEK-Dz-KXk">
+                                <rect key="frame" x="80" y="82" width="161" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEK-Dz-KXk" firstAttribute="top" secondItem="tyu-LD-eNd" secondAttribute="bottom" constant="62" id="495-KP-gkP"/>
+                            <constraint firstItem="SMk-aR-AV8" firstAttribute="centerX" secondItem="iQm-GP-6J5" secondAttribute="centerX" id="I0t-D8-h4c"/>
+                            <constraint firstItem="rsH-Ai-lm7" firstAttribute="top" secondItem="SMk-aR-AV8" secondAttribute="bottom" constant="225" id="XDd-YK-628"/>
+                            <constraint firstItem="SMk-aR-AV8" firstAttribute="centerX" secondItem="KEK-Dz-KXk" secondAttribute="centerX" id="afT-XF-Rhs"/>
+                            <constraint firstItem="SMk-aR-AV8" firstAttribute="top" secondItem="KEK-Dz-KXk" secondAttribute="bottom" constant="72" id="nFg-RX-MnK"/>
+                            <constraint firstItem="KEK-Dz-KXk" firstAttribute="leading" secondItem="iQm-GP-6J5" secondAttribute="leadingMargin" constant="64" id="toV-3F-SE0"/>
+                            <constraint firstItem="SMk-aR-AV8" firstAttribute="centerY" secondItem="iQm-GP-6J5" secondAttribute="centerY" id="wY7-vd-d1S"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="KEK-Dz-KXk" id="0Ig-QH-jZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPx-iE-tvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="452"/>
+        </scene>
+    </scenes>
+</document>

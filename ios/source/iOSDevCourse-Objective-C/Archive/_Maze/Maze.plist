@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Locations</key>
+	<array>
+		<dict>
+			<key>Coordinate</key>
+			<string>{0,0}</string>
+			<key>Type</key>
+			<string>Entrance</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{1,0}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{2,0}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{2,1}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{2,2}</string>
+			<key>Type</key>
+			<string>Treasure</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{3,1}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{4,1}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+		<dict>
+			<key>Coordinate</key>
+			<string>{4,2}</string>
+			<key>Type</key>
+			<string>Corridor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

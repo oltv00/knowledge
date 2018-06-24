@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="MRQCar" representedClassName="MRQCar" parentEntity="MRQObject" syncable="YES">
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MRQStudent" inverseName="car" inverseEntity="MRQStudent" syncable="YES"/>
+    </entity>
+    <entity name="MRQCourse" representedClassName="MRQCourse" parentEntity="MRQObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MRQStudent" inverseName="courses" inverseEntity="MRQStudent" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MRQUniversity" inverseName="courses" inverseEntity="MRQUniversity" syncable="YES"/>
+        <fetchedProperty name="bestStudents" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="MRQStudent" predicateString="score &gt; 3.75"/>
+        </fetchedProperty>
+        <fetchedProperty name="studentsWithManyCourses" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="MRQStudent" predicateString="courses.@count &gt;= 4"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="MRQObject" representedClassName="MRQObject" syncable="YES"/>
+    <entity name="MRQStudent" representedClassName="MRQStudent" parentEntity="MRQObject" syncable="YES">
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MRQCar" inverseName="owner" inverseEntity="MRQCar" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MRQCourse" inverseName="students" inverseEntity="MRQCourse" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MRQUniversity" inverseName="students" inverseEntity="MRQUniversity" syncable="YES"/>
+    </entity>
+    <entity name="MRQUniversity" representedClassName="MRQUniversity" parentEntity="MRQObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MRQCourse" inverseName="university" inverseEntity="MRQCourse" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MRQStudent" inverseName="university" inverseEntity="MRQStudent" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="MRQStudent" predicateString="score &gt; 3 AND score &lt;= 3.5"/>
+    <elements>
+        <element name="MRQCar" positionX="196" positionY="-1953" width="128" height="73"/>
+        <element name="MRQCourse" positionX="-216" positionY="-2070" width="128" height="131"/>
+        <element name="MRQObject" positionX="-11" positionY="-2250" width="128" height="43"/>
+        <element name="MRQStudent" positionX="-9" positionY="-1998" width="128" height="148"/>
+        <element name="MRQUniversity" positionX="-479" positionY="-2032" width="128" height="88"/>
+    </elements>
+</model>

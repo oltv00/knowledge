@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3089861CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3089851CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.m */; };
+		3C33295F1CF1D65D00BA6C43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33295E1CF1D65D00BA6C43 /* main.m */; };
+		3C3329621CF1D65D00BA6C43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329611CF1D65D00BA6C43 /* AppDelegate.m */; };
+		3C3329681CF1D65D00BA6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3329661CF1D65D00BA6C43 /* Main.storyboard */; };
+		3C33296B1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329691CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodeld */; };
+		3C33296D1CF1D65D00BA6C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C33296C1CF1D65D00BA6C43 /* Assets.xcassets */; };
+		3C3329701CF1D65D00BA6C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C33296E1CF1D65D00BA6C43 /* LaunchScreen.storyboard */; };
+		3C33297A1CF1DA3500BA6C43 /* OLTVCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329791CF1DA3500BA6C43 /* OLTVCoreDataManager.m */; };
+		3C3329801CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33297F1CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.m */; };
+		3C33299F1CF1E5FB00BA6C43 /* OLTVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329991CF1E5FB00BA6C43 /* OLTVObject.m */; };
+		3C3329A11CF1E5FB00BA6C43 /* OLTVStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33299D1CF1E5FB00BA6C43 /* OLTVStudent.m */; };
+		3C3329A91CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329A61CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.m */; };
+		3C3329AA1CF1EDC000BA6C43 /* OLTVStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329A81CF1EDC000BA6C43 /* OLTVStudentsTableViewController.m */; };
+		3C3329AD1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329AC1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.m */; };
+		3C3329B41CF24C4500BA6C43 /* OLTVCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329B31CF24C4500BA6C43 /* OLTVCoursesTableViewController.m */; };
+		3C3329C21CF24F4100BA6C43 /* OLTVCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329BA1CF24F4100BA6C43 /* OLTVCourse.m */; };
+		3C3329C51CF24F4100BA6C43 /* OLTVTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329C01CF24F4100BA6C43 /* OLTVTeacher.m */; };
+		3C3329C81CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329C71CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.m */; };
+		3C3329CB1CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329CA1CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.m */; };
+		3C3329CE1CF25D5300BA6C43 /* OLTVCourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3329CD1CF25D5300BA6C43 /* OLTVCourseTableViewCell.m */; };
+		3C3E742A1CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E74291CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.m */; };
+		3CBE4A051CF6437D001CD410 /* OLTVTeachersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE4A041CF6437D001CD410 /* OLTVTeachersTableViewController.m */; };
+		3CF6D3AC1CF7924F00AF2004 /* OLTVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3AA1CF7924F00AF2004 /* OLTVUser.m */; };
+		3CF6D3C91CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3BB1CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.m */; };
+		3CF6D3CA1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3BE1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.m */; };
+		3CF6D3CB1CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3C11CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.m */; };
+		3CF6D3CC1CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3C41CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.m */; };
+		3CF6D3CD1CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D3C71CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C3089841CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVStudentCheckboxTableViewCell.h; path = UI/Cells/OLTVStudentCheckboxTableViewCell.h; sourceTree = "<group>"; };
+		3C3089851CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVStudentCheckboxTableViewCell.m; path = UI/Cells/OLTVStudentCheckboxTableViewCell.m; sourceTree = "<group>"; };
+		3C33295A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev4401_CoreDataHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C33295E1CF1D65D00BA6C43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C3329601CF1D65D00BA6C43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C3329611CF1D65D00BA6C43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C3329671CF1D65D00BA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C33296A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSDev4401_CoreDataHW.xcdatamodel; sourceTree = "<group>"; };
+		3C33296C1CF1D65D00BA6C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C33296F1CF1D65D00BA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C3329711CF1D65D00BA6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3329781CF1DA3500BA6C43 /* OLTVCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCoreDataManager.h; path = Model/OLTVCoreDataManager.h; sourceTree = "<group>"; };
+		3C3329791CF1DA3500BA6C43 /* OLTVCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCoreDataManager.m; path = Model/OLTVCoreDataManager.m; sourceTree = "<group>"; };
+		3C33297E1CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCoreDataTableViewController.h; path = Controller/OLTVCoreDataTableViewController.h; sourceTree = "<group>"; };
+		3C33297F1CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCoreDataTableViewController.m; path = Controller/OLTVCoreDataTableViewController.m; sourceTree = "<group>"; };
+		3C3329991CF1E5FB00BA6C43 /* OLTVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVObject.m; path = Model/Entities/OLTVObject.m; sourceTree = "<group>"; };
+		3C33299D1CF1E5FB00BA6C43 /* OLTVStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVStudent.m; path = Model/Entities/OLTVStudent.m; sourceTree = "<group>"; };
+		3C3329A51CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedUserTableViewController.h; path = Controller/OLTVDetailedUserTableViewController.h; sourceTree = "<group>"; };
+		3C3329A61CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedUserTableViewController.m; path = Controller/OLTVDetailedUserTableViewController.m; sourceTree = "<group>"; };
+		3C3329A71CF1EDC000BA6C43 /* OLTVStudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVStudentsTableViewController.h; path = Controller/OLTVStudentsTableViewController.h; sourceTree = "<group>"; };
+		3C3329A81CF1EDC000BA6C43 /* OLTVStudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVStudentsTableViewController.m; path = Controller/OLTVStudentsTableViewController.m; sourceTree = "<group>"; };
+		3C3329AB1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedUserTableViewCell.h; path = UI/Cells/OLTVDetailedUserTableViewCell.h; sourceTree = "<group>"; };
+		3C3329AC1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedUserTableViewCell.m; path = UI/Cells/OLTVDetailedUserTableViewCell.m; sourceTree = "<group>"; };
+		3C3329B21CF24C4500BA6C43 /* OLTVCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCoursesTableViewController.h; path = Controller/OLTVCoursesTableViewController.h; sourceTree = "<group>"; };
+		3C3329B31CF24C4500BA6C43 /* OLTVCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCoursesTableViewController.m; path = Controller/OLTVCoursesTableViewController.m; sourceTree = "<group>"; };
+		3C3329BA1CF24F4100BA6C43 /* OLTVCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCourse.m; path = Model/Entities/OLTVCourse.m; sourceTree = "<group>"; };
+		3C3329C01CF24F4100BA6C43 /* OLTVTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVTeacher.m; path = Model/Entities/OLTVTeacher.m; sourceTree = "<group>"; };
+		3C3329C61CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedCourseTableViewController.h; path = Controller/OLTVDetailedCourseTableViewController.h; sourceTree = "<group>"; };
+		3C3329C71CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedCourseTableViewController.m; path = Controller/OLTVDetailedCourseTableViewController.m; sourceTree = "<group>"; };
+		3C3329C91CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVDetailedCourseTableViewCell.h; path = UI/Cells/OLTVDetailedCourseTableViewCell.h; sourceTree = "<group>"; };
+		3C3329CA1CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVDetailedCourseTableViewCell.m; path = UI/Cells/OLTVDetailedCourseTableViewCell.m; sourceTree = "<group>"; };
+		3C3329CC1CF25D5300BA6C43 /* OLTVCourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCourseTableViewCell.h; path = UI/Cells/OLTVCourseTableViewCell.h; sourceTree = "<group>"; };
+		3C3329CD1CF25D5300BA6C43 /* OLTVCourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVCourseTableViewCell.m; path = UI/Cells/OLTVCourseTableViewCell.m; sourceTree = "<group>"; };
+		3C3E74281CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVAddUserToCourseTableViewController.h; path = Controller/OLTVAddUserToCourseTableViewController.h; sourceTree = "<group>"; };
+		3C3E74291CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVAddUserToCourseTableViewController.m; path = Controller/OLTVAddUserToCourseTableViewController.m; sourceTree = "<group>"; };
+		3CBE4A031CF6437D001CD410 /* OLTVTeachersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVTeachersTableViewController.h; path = Controller/OLTVTeachersTableViewController.h; sourceTree = "<group>"; };
+		3CBE4A041CF6437D001CD410 /* OLTVTeachersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVTeachersTableViewController.m; path = Controller/OLTVTeachersTableViewController.m; sourceTree = "<group>"; };
+		3CF48CA71CFCE9BA00F95EE1 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		3CF6D3AA1CF7924F00AF2004 /* OLTVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTVUser.m; path = Model/Entities/OLTVUser.m; sourceTree = "<group>"; };
+		3CF6D3BA1CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OLTVCourse+CoreDataProperties.h"; path = "Model/Entities/OLTVCourse+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D3BB1CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OLTVCourse+CoreDataProperties.m"; path = "Model/Entities/OLTVCourse+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D3BC1CF79A3F00AF2004 /* OLTVCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVCourse.h; path = Model/Entities/OLTVCourse.h; sourceTree = "<group>"; };
+		3CF6D3BD1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OLTVStudent+CoreDataProperties.h"; path = "Model/Entities/OLTVStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D3BE1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OLTVStudent+CoreDataProperties.m"; path = "Model/Entities/OLTVStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D3BF1CF79A3F00AF2004 /* OLTVStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVStudent.h; path = Model/Entities/OLTVStudent.h; sourceTree = "<group>"; };
+		3CF6D3C01CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OLTVUser+CoreDataProperties.h"; path = "Model/Entities/OLTVUser+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D3C11CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OLTVUser+CoreDataProperties.m"; path = "Model/Entities/OLTVUser+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D3C21CF79A3F00AF2004 /* OLTVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVUser.h; path = Model/Entities/OLTVUser.h; sourceTree = "<group>"; };
+		3CF6D3C31CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OLTVTeacher+CoreDataProperties.h"; path = "Model/Entities/OLTVTeacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D3C41CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OLTVTeacher+CoreDataProperties.m"; path = "Model/Entities/OLTVTeacher+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D3C51CF79A3F00AF2004 /* OLTVTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVTeacher.h; path = Model/Entities/OLTVTeacher.h; sourceTree = "<group>"; };
+		3CF6D3C61CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OLTVObject+CoreDataProperties.h"; path = "Model/Entities/OLTVObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D3C71CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OLTVObject+CoreDataProperties.m"; path = "Model/Entities/OLTVObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D3C81CF79A3F00AF2004 /* OLTVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTVObject.h; path = Model/Entities/OLTVObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C3329571CF1D65D00BA6C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C3329511CF1D65D00BA6C43 = {
+			isa = PBXGroup;
+			children = (
+				3C33295C1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW */,
+				3C33295B1CF1D65D00BA6C43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C33295B1CF1D65D00BA6C43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C33295A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C33295C1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW */ = {
+			isa = PBXGroup;
+			children = (
+				3C33297B1CF1DA3A00BA6C43 /* Model */,
+				3C33297D1CF1DA6100BA6C43 /* Controller */,
+				3C3329771CF1D67200BA6C43 /* UI */,
+				3C33295D1CF1D65D00BA6C43 /* Supporting Files */,
+			);
+			path = iOSDev4401_CoreDataHW;
+			sourceTree = "<group>";
+		};
+		3C33295D1CF1D65D00BA6C43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C33295E1CF1D65D00BA6C43 /* main.m */,
+				3C3329711CF1D65D00BA6C43 /* Info.plist */,
+				3C3329601CF1D65D00BA6C43 /* AppDelegate.h */,
+				3C3329611CF1D65D00BA6C43 /* AppDelegate.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C3329771CF1D67200BA6C43 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C3329AE1CF1EFFA00BA6C43 /* Cells */,
+				3C3329661CF1D65D00BA6C43 /* Main.storyboard */,
+				3C33296E1CF1D65D00BA6C43 /* LaunchScreen.storyboard */,
+				3C33296C1CF1D65D00BA6C43 /* Assets.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3C33297B1CF1DA3A00BA6C43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CF48CA71CFCE9BA00F95EE1 /* Data.h */,
+				3C33297C1CF1DA4700BA6C43 /* Entities */,
+				3C3329691CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodeld */,
+				3C3329781CF1DA3500BA6C43 /* OLTVCoreDataManager.h */,
+				3C3329791CF1DA3500BA6C43 /* OLTVCoreDataManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3C33297C1CF1DA4700BA6C43 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3B21CF7930C00AF2004 /* Teacher */,
+				3CF6D3B31CF7931100AF2004 /* Course */,
+				3CF6D3B11CF7930500AF2004 /* Object */,
+				3CF6D3AF1CF792F800AF2004 /* Student */,
+				3CF6D3B01CF792FE00AF2004 /* User */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		3C33297D1CF1DA6100BA6C43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C33297E1CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.h */,
+				3C33297F1CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.m */,
+				3C3329A51CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.h */,
+				3C3329A61CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.m */,
+				3C3E74281CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.h */,
+				3C3E74291CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.m */,
+				3CF6D3B41CF7956900AF2004 /* Students */,
+				3CF6D3B51CF7957200AF2004 /* Courses */,
+				3CF6D3B61CF7958000AF2004 /* Teachers */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3C3329AE1CF1EFFA00BA6C43 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C3329AB1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.h */,
+				3C3329AC1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.m */,
+				3C3329C91CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.h */,
+				3C3329CA1CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.m */,
+				3C3329CC1CF25D5300BA6C43 /* OLTVCourseTableViewCell.h */,
+				3C3329CD1CF25D5300BA6C43 /* OLTVCourseTableViewCell.m */,
+				3C3089841CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.h */,
+				3C3089851CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3CF6D3AF1CF792F800AF2004 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3BD1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.h */,
+				3CF6D3BE1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.m */,
+				3CF6D3BF1CF79A3F00AF2004 /* OLTVStudent.h */,
+				3C33299D1CF1E5FB00BA6C43 /* OLTVStudent.m */,
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
+		3CF6D3B01CF792FE00AF2004 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3C01CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.h */,
+				3CF6D3C11CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.m */,
+				3CF6D3C21CF79A3F00AF2004 /* OLTVUser.h */,
+				3CF6D3AA1CF7924F00AF2004 /* OLTVUser.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		3CF6D3B11CF7930500AF2004 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3C61CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.h */,
+				3CF6D3C71CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.m */,
+				3CF6D3C81CF79A3F00AF2004 /* OLTVObject.h */,
+				3C3329991CF1E5FB00BA6C43 /* OLTVObject.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		3CF6D3B21CF7930C00AF2004 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3C31CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.h */,
+				3CF6D3C41CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.m */,
+				3CF6D3C51CF79A3F00AF2004 /* OLTVTeacher.h */,
+				3C3329C01CF24F4100BA6C43 /* OLTVTeacher.m */,
+			);
+			name = Teacher;
+			sourceTree = "<group>";
+		};
+		3CF6D3B31CF7931100AF2004 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6D3BA1CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.h */,
+				3CF6D3BB1CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.m */,
+				3CF6D3BC1CF79A3F00AF2004 /* OLTVCourse.h */,
+				3C3329BA1CF24F4100BA6C43 /* OLTVCourse.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		3CF6D3B41CF7956900AF2004 /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				3C3329A71CF1EDC000BA6C43 /* OLTVStudentsTableViewController.h */,
+				3C3329A81CF1EDC000BA6C43 /* OLTVStudentsTableViewController.m */,
+			);
+			name = Students;
+			sourceTree = "<group>";
+		};
+		3CF6D3B51CF7957200AF2004 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				3C3329B21CF24C4500BA6C43 /* OLTVCoursesTableViewController.h */,
+				3C3329B31CF24C4500BA6C43 /* OLTVCoursesTableViewController.m */,
+				3C3329C61CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.h */,
+				3C3329C71CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.m */,
+			);
+			name = Courses;
+			sourceTree = "<group>";
+		};
+		3CF6D3B61CF7958000AF2004 /* Teachers */ = {
+			isa = PBXGroup;
+			children = (
+				3CBE4A031CF6437D001CD410 /* OLTVTeachersTableViewController.h */,
+				3CBE4A041CF6437D001CD410 /* OLTVTeachersTableViewController.m */,
+			);
+			name = Teachers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C3329591CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C3329741CF1D65D00BA6C43 /* Build configuration list for PBXNativeTarget "iOSDev4401_CoreDataHW" */;
+			buildPhases = (
+				3C3329561CF1D65D00BA6C43 /* Sources */,
+				3C3329571CF1D65D00BA6C43 /* Frameworks */,
+				3C3329581CF1D65D00BA6C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDev4401_CoreDataHW;
+			productName = iOSDev4401_CoreDataHW;
+			productReference = 3C33295A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C3329521CF1D65D00BA6C43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oltv00;
+				TargetAttributes = {
+					3C3329591CF1D65D00BA6C43 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3C3329551CF1D65D00BA6C43 /* Build configuration list for PBXProject "iOSDev4401_CoreDataHW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C3329511CF1D65D00BA6C43;
+			productRefGroup = 3C33295B1CF1D65D00BA6C43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C3329591CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C3329581CF1D65D00BA6C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3329701CF1D65D00BA6C43 /* LaunchScreen.storyboard in Resources */,
+				3C33296D1CF1D65D00BA6C43 /* Assets.xcassets in Resources */,
+				3C3329681CF1D65D00BA6C43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C3329561CF1D65D00BA6C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3329CE1CF25D5300BA6C43 /* OLTVCourseTableViewCell.m in Sources */,
+				3CBE4A051CF6437D001CD410 /* OLTVTeachersTableViewController.m in Sources */,
+				3C3329621CF1D65D00BA6C43 /* AppDelegate.m in Sources */,
+				3C3329AD1CF1EFF700BA6C43 /* OLTVDetailedUserTableViewCell.m in Sources */,
+				3C3329AA1CF1EDC000BA6C43 /* OLTVStudentsTableViewController.m in Sources */,
+				3C3329A91CF1EDC000BA6C43 /* OLTVDetailedUserTableViewController.m in Sources */,
+				3CF6D3CC1CF79A3F00AF2004 /* OLTVTeacher+CoreDataProperties.m in Sources */,
+				3C33296B1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodeld in Sources */,
+				3C33299F1CF1E5FB00BA6C43 /* OLTVObject.m in Sources */,
+				3C33295F1CF1D65D00BA6C43 /* main.m in Sources */,
+				3C3329B41CF24C4500BA6C43 /* OLTVCoursesTableViewController.m in Sources */,
+				3C33297A1CF1DA3500BA6C43 /* OLTVCoreDataManager.m in Sources */,
+				3CF6D3AC1CF7924F00AF2004 /* OLTVUser.m in Sources */,
+				3C3329C51CF24F4100BA6C43 /* OLTVTeacher.m in Sources */,
+				3CF6D3CB1CF79A3F00AF2004 /* OLTVUser+CoreDataProperties.m in Sources */,
+				3CF6D3CD1CF79A3F00AF2004 /* OLTVObject+CoreDataProperties.m in Sources */,
+				3C3329C21CF24F4100BA6C43 /* OLTVCourse.m in Sources */,
+				3C3E742A1CF3BF36001E08BE /* OLTVAddUserToCourseTableViewController.m in Sources */,
+				3C3329801CF1DA8100BA6C43 /* OLTVCoreDataTableViewController.m in Sources */,
+				3C3329A11CF1E5FB00BA6C43 /* OLTVStudent.m in Sources */,
+				3C3329C81CF251BC00BA6C43 /* OLTVDetailedCourseTableViewController.m in Sources */,
+				3C3329CB1CF257F300BA6C43 /* OLTVDetailedCourseTableViewCell.m in Sources */,
+				3CF6D3C91CF79A3F00AF2004 /* OLTVCourse+CoreDataProperties.m in Sources */,
+				3CF6D3CA1CF79A3F00AF2004 /* OLTVStudent+CoreDataProperties.m in Sources */,
+				3C3089861CF4F257008F153E /* OLTVStudentCheckboxTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C3329661CF1D65D00BA6C43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C3329671CF1D65D00BA6C43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C33296E1CF1D65D00BA6C43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C33296F1CF1D65D00BA6C43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C3329721CF1D65D00BA6C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C3329731CF1D65D00BA6C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C3329751CF1D65D00BA6C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev4401_CoreDataHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev4401-CoreDataHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C3329761CF1D65D00BA6C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev4401_CoreDataHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev4401-CoreDataHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C3329551CF1D65D00BA6C43 /* Build configuration list for PBXProject "iOSDev4401_CoreDataHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3329721CF1D65D00BA6C43 /* Debug */,
+				3C3329731CF1D65D00BA6C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C3329741CF1D65D00BA6C43 /* Build configuration list for PBXNativeTarget "iOSDev4401_CoreDataHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3329751CF1D65D00BA6C43 /* Debug */,
+				3C3329761CF1D65D00BA6C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C3329691CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C33296A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodel */,
+			);
+			currentVersion = 3C33296A1CF1D65D00BA6C43 /* iOSDev4401_CoreDataHW.xcdatamodel */;
+			path = iOSDev4401_CoreDataHW.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C3329521CF1D65D00BA6C43 /* Project object */;
+}

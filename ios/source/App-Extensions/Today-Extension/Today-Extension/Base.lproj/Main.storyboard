@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Today_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAP-xW-8I6">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdJ-5X-1lt">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7k-e0-19f">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqH-dp-hWb">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-ZY-9Re">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9uE-Th-Bks"/>
+                                    <constraint firstAttribute="width" constant="40" id="ZWs-9h-tUR"/>
+                                </constraints>
+                                <state key="normal" title="=="/>
+                                <connections>
+                                    <segue destination="9g5-2J-PjT" kind="show" identifier="showCity" id="RMd-2Z-ik3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AqH-dp-hWb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="99" id="663-in-m7n"/>
+                            <constraint firstAttribute="trailing" secondItem="OuN-ZY-9Re" secondAttribute="trailing" constant="16" id="BMj-fe-0q0"/>
+                            <constraint firstItem="T7k-e0-19f" firstAttribute="top" secondItem="VdJ-5X-1lt" secondAttribute="bottom" constant="7.5" id="IVU-Wk-Fcg"/>
+                            <constraint firstItem="AqH-dp-hWb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yq3-5U-mTn"/>
+                            <constraint firstItem="kAP-xW-8I6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cJq-Ys-6VY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T7k-e0-19f" secondAttribute="bottom" constant="123" id="d2V-So-PF8"/>
+                            <constraint firstItem="OuN-ZY-9Re" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="eds-ld-jXQ"/>
+                            <constraint firstItem="T7k-e0-19f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w6P-mW-sF1"/>
+                            <constraint firstItem="kAP-xW-8I6" firstAttribute="top" secondItem="AqH-dp-hWb" secondAttribute="bottom" constant="8" id="wCu-O0-ppN"/>
+                            <constraint firstItem="VdJ-5X-1lt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wbz-te-Rs8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="AqH-dp-hWb" id="8sw-uL-BRG"/>
+                        <outlet property="countryLabel" destination="kAP-xW-8I6" id="9MB-sI-7IT"/>
+                        <outlet property="descriptionLabel" destination="VdJ-5X-1lt" id="dCt-g7-5CS"/>
+                        <outlet property="temperatureLabel" destination="T7k-e0-19f" id="cdb-kh-MVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2092" y="125"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="X7v-SA-Q9Z">
+            <objects>
+                <tableViewController id="80H-wH-WWa" customClass="CitiesTableViewController" customModule="Today_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GuM-tK-DST">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="euk-sS-rgI">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="euk-sS-rgI" id="Dre-cK-B0u">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="80H-wH-WWa" id="nUS-Fv-ghn"/>
+                            <outlet property="delegate" destination="80H-wH-WWa" id="eBq-dE-ItW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="City" id="WTf-vi-GBu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="flk-PP-0Jf">
+                            <connections>
+                                <segue destination="rbm-kJ-6ps" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="P7L-rW-0st"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5g5-ub-IdT">
+                            <connections>
+                                <segue destination="rbm-kJ-6ps" kind="unwind" unwindAction="updateWeatherInfoWithSegue:" id="KK5-lS-Uo9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkC-pJ-ynO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rbm-kJ-6ps" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sGS-i3-Xpk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9g5-2J-PjT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9wr-qJ-81A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="80H-wH-WWa" kind="relationship" relationship="rootViewController" id="Z0u-G6-RfM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbP-k0-BFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1353" y="125"/>
+        </scene>
+    </scenes>
+</document>

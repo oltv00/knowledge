@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0nx-a9-7rp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="RWU-tV-gi0">
+            <objects>
+                <tableViewController storyboardIdentifier="MSMViewController" id="EU8-n6-F0N" customClass="MSMViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YLd-tf-7rO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsScopeBar="YES" id="EXf-Y9-bgm">
+                            <rect key="frame" x="0.0" y="64" width="320" height="88"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Birthdate</string>
+                                <string>Firstname</string>
+                                <string>Lastname</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="EU8-n6-F0N" id="lh0-zf-gYm"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6wo-lX-qVv">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6wo-lX-qVv" id="f62-kU-4Cl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="kWe-RV-7tD">
+                        <barButtonItem key="leftBarButtonItem" image="homeBlue (30x30).png" id="FXs-7y-sIY" userLabel="Home - Bar Button Item">
+                            <connections>
+                                <action selector="actionClickHomeButton:" destination="EU8-n6-F0N" id="8DK-UC-tck"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="uploadBlue (30 x 30).png" id="jb7-Wn-mgN" userLabel="Top - Bar Button Item">
+                            <connections>
+                                <action selector="actionClickTopButton:" destination="EU8-n6-F0N" id="eyg-Ro-ckw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="homeBarButton" destination="FXs-7y-sIY" id="M3I-qL-MxZ"/>
+                        <outlet property="topBarButton" destination="jb7-Wn-mgN" id="V5e-Cw-fPi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXJ-ia-iXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K0V-zN-64g">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="0nx-a9-7rp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pvb-2w-ZtP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EU8-n6-F0N" kind="relationship" relationship="rootViewController" id="ElS-nB-JXi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5p-xU-l9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeBlue (30x30).png" width="30" height="30"/>
+        <image name="uploadBlue (30 x 30).png" width="30" height="30"/>
+    </resources>
+</document>

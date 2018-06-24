@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0A82F41C31C094005C8073 /* st-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A82F31C31C094005C8073 /* st-1.png */; };
+		3A0A82F71C31C688005C8073 /* MRQGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A82F61C31C688005C8073 /* MRQGroup.m */; };
+		3AC5D8EA1C2EFE5500107386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5D8E91C2EFE5500107386 /* main.m */; };
+		3AC5D8ED1C2EFE5500107386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5D8EC1C2EFE5500107386 /* AppDelegate.m */; };
+		3AC5D8F31C2EFE5500107386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5D8F11C2EFE5500107386 /* Main.storyboard */; };
+		3AC5D8F51C2EFE5500107386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5D8F41C2EFE5500107386 /* Assets.xcassets */; };
+		3AC5D8F81C2EFE5500107386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5D8F61C2EFE5500107386 /* LaunchScreen.storyboard */; };
+		3AF58E191C307B1800F91DA0 /* MRQStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E181C307B1800F91DA0 /* MRQStudent.m */; };
+		3AF58E1C1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E1B1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.m */; };
+		3AF58E211C307E8B00F91DA0 /* MRQDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E201C307E8B00F91DA0 /* MRQDatePickerViewController.m */; };
+		3AF58E251C307F6D00F91DA0 /* MRQStudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E241C307F6D00F91DA0 /* MRQStudentTableViewCell.m */; };
+		3AF58E281C307FBE00F91DA0 /* MRQStudentDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E271C307FBE00F91DA0 /* MRQStudentDetailTableViewController.m */; };
+		3AF58E2B1C30804A00F91DA0 /* MRQStudentListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E2A1C30804A00F91DA0 /* MRQStudentListTableViewController.m */; };
+		3AF58E2E1C30843300F91DA0 /* MRQGradePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF58E2D1C30843300F91DA0 /* MRQGradePickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A0A82F31C31C094005C8073 /* st-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "st-1.png"; sourceTree = "<group>"; };
+		3A0A82F51C31C688005C8073 /* MRQGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQGroup.h; sourceTree = "<group>"; };
+		3A0A82F61C31C688005C8073 /* MRQGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQGroup.m; sourceTree = "<group>"; };
+		3A0A82F81C31C82D005C8073 /* Controllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controllers.h; sourceTree = "<group>"; };
+		3AC5D8E51C2EFE5500107386 /* 40_KVC&KVORestoProg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "40_KVC&KVORestoProg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC5D8E91C2EFE5500107386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AC5D8EB1C2EFE5500107386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AC5D8EC1C2EFE5500107386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AC5D8F21C2EFE5500107386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AC5D8F41C2EFE5500107386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AC5D8F71C2EFE5500107386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AC5D8F91C2EFE5500107386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF58E171C307B1800F91DA0 /* MRQStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudent.h; sourceTree = "<group>"; };
+		3AF58E181C307B1800F91DA0 /* MRQStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudent.m; sourceTree = "<group>"; };
+		3AF58E1A1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudentCreateTableViewController.h; sourceTree = "<group>"; };
+		3AF58E1B1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudentCreateTableViewController.m; sourceTree = "<group>"; };
+		3AF58E1F1C307E8B00F91DA0 /* MRQDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQDatePickerViewController.h; sourceTree = "<group>"; };
+		3AF58E201C307E8B00F91DA0 /* MRQDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQDatePickerViewController.m; sourceTree = "<group>"; };
+		3AF58E231C307F6D00F91DA0 /* MRQStudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudentTableViewCell.h; sourceTree = "<group>"; };
+		3AF58E241C307F6D00F91DA0 /* MRQStudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudentTableViewCell.m; sourceTree = "<group>"; };
+		3AF58E261C307FBE00F91DA0 /* MRQStudentDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudentDetailTableViewController.h; sourceTree = "<group>"; };
+		3AF58E271C307FBE00F91DA0 /* MRQStudentDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudentDetailTableViewController.m; sourceTree = "<group>"; };
+		3AF58E291C30804A00F91DA0 /* MRQStudentListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQStudentListTableViewController.h; sourceTree = "<group>"; };
+		3AF58E2A1C30804A00F91DA0 /* MRQStudentListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQStudentListTableViewController.m; sourceTree = "<group>"; };
+		3AF58E2C1C30843300F91DA0 /* MRQGradePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRQGradePickerViewController.h; sourceTree = "<group>"; };
+		3AF58E2D1C30843300F91DA0 /* MRQGradePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRQGradePickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AC5D8E21C2EFE5500107386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A0A82F21C31C094005C8073 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A82F31C31C094005C8073 /* st-1.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3AC5D8DC1C2EFE5500107386 = {
+			isa = PBXGroup;
+			children = (
+				3AC5D8E71C2EFE5500107386 /* 40_KVC&KVORestoProg */,
+				3AC5D8E61C2EFE5500107386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AC5D8E61C2EFE5500107386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D8E51C2EFE5500107386 /* 40_KVC&KVORestoProg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AC5D8E71C2EFE5500107386 /* 40_KVC&KVORestoProg */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D8F11C2EFE5500107386 /* Main.storyboard */,
+				3AC5D8EB1C2EFE5500107386 /* AppDelegate.h */,
+				3AC5D8EC1C2EFE5500107386 /* AppDelegate.m */,
+				3AF58E1E1C307BB700F91DA0 /* Model */,
+				3AF58E1D1C307BA200F91DA0 /* Controller */,
+				3AF58E221C307F5300F91DA0 /* UI */,
+				3A0A82F21C31C094005C8073 /* images */,
+				3AC5D8E81C2EFE5500107386 /* Supporting Files */,
+			);
+			path = "40_KVC&KVORestoProg";
+			sourceTree = "<group>";
+		};
+		3AC5D8E81C2EFE5500107386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D8F41C2EFE5500107386 /* Assets.xcassets */,
+				3AC5D8F61C2EFE5500107386 /* LaunchScreen.storyboard */,
+				3AC5D8F91C2EFE5500107386 /* Info.plist */,
+				3AC5D8E91C2EFE5500107386 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AF58E1D1C307BA200F91DA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A82F81C31C82D005C8073 /* Controllers.h */,
+				3AF58E291C30804A00F91DA0 /* MRQStudentListTableViewController.h */,
+				3AF58E2A1C30804A00F91DA0 /* MRQStudentListTableViewController.m */,
+				3AF58E1A1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.h */,
+				3AF58E1B1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.m */,
+				3AF58E261C307FBE00F91DA0 /* MRQStudentDetailTableViewController.h */,
+				3AF58E271C307FBE00F91DA0 /* MRQStudentDetailTableViewController.m */,
+				3AF58E1F1C307E8B00F91DA0 /* MRQDatePickerViewController.h */,
+				3AF58E201C307E8B00F91DA0 /* MRQDatePickerViewController.m */,
+				3AF58E2C1C30843300F91DA0 /* MRQGradePickerViewController.h */,
+				3AF58E2D1C30843300F91DA0 /* MRQGradePickerViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3AF58E1E1C307BB700F91DA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A82F51C31C688005C8073 /* MRQGroup.h */,
+				3A0A82F61C31C688005C8073 /* MRQGroup.m */,
+				3AF58E171C307B1800F91DA0 /* MRQStudent.h */,
+				3AF58E181C307B1800F91DA0 /* MRQStudent.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3AF58E221C307F5300F91DA0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3AF58E231C307F6D00F91DA0 /* MRQStudentTableViewCell.h */,
+				3AF58E241C307F6D00F91DA0 /* MRQStudentTableViewCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AC5D8E41C2EFE5500107386 /* 40_KVC&KVORestoProg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC5D8FC1C2EFE5500107386 /* Build configuration list for PBXNativeTarget "40_KVC&KVORestoProg" */;
+			buildPhases = (
+				3AC5D8E11C2EFE5500107386 /* Sources */,
+				3AC5D8E21C2EFE5500107386 /* Frameworks */,
+				3AC5D8E31C2EFE5500107386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "40_KVC&KVORestoProg";
+			productName = "40_KVC&KVORestoProg";
+			productReference = 3AC5D8E51C2EFE5500107386 /* 40_KVC&KVORestoProg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AC5D8DD1C2EFE5500107386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Oleg Tverdokhleb";
+				TargetAttributes = {
+					3AC5D8E41C2EFE5500107386 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3AC5D8E01C2EFE5500107386 /* Build configuration list for PBXProject "40_KVC&KVORestoProg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AC5D8DC1C2EFE5500107386;
+			productRefGroup = 3AC5D8E61C2EFE5500107386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AC5D8E41C2EFE5500107386 /* 40_KVC&KVORestoProg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AC5D8E31C2EFE5500107386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC5D8F81C2EFE5500107386 /* LaunchScreen.storyboard in Resources */,
+				3AC5D8F51C2EFE5500107386 /* Assets.xcassets in Resources */,
+				3AC5D8F31C2EFE5500107386 /* Main.storyboard in Resources */,
+				3A0A82F41C31C094005C8073 /* st-1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AC5D8E11C2EFE5500107386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF58E2B1C30804A00F91DA0 /* MRQStudentListTableViewController.m in Sources */,
+				3AF58E251C307F6D00F91DA0 /* MRQStudentTableViewCell.m in Sources */,
+				3A0A82F71C31C688005C8073 /* MRQGroup.m in Sources */,
+				3AF58E1C1C307B9C00F91DA0 /* MRQStudentCreateTableViewController.m in Sources */,
+				3AF58E281C307FBE00F91DA0 /* MRQStudentDetailTableViewController.m in Sources */,
+				3AC5D8ED1C2EFE5500107386 /* AppDelegate.m in Sources */,
+				3AF58E2E1C30843300F91DA0 /* MRQGradePickerViewController.m in Sources */,
+				3AC5D8EA1C2EFE5500107386 /* main.m in Sources */,
+				3AF58E191C307B1800F91DA0 /* MRQStudent.m in Sources */,
+				3AF58E211C307E8B00F91DA0 /* MRQDatePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AC5D8F11C2EFE5500107386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC5D8F21C2EFE5500107386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AC5D8F61C2EFE5500107386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC5D8F71C2EFE5500107386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AC5D8FA1C2EFE5500107386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AC5D8FB1C2EFE5500107386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AC5D8FD1C2EFE5500107386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "40_KVC&KVORestoProg/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MRQResto.-0-KVC-KVORestoProg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AC5D8FE1C2EFE5500107386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "40_KVC&KVORestoProg/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MRQResto.-0-KVC-KVORestoProg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AC5D8E01C2EFE5500107386 /* Build configuration list for PBXProject "40_KVC&KVORestoProg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC5D8FA1C2EFE5500107386 /* Debug */,
+				3AC5D8FB1C2EFE5500107386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC5D8FC1C2EFE5500107386 /* Build configuration list for PBXNativeTarget "40_KVC&KVORestoProg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC5D8FD1C2EFE5500107386 /* Debug */,
+				3AC5D8FE1C2EFE5500107386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AC5D8DD1C2EFE5500107386 /* Project object */;
+}

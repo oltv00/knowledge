@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3496031CE8EEF40070CD8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3496021CE8EEF40070CD8C /* main.m */; };
+		3C3496061CE8EEF40070CD8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3496051CE8EEF40070CD8C /* AppDelegate.m */; };
+		3C34960C1CE8EEF40070CD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C34960A1CE8EEF40070CD8C /* Main.storyboard */; };
+		3C34960E1CE8EEF40070CD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C34960D1CE8EEF40070CD8C /* Assets.xcassets */; };
+		3C3496111CE8EEF40070CD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C34960F1CE8EEF40070CD8C /* LaunchScreen.storyboard */; };
+		3C34961A1CE8F0420070CD8C /* OLTVMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3496191CE8F0420070CD8C /* OLTVMainTableViewController.m */; };
+		3C34961F1CE8F31B0070CD8C /* OLTVURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C34961E1CE8F31B0070CD8C /* OLTVURL.m */; };
+		3C3496221CE8F32F0070CD8C /* OLTVTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3496211CE8F32F0070CD8C /* OLTVTableSection.m */; };
+		3C3496291CE91A6D0070CD8C /* OLTVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3496281CE91A6D0070CD8C /* OLTVWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C3495FE1CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev3901_UIWebViewHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3496021CE8EEF40070CD8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C3496041CE8EEF40070CD8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C3496051CE8EEF40070CD8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C34960B1CE8EEF40070CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C34960D1CE8EEF40070CD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C3496101CE8EEF40070CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C3496121CE8EEF40070CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3496181CE8F0420070CD8C /* OLTVMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTVMainTableViewController.h; sourceTree = "<group>"; };
+		3C3496191CE8F0420070CD8C /* OLTVMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTVMainTableViewController.m; sourceTree = "<group>"; };
+		3C34961D1CE8F31B0070CD8C /* OLTVURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTVURL.h; sourceTree = "<group>"; };
+		3C34961E1CE8F31B0070CD8C /* OLTVURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTVURL.m; sourceTree = "<group>"; };
+		3C3496201CE8F32F0070CD8C /* OLTVTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTVTableSection.h; sourceTree = "<group>"; };
+		3C3496211CE8F32F0070CD8C /* OLTVTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTVTableSection.m; sourceTree = "<group>"; };
+		3C3496251CE8FAFC0070CD8C /* OLTVData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLTVData.h; sourceTree = "<group>"; };
+		3C3496271CE91A6D0070CD8C /* OLTVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTVWebViewController.h; sourceTree = "<group>"; };
+		3C3496281CE91A6D0070CD8C /* OLTVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTVWebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C3495FB1CE8EEF40070CD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C3495F51CE8EEF40070CD8C = {
+			isa = PBXGroup;
+			children = (
+				3C3496001CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW */,
+				3C3495FF1CE8EEF40070CD8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C3495FF1CE8EEF40070CD8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C3495FE1CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C3496001CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW */ = {
+			isa = PBXGroup;
+			children = (
+				3C3496261CE918F70070CD8C /* UI */,
+				3C34961C1CE8F3010070CD8C /* Model */,
+				3C34961B1CE8F2F70070CD8C /* Controllers */,
+				3C3496011CE8EEF40070CD8C /* Supporting Files */,
+			);
+			path = iOSDev3901_UIWebViewHW;
+			sourceTree = "<group>";
+		};
+		3C3496011CE8EEF40070CD8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C34960D1CE8EEF40070CD8C /* Assets.xcassets */,
+				3C34960F1CE8EEF40070CD8C /* LaunchScreen.storyboard */,
+				3C3496121CE8EEF40070CD8C /* Info.plist */,
+				3C3496041CE8EEF40070CD8C /* AppDelegate.h */,
+				3C3496051CE8EEF40070CD8C /* AppDelegate.m */,
+				3C3496021CE8EEF40070CD8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C34961B1CE8F2F70070CD8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C3496181CE8F0420070CD8C /* OLTVMainTableViewController.h */,
+				3C3496191CE8F0420070CD8C /* OLTVMainTableViewController.m */,
+				3C3496271CE91A6D0070CD8C /* OLTVWebViewController.h */,
+				3C3496281CE91A6D0070CD8C /* OLTVWebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3C34961C1CE8F3010070CD8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C3496251CE8FAFC0070CD8C /* OLTVData.h */,
+				3C34961D1CE8F31B0070CD8C /* OLTVURL.h */,
+				3C34961E1CE8F31B0070CD8C /* OLTVURL.m */,
+				3C3496201CE8F32F0070CD8C /* OLTVTableSection.h */,
+				3C3496211CE8F32F0070CD8C /* OLTVTableSection.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3C3496261CE918F70070CD8C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C34960A1CE8EEF40070CD8C /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C3495FD1CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C3496151CE8EEF40070CD8C /* Build configuration list for PBXNativeTarget "iOSDev3901_UIWebViewHW" */;
+			buildPhases = (
+				3C3495FA1CE8EEF40070CD8C /* Sources */,
+				3C3495FB1CE8EEF40070CD8C /* Frameworks */,
+				3C3495FC1CE8EEF40070CD8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDev3901_UIWebViewHW;
+			productName = iOSDev3901_UIWebViewHW;
+			productReference = 3C3495FE1CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C3495F61CE8EEF40070CD8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oltv00;
+				TargetAttributes = {
+					3C3495FD1CE8EEF40070CD8C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5V5PKY8F9C;
+					};
+				};
+			};
+			buildConfigurationList = 3C3495F91CE8EEF40070CD8C /* Build configuration list for PBXProject "iOSDev3901_UIWebViewHW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C3495F51CE8EEF40070CD8C;
+			productRefGroup = 3C3495FF1CE8EEF40070CD8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C3495FD1CE8EEF40070CD8C /* iOSDev3901_UIWebViewHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C3495FC1CE8EEF40070CD8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3496111CE8EEF40070CD8C /* LaunchScreen.storyboard in Resources */,
+				3C34960E1CE8EEF40070CD8C /* Assets.xcassets in Resources */,
+				3C34960C1CE8EEF40070CD8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C3495FA1CE8EEF40070CD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3496291CE91A6D0070CD8C /* OLTVWebViewController.m in Sources */,
+				3C34961F1CE8F31B0070CD8C /* OLTVURL.m in Sources */,
+				3C3496061CE8EEF40070CD8C /* AppDelegate.m in Sources */,
+				3C3496031CE8EEF40070CD8C /* main.m in Sources */,
+				3C3496221CE8F32F0070CD8C /* OLTVTableSection.m in Sources */,
+				3C34961A1CE8F0420070CD8C /* OLTVMainTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C34960A1CE8EEF40070CD8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C34960B1CE8EEF40070CD8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C34960F1CE8EEF40070CD8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C3496101CE8EEF40070CD8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C3496131CE8EEF40070CD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C3496141CE8EEF40070CD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C3496161CE8EEF40070CD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev3901_UIWebViewHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev3901-UIWebViewHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C3496171CE8EEF40070CD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSDev3901_UIWebViewHW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.iOSDev3901-UIWebViewHW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C3495F91CE8EEF40070CD8C /* Build configuration list for PBXProject "iOSDev3901_UIWebViewHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3496131CE8EEF40070CD8C /* Debug */,
+				3C3496141CE8EEF40070CD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C3496151CE8EEF40070CD8C /* Build configuration list for PBXNativeTarget "iOSDev3901_UIWebViewHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3496161CE8EEF40070CD8C /* Debug */,
+				3C3496171CE8EEF40070CD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C3495F61CE8EEF40070CD8C /* Project object */;
+}

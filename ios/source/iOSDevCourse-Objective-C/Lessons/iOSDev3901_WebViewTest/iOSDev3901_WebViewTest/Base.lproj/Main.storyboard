@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQJ-m4-mFT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dHx-ON-nml"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rFT-5O-PhU">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abx-Er-XGY">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="RGI-bE-dRo">
+                                        <connections>
+                                            <action selector="actionBack:" destination="BYZ-38-t0r" id="seq-Ur-yVK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="4KD-1i-vw9">
+                                        <connections>
+                                            <action selector="actionForward:" destination="BYZ-38-t0r" id="A2i-wj-vTy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RxV-O3-iwr"/>
+                                    <barButtonItem systemItem="refresh" id="3d4-Ay-Oht">
+                                        <connections>
+                                            <action selector="actionRefresh:" destination="BYZ-38-t0r" id="khp-2z-poh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CQJ-m4-mFT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2G8-ln-wyg"/>
+                            <constraint firstAttribute="trailing" secondItem="abx-Er-XGY" secondAttribute="trailing" id="2qS-el-Y4e"/>
+                            <constraint firstItem="CQJ-m4-mFT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7U9-Ux-EZh"/>
+                            <constraint firstItem="abx-Er-XGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J0A-sQ-g2K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="abx-Er-XGY" secondAttribute="bottom" id="JZw-KR-j46"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CQJ-m4-mFT" secondAttribute="bottom" id="TQ3-8x-VY6"/>
+                            <constraint firstItem="rFT-5O-PhU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U54-ts-XrZ"/>
+                            <constraint firstAttribute="trailing" secondItem="CQJ-m4-mFT" secondAttribute="trailing" id="gw9-ZD-fXw"/>
+                            <constraint firstItem="rFT-5O-PhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rii-j9-ZYi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButtonItem" destination="RGI-bE-dRo" id="1eN-lp-L2p"/>
+                        <outlet property="forwardButtonItem" destination="4KD-1i-vw9" id="XhJ-bQ-XkO"/>
+                        <outlet property="loadIndicator" destination="rFT-5O-PhU" id="jkd-Z9-bD8"/>
+                        <outlet property="webView" destination="CQJ-m4-mFT" id="Aha-fG-d0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

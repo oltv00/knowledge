@@ -2,6 +2,7 @@
 
 ## GPG
 
+```git
 // configure global gpg
 git config --global user.signingkey MY_KEY_ID
 
@@ -13,6 +14,21 @@ git config commit.gpgsign true
 
 // print gpg keys
 gpg --list-secret-keys --keyid-format LONG
+```
+
+## Worktree
+
+```git
+git worktree add ../folder name-of-branch
+git worktree list
+git worktree prune
+```
+
+To fix `fatal: '' is already checked out at ''`
+
+`rm -rf .git/worktrees/`
+
+## Unsorted
 
 ```git
 // Squash

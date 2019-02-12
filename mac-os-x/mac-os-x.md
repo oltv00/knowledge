@@ -29,6 +29,7 @@ Pocket
 Vimbox
 PIPer
 Grammarly
+Evernote Web Clipper
 ```
 
 * Google Chrome

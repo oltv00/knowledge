@@ -91,12 +91,6 @@ To install: `brew cask install day*o`
 EEEE H:mm dd/MM
 ```
 
-* Kap * movie recorder
-
-```txt
-brew cask install kap
-```
-
 ## Oragization
 
 * Notes
@@ -109,7 +103,6 @@ brew cask install kap
 ## etc
 
 * Spotify
-* SpotMenu
 
 ## Development
 

@@ -1,1 +1,0 @@
-To build use [Carthage](https://github.com/Carthage/Carthage) 'carthage update'

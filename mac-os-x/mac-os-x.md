@@ -66,6 +66,7 @@ Evernote Web Clipper
   * FreeVPN [freevpn.pw](freevpn.pw)
 * Monosnap
 * Bartender 3
+* iStat Menus 6
 
 ```txt
 To fix mac os menu bar order
@@ -82,13 +83,6 @@ spotifyminiplayer
 Translate
 tunnelblick_toggle
 tty
-```
-
-* Day-O alternate
-
-```txt
-To install: `brew cask install day*o`
-EEEE H:mm dd/MM
 ```
 
 ## Oragization

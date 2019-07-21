@@ -6,7 +6,7 @@ import Foundation
 
 class DispatchWorkItemTest_1 {
     private let queue = DispatchQueue(
-        label: "com.concurrentQueue",
+        label: "com.concurrentQueue_1",
         attributes: .concurrent
     )
 
@@ -39,7 +39,7 @@ class DispatchWorkItemTest_1 {
     }
 
     private func getCurrentThreadName() -> String {
-        return Thread.current.name ?? "NOT_KNOWN"
+        return Thread.current.description
     }
 }
 
@@ -47,10 +47,36 @@ let dispatchWorkItemTest_1 = DispatchWorkItemTest_1()
 dispatchWorkItemTest_1.testNotify()
 
 // Cancel task example
+// Отменить задачу можно только до того как она будет поставлена на выполнение.
+// Если задача будет поставлена на выполнение, отменить ее не получится.
 
 class DispatchWorkItemTest_2 {
     private let queue = DispatchQueue(
-        label: "com.concurrentQueue",
-        attributes: .concurrent
+        label: "com.concurrentQueue_2"
     )
+
+    func testCancel() {
+        print("\(#function) start")
+
+        queue.async {
+            sleep(1)
+            print("test1")
+        }
+        queue.async {
+            sleep(1)
+            print("test2")
+        }
+
+        let item =  DispatchWorkItem {
+            print("DispatchWorkItem process")
+        }
+        queue.async(execute: item)
+
+        item.cancel()
+
+        print("\(#function) end")
+    }
 }
+
+let dispatchWorkItemTest_2 = DispatchWorkItemTest_2()
+dispatchWorkItemTest_2.testCancel()

@@ -15,5 +15,6 @@
         <page name='2-3-methods'/>
         <page name='2-4-concurrent-perform'/>
         <page name='2-5-work-item'/>
+        <page name='2-6-semaphore'/>
     </pages>
 </playground>

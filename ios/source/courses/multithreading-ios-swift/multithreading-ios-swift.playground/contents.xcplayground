@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='1-2-basics'/>
+        <page name='1-3-qos'/>
+        <page name='1-4-synchronization'/>
+        <page name='1-5-recursive-lock'/>
+        <page name='1-6-condition'/>
+        <page name='1-7-read-write-lock'/>
+        <page name='1-8-spin-lock'/>
+        <page name='1-9-synchronized'/>
+        <page name='1-10-problems'/>
+        <page name='1-11-atomic-operations'/>
+        <page name='2-2-queues'/>
+        <page name='2-3-methods'/>
+        <page name='2-4-concurrent-perform'/>
+        <page name='2-5-work-item'/>
+    </pages>
+</playground>

@@ -1,6 +1,6 @@
 # Mac OS X
 
-* [File manager](#file*manager)
+* [File manager](#file-manager)
 * [Web](#web)
 * [Communication](#communication)
 * [Productivity](#productivity)
@@ -11,9 +11,7 @@
 
 ## File manager
 
-```txt
-Finder
-```
+* Finder
 
 ## Web
 
@@ -22,18 +20,12 @@ Finder
 Extensions:
 
 ```txt
-Ghostery
 1 Password
+Ghostery
+PIPer
 Adguard
 Pocket
-Vimbox
-PIPer
-Grammarly
-Evernote Web Clipper
 ```
-
-* Google Chrome
-* Firefox
 
 ## Communication
 
@@ -45,6 +37,7 @@ Evernote Web Clipper
 * WhatsApp
 * Telegram
 * VK Messenger
+* TweetDeck
 
 ## Productivity
 
@@ -67,6 +60,7 @@ Evernote Web Clipper
 * Monosnap
 * Bartender 3
 * iStat Menus 6
+* Karabiner
 
 ```txt
 To fix mac os menu bar order
@@ -82,6 +76,7 @@ Search Safari and Chrome Tabs * for Google Chrome
 spotifyminiplayer
 Translate
 tunnelblick_toggle
+DarkOrLight
 tty
 ```
 
@@ -105,6 +100,7 @@ tty
   * Fork
 * iTerm
 * Zeplin
+* Figma
 * Sublime Text
 * Postman
 * Microsoft Remote Desktop
@@ -121,6 +117,13 @@ tty
 
 * brew
 * rvm
+* fastlane
+
+```txt
+brew cask install fastlane
+```
+
+* gnupg gnupg2
 
 ```txt
 brew install gnupg gnupg2

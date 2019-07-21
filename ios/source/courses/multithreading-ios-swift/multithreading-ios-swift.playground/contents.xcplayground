@@ -16,5 +16,8 @@
         <page name='2-4-concurrent-perform'/>
         <page name='2-5-work-item'/>
         <page name='2-6-semaphore'/>
+        <page name='2-7-dispatch-group'/>
+        <page name='2-8-dispatch-barrier'/>
+        <page name='2-9-dispatch-source'/>
     </pages>
 </playground>

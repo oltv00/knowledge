@@ -19,5 +19,7 @@
         <page name='2-7-dispatch-group'/>
         <page name='2-8-dispatch-barrier'/>
         <page name='2-9-dispatch-source'/>
+        <page name='2-10-target-queue-hierarchy'/>
+        <page name='2-11-dispatch-io'/>
     </pages>
 </playground>

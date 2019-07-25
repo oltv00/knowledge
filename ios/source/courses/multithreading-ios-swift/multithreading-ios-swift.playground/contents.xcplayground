@@ -21,5 +21,15 @@
         <page name='2-9-dispatch-source'/>
         <page name='2-10-target-queue-hierarchy'/>
         <page name='2-11-dispatch-io'/>
+        <page name='3-2-operation'/>
+        <page name='3-3-operation-and-operation-queue'/>
+        <page name='3-4-async-operation'/>
+        <page name='3-5-maxConcurrentOperationCount'/>
+        <page name='3-6-cancel-operation'/>
+        <page name='3-7-dependencies'/>
+        <page name='3-8-waitUntil'/>
+        <page name='3-9-completion-block'/>
+        <page name='3-10-suspend'/>
+        <page name='3-11-gcd-vs-operation'/>
     </pages>
 </playground>

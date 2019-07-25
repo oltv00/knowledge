@@ -16,3 +16,22 @@ class OperationTest_1 {
 
 let operationTest_1 = OperationTest_1()
 operationTest_1.test()
+
+class OperationTest_2 {
+
+    class OperationA: Operation {
+        override func main() {
+            print("\(#function) in \(self)")
+        }
+    }
+
+    private let operationQueue = OperationQueue()
+
+    func test() {
+        let operation = OperationA()
+        operationQueue.addOperation(operation)
+    }
+}
+
+let operationTest_2 = OperationTest_2()
+operationTest_2.test()

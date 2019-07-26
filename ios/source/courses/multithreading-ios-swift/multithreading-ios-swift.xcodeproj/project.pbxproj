@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C39CEB22EB0C4C0008A8C2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C39CEA22EB0C4C0008A8C2 /* main.swift */; };
+		402EB02F26F104685FDC0854 /* 2-9-dispatch-source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA8F32102F2C03422E02 /* 2-9-dispatch-source.swift */; };
+		402EB10026CA5CCACD2530F6 /* 3-9-completion-block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB8CAD8A65F61A799C57E /* 3-9-completion-block.swift */; };
+		402EB12C3353DBDA7391EE27 /* 2-6-semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBE6CD5490B1EC201FFD5 /* 2-6-semaphore.swift */; };
+		402EB1623B54CCF67FB86449 /* 3-11-gcd-vs-operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBECD2B2133E3EFDFC4DB /* 3-11-gcd-vs-operation.swift */; };
+		402EB37CAB4054054E1F2C13 /* 1-4-synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAA1BCA6707A57E4B2F /* 1-4-synchronization.swift */; };
+		402EB3E61BF428DCE3742016 /* 2-5-work-item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB30E0639D5FC970E8B62 /* 2-5-work-item.swift */; };
+		402EB4E71B8CB51337DE3AAF /* 3-2-operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB2EF7EE3A67D1CBDCABE /* 3-2-operation.swift */; };
+		402EB4FCB0E0E8A1B88CBE6F /* 2-3-methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBD8F740836B14D6057EA /* 2-3-methods.swift */; };
+		402EB5DE29A9567F1B6A5A91 /* 2-7-dispatch-group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB4A1884A2FCF318BC9AF /* 2-7-dispatch-group.swift */; };
+		402EB608C2454378A2523860 /* 3-6-cancel-operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7C8F0B2AC2E8B84FE4D /* 3-6-cancel-operation.swift */; };
+		402EB6116B26CA70DBDD6952 /* 2-11-dispatch-io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB085C7619833A4441FB1 /* 2-11-dispatch-io.swift */; };
+		402EB684DAE1D4961B8599E0 /* 1-5-recursive-lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB493E6D141E4882AC1B1 /* 1-5-recursive-lock.swift */; };
+		402EB6BCE45EA1F1F30DEC8C /* 3-8-waitUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7FE08927837908E98F3 /* 3-8-waitUntil.swift */; };
+		402EB783E3E15823EA7A4E9F /* 2-11-dispatch-io.json in Resources */ = {isa = PBXBuildFile; fileRef = 402EBDE2E9CD339A61BCF2D9 /* 2-11-dispatch-io.json */; };
+		402EB786C8A73FC90AA6C49E /* 3-5-maxConcurrentOperationCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB0D8A5169A9F2D112CDD /* 3-5-maxConcurrentOperationCount.swift */; };
+		402EB7996CA46F1846A3DE85 /* 2-8-dispatch-barrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBCE012359AEE13547C45 /* 2-8-dispatch-barrier.swift */; };
+		402EB8254E233AA318661DB9 /* 1-3-qos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB7C169D441BDE695C4D9 /* 1-3-qos.swift */; };
+		402EB8C968D40D12F240B331 /* 1-7-read-write-lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB4B5188FCDCF9BF3AE94 /* 1-7-read-write-lock.swift */; };
+		402EB99DD070CA120FE0E54D /* 2-2-queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB1820D1BFF509631A9BA /* 2-2-queues.swift */; };
+		402EB9BDADD8D27018E89CAC /* 3-10-suspend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB28D054E26300CE28B74 /* 3-10-suspend.swift */; };
+		402EBAAF8700646A9DAF2B6B /* 2-4-concurrent-perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB96CBD2737B7D8C6A89F /* 2-4-concurrent-perform.swift */; };
+		402EBADC81A58D687677353D /* 3-3-operation-and-operation-queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB8C30673A1128459C5E7 /* 3-3-operation-and-operation-queue.swift */; };
+		402EBB0117F85CC1BB832F52 /* 3-7-dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9AD97629B5BB9062421 /* 3-7-dependencies.swift */; };
+		402EBB53BEF65107F5481E85 /* 1-6-condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBABBE7BC77BD307E390C /* 1-6-condition.swift */; };
+		402EBBAA5EF46F5E54879655 /* 1-10-problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBE05D0D6B90FDAC56490 /* 1-10-problems.swift */; };
+		402EBD2735125967C4589992 /* 3-4-async-operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBD5FD96F8C6E2380B9A8 /* 3-4-async-operation.swift */; };
+		402EBD858DE00189FCF22234 /* 1-9-synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB09EBDB8CA070FD93C25 /* 1-9-synchronized.swift */; };
+		402EBD91354B1AE496919F99 /* 1-11-atomic-operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB39BE57C0C7685D7C8AD /* 1-11-atomic-operations.swift */; };
+		402EBE5CFAD254A17AE53FF8 /* 1-8-spin-lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB50B74B84B352B46B4DB /* 1-8-spin-lock.swift */; };
+		402EBE9F6483C17A00AB5FF7 /* 1-2-basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9429CB5AD8F899BFB94 /* 1-2-basics.swift */; };
+		402EBF43DE753CF117E6D414 /* 2-10-target-queue-hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB52E275DA66C86E5A86A /* 2-10-target-queue-hierarchy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30C39CE522EB0C4C0008A8C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30C39CE722EB0C4C0008A8C2 /* multithreading-ios-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "multithreading-ios-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C39CEA22EB0C4C0008A8C2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		30C39CF522EB0C810008A8C2 /* multithreading-ios-swift-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "multithreading-ios-swift-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C39CF922EB0C810008A8C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402EB085C7619833A4441FB1 /* 2-11-dispatch-io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-11-dispatch-io.swift"; sourceTree = "<group>"; };
+		402EB09EBDB8CA070FD93C25 /* 1-9-synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-9-synchronized.swift"; sourceTree = "<group>"; };
+		402EB0D8A5169A9F2D112CDD /* 3-5-maxConcurrentOperationCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-5-maxConcurrentOperationCount.swift"; sourceTree = "<group>"; };
+		402EB1820D1BFF509631A9BA /* 2-2-queues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-2-queues.swift"; sourceTree = "<group>"; };
+		402EB28D054E26300CE28B74 /* 3-10-suspend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-10-suspend.swift"; sourceTree = "<group>"; };
+		402EB2EF7EE3A67D1CBDCABE /* 3-2-operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-2-operation.swift"; sourceTree = "<group>"; };
+		402EB30E0639D5FC970E8B62 /* 2-5-work-item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-5-work-item.swift"; sourceTree = "<group>"; };
+		402EB39BE57C0C7685D7C8AD /* 1-11-atomic-operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-11-atomic-operations.swift"; sourceTree = "<group>"; };
+		402EB493E6D141E4882AC1B1 /* 1-5-recursive-lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-5-recursive-lock.swift"; sourceTree = "<group>"; };
+		402EB4A1884A2FCF318BC9AF /* 2-7-dispatch-group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-7-dispatch-group.swift"; sourceTree = "<group>"; };
+		402EB4B5188FCDCF9BF3AE94 /* 1-7-read-write-lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-7-read-write-lock.swift"; sourceTree = "<group>"; };
+		402EB50B74B84B352B46B4DB /* 1-8-spin-lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-8-spin-lock.swift"; sourceTree = "<group>"; };
+		402EB52E275DA66C86E5A86A /* 2-10-target-queue-hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-10-target-queue-hierarchy.swift"; sourceTree = "<group>"; };
+		402EB7C169D441BDE695C4D9 /* 1-3-qos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-3-qos.swift"; sourceTree = "<group>"; };
+		402EB7C8F0B2AC2E8B84FE4D /* 3-6-cancel-operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-6-cancel-operation.swift"; sourceTree = "<group>"; };
+		402EB7FE08927837908E98F3 /* 3-8-waitUntil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-8-waitUntil.swift"; sourceTree = "<group>"; };
+		402EB8C30673A1128459C5E7 /* 3-3-operation-and-operation-queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-3-operation-and-operation-queue.swift"; sourceTree = "<group>"; };
+		402EB8CAD8A65F61A799C57E /* 3-9-completion-block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-9-completion-block.swift"; sourceTree = "<group>"; };
+		402EB9429CB5AD8F899BFB94 /* 1-2-basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-2-basics.swift"; sourceTree = "<group>"; };
+		402EB96CBD2737B7D8C6A89F /* 2-4-concurrent-perform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-4-concurrent-perform.swift"; sourceTree = "<group>"; };
+		402EB9AD97629B5BB9062421 /* 3-7-dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-7-dependencies.swift"; sourceTree = "<group>"; };
+		402EBA8F32102F2C03422E02 /* 2-9-dispatch-source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-9-dispatch-source.swift"; sourceTree = "<group>"; };
+		402EBABBE7BC77BD307E390C /* 1-6-condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-6-condition.swift"; sourceTree = "<group>"; };
+		402EBCE012359AEE13547C45 /* 2-8-dispatch-barrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-8-dispatch-barrier.swift"; sourceTree = "<group>"; };
+		402EBD5FD96F8C6E2380B9A8 /* 3-4-async-operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-4-async-operation.swift"; sourceTree = "<group>"; };
+		402EBD8F740836B14D6057EA /* 2-3-methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-3-methods.swift"; sourceTree = "<group>"; };
+		402EBDE2E9CD339A61BCF2D9 /* 2-11-dispatch-io.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2-11-dispatch-io.json"; sourceTree = "<group>"; };
+		402EBE05D0D6B90FDAC56490 /* 1-10-problems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-10-problems.swift"; sourceTree = "<group>"; };
+		402EBE6CD5490B1EC201FFD5 /* 2-6-semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-6-semaphore.swift"; sourceTree = "<group>"; };
+		402EBECD2B2133E3EFDFC4DB /* 3-11-gcd-vs-operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "3-11-gcd-vs-operation.swift"; sourceTree = "<group>"; };
+		402EBFAA1BCA6707A57E4B2F /* 1-4-synchronization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-4-synchronization.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C39CE422EB0C4C0008A8C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C39CF222EB0C810008A8C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C39CDE22EB0C4C0008A8C2 = {
+			isa = PBXGroup;
+			children = (
+				30C39CE922EB0C4C0008A8C2 /* multithreading-ios-swift */,
+				30C39CF622EB0C810008A8C2 /* multithreading-ios-swift-tests */,
+				30C39CE822EB0C4C0008A8C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C39CE822EB0C4C0008A8C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C39CE722EB0C4C0008A8C2 /* multithreading-ios-swift */,
+				30C39CF522EB0C810008A8C2 /* multithreading-ios-swift-tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C39CE922EB0C4C0008A8C2 /* multithreading-ios-swift */ = {
+			isa = PBXGroup;
+			children = (
+				30C39CEA22EB0C4C0008A8C2 /* main.swift */,
+			);
+			path = "multithreading-ios-swift";
+			sourceTree = "<group>";
+		};
+		30C39CF622EB0C810008A8C2 /* multithreading-ios-swift-tests */ = {
+			isa = PBXGroup;
+			children = (
+				30C39CF922EB0C810008A8C2 /* Info.plist */,
+				402EB3E300817EC3504F5B28 /* source */,
+			);
+			path = "multithreading-ios-swift-tests";
+			sourceTree = "<group>";
+		};
+		402EB1A97F378689DE23FB75 /* module_2 */ = {
+			isa = PBXGroup;
+			children = (
+				402EB1820D1BFF509631A9BA /* 2-2-queues.swift */,
+				402EBD8F740836B14D6057EA /* 2-3-methods.swift */,
+				402EB96CBD2737B7D8C6A89F /* 2-4-concurrent-perform.swift */,
+				402EB30E0639D5FC970E8B62 /* 2-5-work-item.swift */,
+				402EBE6CD5490B1EC201FFD5 /* 2-6-semaphore.swift */,
+				402EB4A1884A2FCF318BC9AF /* 2-7-dispatch-group.swift */,
+				402EBCE012359AEE13547C45 /* 2-8-dispatch-barrier.swift */,
+				402EBA8F32102F2C03422E02 /* 2-9-dispatch-source.swift */,
+				402EB52E275DA66C86E5A86A /* 2-10-target-queue-hierarchy.swift */,
+				402EB085C7619833A4441FB1 /* 2-11-dispatch-io.swift */,
+				402EBDE2E9CD339A61BCF2D9 /* 2-11-dispatch-io.json */,
+			);
+			path = module_2;
+			sourceTree = "<group>";
+		};
+		402EB3E300817EC3504F5B28 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				402EBA75D2CD2B00C6436832 /* module_1 */,
+				402EB1A97F378689DE23FB75 /* module_2 */,
+				402EBC8390B0780DC048447A /* module_3 */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		402EBA75D2CD2B00C6436832 /* module_1 */ = {
+			isa = PBXGroup;
+			children = (
+				402EB9429CB5AD8F899BFB94 /* 1-2-basics.swift */,
+				402EB7C169D441BDE695C4D9 /* 1-3-qos.swift */,
+				402EBFAA1BCA6707A57E4B2F /* 1-4-synchronization.swift */,
+				402EB493E6D141E4882AC1B1 /* 1-5-recursive-lock.swift */,
+				402EBABBE7BC77BD307E390C /* 1-6-condition.swift */,
+				402EB4B5188FCDCF9BF3AE94 /* 1-7-read-write-lock.swift */,
+				402EB50B74B84B352B46B4DB /* 1-8-spin-lock.swift */,
+				402EB09EBDB8CA070FD93C25 /* 1-9-synchronized.swift */,
+				402EBE05D0D6B90FDAC56490 /* 1-10-problems.swift */,
+				402EB39BE57C0C7685D7C8AD /* 1-11-atomic-operations.swift */,
+			);
+			path = module_1;
+			sourceTree = "<group>";
+		};
+		402EBC8390B0780DC048447A /* module_3 */ = {
+			isa = PBXGroup;
+			children = (
+				402EB2EF7EE3A67D1CBDCABE /* 3-2-operation.swift */,
+				402EB8C30673A1128459C5E7 /* 3-3-operation-and-operation-queue.swift */,
+				402EBD5FD96F8C6E2380B9A8 /* 3-4-async-operation.swift */,
+				402EB0D8A5169A9F2D112CDD /* 3-5-maxConcurrentOperationCount.swift */,
+				402EB7C8F0B2AC2E8B84FE4D /* 3-6-cancel-operation.swift */,
+				402EB9AD97629B5BB9062421 /* 3-7-dependencies.swift */,
+				402EB7FE08927837908E98F3 /* 3-8-waitUntil.swift */,
+				402EB8CAD8A65F61A799C57E /* 3-9-completion-block.swift */,
+				402EB28D054E26300CE28B74 /* 3-10-suspend.swift */,
+				402EBECD2B2133E3EFDFC4DB /* 3-11-gcd-vs-operation.swift */,
+			);
+			path = module_3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C39CE622EB0C4C0008A8C2 /* multithreading-ios-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C39CEE22EB0C4C0008A8C2 /* Build configuration list for PBXNativeTarget "multithreading-ios-swift" */;
+			buildPhases = (
+				30C39CE322EB0C4C0008A8C2 /* Sources */,
+				30C39CE422EB0C4C0008A8C2 /* Frameworks */,
+				30C39CE522EB0C4C0008A8C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "multithreading-ios-swift";
+			productName = "multithreading-ios-swift";
+			productReference = 30C39CE722EB0C4C0008A8C2 /* multithreading-ios-swift */;
+			productType = "com.apple.product-type.tool";
+		};
+		30C39CF422EB0C810008A8C2 /* multithreading-ios-swift-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C39CFA22EB0C810008A8C2 /* Build configuration list for PBXNativeTarget "multithreading-ios-swift-tests" */;
+			buildPhases = (
+				30C39CF122EB0C810008A8C2 /* Sources */,
+				30C39CF222EB0C810008A8C2 /* Frameworks */,
+				30C39CF322EB0C810008A8C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "multithreading-ios-swift-tests";
+			productName = "multithreading-ios-swift-tests";
+			productReference = 30C39CF522EB0C810008A8C2 /* multithreading-ios-swift-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C39CDF22EB0C4C0008A8C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = oltv00;
+				TargetAttributes = {
+					30C39CE622EB0C4C0008A8C2 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					30C39CF422EB0C810008A8C2 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 30C39CE222EB0C4C0008A8C2 /* Build configuration list for PBXProject "multithreading-ios-swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30C39CDE22EB0C4C0008A8C2;
+			productRefGroup = 30C39CE822EB0C4C0008A8C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C39CE622EB0C4C0008A8C2 /* multithreading-ios-swift */,
+				30C39CF422EB0C810008A8C2 /* multithreading-ios-swift-tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C39CF322EB0C810008A8C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EB783E3E15823EA7A4E9F /* 2-11-dispatch-io.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C39CE322EB0C4C0008A8C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C39CEB22EB0C4C0008A8C2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C39CF122EB0C810008A8C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EBE9F6483C17A00AB5FF7 /* 1-2-basics.swift in Sources */,
+				402EB8254E233AA318661DB9 /* 1-3-qos.swift in Sources */,
+				402EB37CAB4054054E1F2C13 /* 1-4-synchronization.swift in Sources */,
+				402EB684DAE1D4961B8599E0 /* 1-5-recursive-lock.swift in Sources */,
+				402EBB53BEF65107F5481E85 /* 1-6-condition.swift in Sources */,
+				402EB8C968D40D12F240B331 /* 1-7-read-write-lock.swift in Sources */,
+				402EBE5CFAD254A17AE53FF8 /* 1-8-spin-lock.swift in Sources */,
+				402EBD858DE00189FCF22234 /* 1-9-synchronized.swift in Sources */,
+				402EBBAA5EF46F5E54879655 /* 1-10-problems.swift in Sources */,
+				402EBD91354B1AE496919F99 /* 1-11-atomic-operations.swift in Sources */,
+				402EB99DD070CA120FE0E54D /* 2-2-queues.swift in Sources */,
+				402EB4FCB0E0E8A1B88CBE6F /* 2-3-methods.swift in Sources */,
+				402EBAAF8700646A9DAF2B6B /* 2-4-concurrent-perform.swift in Sources */,
+				402EB3E61BF428DCE3742016 /* 2-5-work-item.swift in Sources */,
+				402EB12C3353DBDA7391EE27 /* 2-6-semaphore.swift in Sources */,
+				402EB5DE29A9567F1B6A5A91 /* 2-7-dispatch-group.swift in Sources */,
+				402EB7996CA46F1846A3DE85 /* 2-8-dispatch-barrier.swift in Sources */,
+				402EB02F26F104685FDC0854 /* 2-9-dispatch-source.swift in Sources */,
+				402EBF43DE753CF117E6D414 /* 2-10-target-queue-hierarchy.swift in Sources */,
+				402EB6116B26CA70DBDD6952 /* 2-11-dispatch-io.swift in Sources */,
+				402EB4E71B8CB51337DE3AAF /* 3-2-operation.swift in Sources */,
+				402EBADC81A58D687677353D /* 3-3-operation-and-operation-queue.swift in Sources */,
+				402EBD2735125967C4589992 /* 3-4-async-operation.swift in Sources */,
+				402EB786C8A73FC90AA6C49E /* 3-5-maxConcurrentOperationCount.swift in Sources */,
+				402EB608C2454378A2523860 /* 3-6-cancel-operation.swift in Sources */,
+				402EBB0117F85CC1BB832F52 /* 3-7-dependencies.swift in Sources */,
+				402EB6BCE45EA1F1F30DEC8C /* 3-8-waitUntil.swift in Sources */,
+				402EB10026CA5CCACD2530F6 /* 3-9-completion-block.swift in Sources */,
+				402EB9BDADD8D27018E89CAC /* 3-10-suspend.swift in Sources */,
+				402EB1623B54CCF67FB86449 /* 3-11-gcd-vs-operation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30C39CEC22EB0C4C0008A8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30C39CED22EB0C4C0008A8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		30C39CEF22EB0C4C0008A8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		30C39CF022EB0C4C0008A8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		30C39CFB22EB0C810008A8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "multithreading-ios-swift-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.multithreading-ios-swift-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		30C39CFC22EB0C810008A8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "multithreading-ios-swift-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oltv00.multithreading-ios-swift-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C39CE222EB0C4C0008A8C2 /* Build configuration list for PBXProject "multithreading-ios-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C39CEC22EB0C4C0008A8C2 /* Debug */,
+				30C39CED22EB0C4C0008A8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C39CEE22EB0C4C0008A8C2 /* Build configuration list for PBXNativeTarget "multithreading-ios-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C39CEF22EB0C4C0008A8C2 /* Debug */,
+				30C39CF022EB0C4C0008A8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C39CFA22EB0C810008A8C2 /* Build configuration list for PBXNativeTarget "multithreading-ios-swift-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C39CFB22EB0C810008A8C2 /* Debug */,
+				30C39CFC22EB0C810008A8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C39CDF22EB0C4C0008A8C2 /* Project object */;
+}

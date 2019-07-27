@@ -61,6 +61,7 @@ Pocket
 * Bartender 3
 * iStat Menus 6
 * Karabiner
+* Folx
 
 ```txt
 To fix mac os menu bar order

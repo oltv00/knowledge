@@ -43,7 +43,7 @@ final class TopNavigationStackView: UIStackView {
 
         let buttons = images.map { (image) -> UIView in
             let button = UIButton(type: .system)
-            button.backgroundColor = .white
+            button.backgroundColor = .clear
             button.setImage(image, for: .normal)
             return button
         }

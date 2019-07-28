@@ -2,9 +2,41 @@ import UIKit
 
 final class CardView: UIView {
 
+    // MARK: - Public properties
+
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+        }
+    }
+
+    var attributedInformation: NSAttributedString? {
+        get {
+            return informationLabel.attributedText
+        }
+        set {
+            informationLabel.attributedText = newValue
+        }
+    }
+
     // MARK: - UI properties
 
-    private lazy var imageView = UIImageView()
+    private let imageView: UIImageView = {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFill
+        return view
+    }()
+
+    private let informationLabel: UILabel = {
+        let view = UILabel()
+        view.textColor = .white
+        view.font = .systemFont(ofSize: 34, weight: .heavy)
+        view.numberOfLines = 0
+        return view
+    }()
 
     // MARK: - Gestures
 
@@ -31,18 +63,21 @@ final class CardView: UIView {
     // MARK: - Setup UI
 
     private func setupView() {
-        setupImageView()
-        setupPanGesture()
-    }
-
-    private func setupImageView() {
-        addSubview(imageView)
-        imageView.fillSuperview()
-        imageView.image = .colored(.green)
-    }
-
-    private func setupPanGesture() {
         addGestureRecognizer(panGesture)
+
+        [
+            imageView,
+            informationLabel,
+        ].forEach(addSubview)
+
+        imageView.fillSuperview()
+        informationLabel.anchor(
+            top: nil,
+            leading: leadingAnchor,
+            bottom: bottomAnchor,
+            trailing: trailingAnchor,
+            padding: .init(top: 0, left: 16, bottom: 16, right: 16)
+        )
     }
 
     // MARK: - Laying out Subviews
@@ -69,13 +104,14 @@ private extension CardView {
 
     @objc func panGestureHandler(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
-        case .changed: handlePanStateChanged(sender)
-        case .ended: handlePanStateEnded(sender)
+        case .changed: handleChangedPanState(sender)
+        case .ended: handleEndedPanState(sender)
+        case .cancelled: handleCancelPanState(sender)
         default: break
         }
     }
 
-    private func handlePanStateChanged(_ sender: UIPanGestureRecognizer) {
+    private func handleChangedPanState(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
         let degrees: CGFloat = translation.x / 20
         let rotationAngle = degrees * .pi / 180
@@ -84,65 +120,46 @@ private extension CardView {
         transform = translatedTransform
     }
 
-    private func handlePanStateEnded(_ sender: UIPanGestureRecognizer) {
+    private func handleEndedPanState(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        let direction: CGFloat = translation.x > 0 ? 1000 : -1000
+        let direction: CGFloat = translation.x > 0 ? 1 : -1
         let shouldDismissCard = abs(translation.x) > 80
 
+        animateCard(animations: {
+            if shouldDismissCard {
+                self.frame = CGRect(
+                    x: 1000 * direction,
+                    y: 0,
+                    width: self.frame.width,
+                    height: self.frame.height
+                )
+            } else {
+                self.transform = .identity
+            }
+        }, completion: { _ in
+            self.transform = .identity
+
+            if shouldDismissCard {
+                self.removeFromSuperview()
+            }
+        })
+    }
+
+    private func handleCancelPanState(_ sender: UIPanGestureRecognizer) {
+        animateCard(animations: {
+            self.transform = .identity
+        })
+    }
+
+    private func animateCard(animations: @escaping () -> Void,
+                             completion: ((Bool) -> Void)? = nil) {
         UIView.animate(
             withDuration: 0.75,
             delay: 0,
             usingSpringWithDamping: 0.5,
             initialSpringVelocity: 0.5,
             options: .curveEaseOut,
-            animations: {
-
-                if shouldDismissCard {
-                    self.frame = CGRect(
-                        x: direction,
-                        y: 0,
-                        width: self.frame.width,
-                        height: self.frame.height
-                    )
-                } else {
-                    self.transform = .identity
-                }
-            },
-            completion: { _ in
-
-                self.transform = .identity
-                self.frame = CGRect(
-                    x: 0,
-                    y: 0,
-                    width: self.superview!.frame.width,
-                    height: self.superview!.frame.height
-                )
-            })
-    }
-}
-
-// TODO: Delete if unused
-extension UIImage {
-    fileprivate static func colored(_ color: UIColor) -> UIImage {
-
-        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
-        UIGraphicsBeginImageContext(rect.size)
-        defer {
-            UIGraphicsEndImageContext()
-        }
-        guard let context = UIGraphicsGetCurrentContext() else {
-            assertionFailure("Can't get graphic context")
-            return UIImage()
-        }
-
-        context.setFillColor(color.cgColor)
-        context.fill(rect)
-
-        guard let image = UIGraphicsGetImageFromCurrentImageContext() else {
-            assertionFailure("Can't get image from context")
-            return UIImage()
-        }
-
-        return image
+            animations: animations,
+            completion: completion)
     }
 }

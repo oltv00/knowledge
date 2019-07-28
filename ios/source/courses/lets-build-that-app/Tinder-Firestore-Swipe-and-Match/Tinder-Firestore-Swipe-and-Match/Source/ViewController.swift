@@ -7,15 +7,12 @@ class ViewController: UIViewController {
     private lazy var contentStackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
+        view.isLayoutMarginsRelativeArrangement = true
         return view
     }()
 
-    private lazy var contentView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue
-        return view
-    }()
-
+    private lazy var cardsDeckView = UIView()
+    private lazy var cardView = CardView()
     private lazy var topStackView = TopNavigationStackView()
     private lazy var bottomStackView = HomeBottomControlsStackView()
 
@@ -30,6 +27,11 @@ class ViewController: UIViewController {
     // MARK: - Setup UI
 
     private func setupSubviews() {
+        setupContentStackView()
+        setupCardsDeckView()
+    }
+
+    private func setupContentStackView() {
         view.addSubview(contentStackView)
         contentStackView.anchor(
             top: view.safeAreaLayoutGuide.topAnchor,
@@ -38,10 +40,18 @@ class ViewController: UIViewController {
             trailing: view.trailingAnchor
         )
 
+        contentStackView.layoutMargins = .init(top: 0, left: 12, bottom: 0, right: 12)
+
         [
             topStackView,
-            contentView,
+            cardsDeckView,
             bottomStackView,
         ].forEach { contentStackView.addArrangedSubview($0) }
+        contentStackView.bringSubviewToFront(cardsDeckView)
+    }
+
+    private func setupCardsDeckView() {
+        cardsDeckView.addSubview(cardView)
+        cardView.fillSuperview()
     }
 }

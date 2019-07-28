@@ -13,6 +13,7 @@
 		402EB5D5C9CB111A829E4B5B /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAF00873E27C4705C6E /* HomeBottomControlsStackView.swift */; };
 		402EB5F8D57CA87E79B9AA75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA0A3ADCFBA8C0C341F9 /* ViewController.swift */; };
 		402EB7FB697BCCC9425EF3EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402EB10AD1E0A6DF11D389D9 /* LaunchScreen.storyboard */; };
+		402EBA8B7C983A7D28F3EF83 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55E0272BC818AFF8F31 /* CardView.swift */; };
 		402EBB9215F24863F14130D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402EB69D5A95FA50F73389DA /* Assets.xcassets */; };
 		402EBD3473E1FD45B11F40E7 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB42A2AD95AF8703F53D5 /* TopNavigationStackView.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		402EB28D385376A2C1796C1C /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		402EB3ADA556C32544C62648 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		402EB42A2AD95AF8703F53D5 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		402EB55E0272BC818AFF8F31 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		402EB69D5A95FA50F73389DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402EBA0A3ADCFBA8C0C341F9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		402EBB0B2955AFBD3DC371FB /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				402EBFAF00873E27C4705C6E /* HomeBottomControlsStackView.swift */,
 				402EB42A2AD95AF8703F53D5 /* TopNavigationStackView.swift */,
+				402EB55E0272BC818AFF8F31 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				402EB5D5C9CB111A829E4B5B /* HomeBottomControlsStackView.swift in Sources */,
 				402EB0F59EF8AE695B606BE1 /* UIImage.swift in Sources */,
 				402EBD3473E1FD45B11F40E7 /* TopNavigationStackView.swift in Sources */,
+				402EBA8B7C983A7D28F3EF83 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

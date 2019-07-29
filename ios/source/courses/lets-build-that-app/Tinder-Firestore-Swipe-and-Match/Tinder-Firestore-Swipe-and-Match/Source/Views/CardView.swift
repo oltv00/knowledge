@@ -22,6 +22,15 @@ final class CardView: UIView {
         }
     }
 
+    var informationAlignment: NSTextAlignment {
+        get {
+            return informationLabel.textAlignment
+        }
+        set {
+            informationLabel.textAlignment = newValue
+        }
+    }
+
     // MARK: - UI properties
 
     private let imageView: UIImageView = {

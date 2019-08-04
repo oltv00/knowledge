@@ -6,17 +6,41 @@ final class CardView: UIView {
 
     var cardViewModel: CardViewModel! {
         didSet {
-            let imageName = cardViewModel.imageNames.first ?? ""
-            imageView.image = UIImage(named: imageName)
-            informationLabel.attributedText = cardViewModel.attributedString
-            informationLabel.textAlignment = cardViewModel.textAlignment
+            updateUI()
+            updateBarsStackView()
+            setupObserving()
+        }
+    }
 
-            (0..<cardViewModel.imageNames.count).forEach { _ in
-                let view = UIView()
-                view.backgroundColor = Constants.deselectedBarColor
-                barsStackView.addArrangedSubview(view)
+    private func updateUI() {
+        let imageName = cardViewModel.imageNames.first ?? ""
+        imageView.image = UIImage(named: imageName)
+        informationLabel.attributedText = cardViewModel.attributedString
+        informationLabel.textAlignment = cardViewModel.textAlignment
+    }
+
+    private func updateBarsStackView() {
+        (0..<cardViewModel.imageNames.count).forEach { _ in
+            let view = UIView()
+            view.backgroundColor = Constants.deselectedBarColor
+            barsStackView.addArrangedSubview(view)
+        }
+        barsStackView.arrangedSubviews.first?.backgroundColor = Constants.selectedBarColor
+    }
+
+    private func setupObserving() {
+        cardViewModel.imageIndexObserver = { [weak self] (index, image) in
+            guard let self = self else { return }
+
+            self.imageView.image = image
+
+            self.barsStackView
+                .arrangedSubviews.forEach {
+                $0.backgroundColor = Constants.deselectedBarColor
             }
-            barsStackView.arrangedSubviews.first?.backgroundColor = Constants.selectedBarColor
+            self.barsStackView
+                .arrangedSubviews[index]
+                .backgroundColor = Constants.selectedBarColor
         }
     }
 
@@ -72,10 +96,6 @@ final class CardView: UIView {
         layer.locations = [0.5, 1.1]
         return layer
     }()
-
-    // MARK: - Stored data
-
-    private var imageIndex = 0
 
     // MARK: - Initialization
 
@@ -161,22 +181,11 @@ private extension CardView {
             ? true
             : false
 
-        let previousImageIndex = imageIndex
-
         if shouldAdvanceNextPhoto {
-            imageIndex = min(imageIndex + 1, cardViewModel.imageNames.count - 1)
+            cardViewModel.advanceToNextPhoto()
         } else {
-            imageIndex = max(0, imageIndex - 1)
+            cardViewModel.goToPreviousPhoto()
         }
-
-        let imageName = cardViewModel.imageNames[imageIndex]
-        imageView.image = UIImage(named: imageName)
-        barsStackView
-            .arrangedSubviews[previousImageIndex]
-            .backgroundColor = Constants.deselectedBarColor
-        barsStackView
-            .arrangedSubviews[imageIndex]
-            .backgroundColor = Constants.selectedBarColor
     }
 
     // MARK: - Pan gesture

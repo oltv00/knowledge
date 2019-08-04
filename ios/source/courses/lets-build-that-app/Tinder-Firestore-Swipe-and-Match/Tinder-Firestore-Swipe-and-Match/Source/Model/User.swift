@@ -5,17 +5,21 @@ struct User {
     let age: Int
     let profession: String
     let imageName: String
+}
 
+// MARK: - CardViewModelCreatable
+
+extension User: CardViewModelCreatable {
     func toCardViewModel() -> CardViewModel {
         return CardViewModel(
-            imageName: imageName,
-            attributedString: makeAttributedInformation(self),
+            imageNames: [imageName],
+            attributedString: makeAttributedString(self),
             textAlignment: .left
         )
     }
 }
 
-private func makeAttributedInformation(_ user: User) -> NSAttributedString {
+private func makeAttributedString(_ user: User) -> NSAttributedString {
     let nameString = NSMutableAttributedString(
         string: user.name,
         attributes: [.font: UIFont.systemFont(ofSize: 32, weight: .heavy)]

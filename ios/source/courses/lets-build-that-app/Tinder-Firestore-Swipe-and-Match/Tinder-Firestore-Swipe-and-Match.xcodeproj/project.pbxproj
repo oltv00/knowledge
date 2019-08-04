@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		402EB0A689950B511E0D2196 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB28D385376A2C1796C1C /* Extensions+UIView.swift */; };
 		402EB0F59EF8AE695B606BE1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBB0B2955AFBD3DC371FB /* UIImage.swift */; };
-		402EB1472F765EE0AACA766D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB9B007069031446140C6 /* User.swift */; };
 		402EB16154149A70ACD47B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB3ADA556C32544C62648 /* AppDelegate.swift */; };
+		402EB25465AF43702CEEBF4C /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB2BE4FBE182B7C11B6B3 /* Advertiser.swift */; };
+		402EB3F72BBB6397CBA8C319 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBD3F088BB002CEA712B2 /* HomeController.swift */; };
 		402EB5D5C9CB111A829E4B5B /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBFAF00873E27C4705C6E /* HomeBottomControlsStackView.swift */; };
-		402EB5F8D57CA87E79B9AA75 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBA0A3ADCFBA8C0C341F9 /* HomeController.swift */; };
 		402EB7FB697BCCC9425EF3EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402EB10AD1E0A6DF11D389D9 /* LaunchScreen.storyboard */; };
+		402EB86B0E7511F1A43E5EB7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EBBDD455ED904218CABCB /* User.swift */; };
 		402EBA8B7C983A7D28F3EF83 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB55E0272BC818AFF8F31 /* CardView.swift */; };
 		402EBB9215F24863F14130D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402EB69D5A95FA50F73389DA /* Assets.xcassets */; };
 		402EBD3473E1FD45B11F40E7 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB42A2AD95AF8703F53D5 /* TopNavigationStackView.swift */; };
@@ -24,15 +25,16 @@
 		3052997D22EB9C2600A03EFD /* Tinder-Firestore-Swipe-and-Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder-Firestore-Swipe-and-Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		402EB10AD1E0A6DF11D389D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402EB28D385376A2C1796C1C /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		402EB2BE4FBE182B7C11B6B3 /* Advertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
 		402EB3ADA556C32544C62648 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		402EB42A2AD95AF8703F53D5 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		402EB55E0272BC818AFF8F31 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		402EB69D5A95FA50F73389DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		402EB9B007069031446140C6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		402EBA0A3ADCFBA8C0C341F9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		402EBACB9CAAA2BDACDC815F /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		402EBB0B2955AFBD3DC371FB /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		402EBB9E6A63BF78AD1C7BBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		402EBBDD455ED904218CABCB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		402EBD3F088BB002CEA712B2 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		402EBFAF00873E27C4705C6E /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		402EB8529DBA5554530B4E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402EBBDD455ED904218CABCB /* User.swift */,
+				402EB2BE4FBE182B7C11B6B3 /* Advertiser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		402EBA059E300023BAD480E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,23 +120,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		402EBE354B53E373AD7349FE /* Model */ = {
+		402EBEF75BB8B6A5EF5FD25A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				402EB9B007069031446140C6 /* User.swift */,
+				402EBD3F088BB002CEA712B2 /* HomeController.swift */,
 			);
-			path = Model;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		402EBFB4E2CD6A90642BBF07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				402EBA0A3ADCFBA8C0C341F9 /* HomeController.swift */,
 				402EB3ADA556C32544C62648 /* AppDelegate.swift */,
 				402EBA059E300023BAD480E7 /* Extensions */,
 				402EB5FA4B602832C7784895 /* Views */,
-				402EBE354B53E373AD7349FE /* Model */,
 				402EB8040479C2293052E3CA /* ViewModels */,
+				402EBEF75BB8B6A5EF5FD25A /* Controllers */,
+				402EB8529DBA5554530B4E09 /* Model */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -200,15 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				402EB5F8D57CA87E79B9AA75 /* HomeController.swift in Sources */,
 				402EB16154149A70ACD47B44 /* AppDelegate.swift in Sources */,
 				402EB0A689950B511E0D2196 /* Extensions+UIView.swift in Sources */,
 				402EB5D5C9CB111A829E4B5B /* HomeBottomControlsStackView.swift in Sources */,
 				402EB0F59EF8AE695B606BE1 /* UIImage.swift in Sources */,
 				402EBD3473E1FD45B11F40E7 /* TopNavigationStackView.swift in Sources */,
 				402EBA8B7C983A7D28F3EF83 /* CardView.swift in Sources */,
-				402EB1472F765EE0AACA766D /* User.swift in Sources */,
 				402EBE11B301D767288941F8 /* CardViewModel.swift in Sources */,
+				402EB86B0E7511F1A43E5EB7 /* User.swift in Sources */,
+				402EB3F72BBB6397CBA8C319 /* HomeController.swift in Sources */,
+				402EB25465AF43702CEEBF4C /* Advertiser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

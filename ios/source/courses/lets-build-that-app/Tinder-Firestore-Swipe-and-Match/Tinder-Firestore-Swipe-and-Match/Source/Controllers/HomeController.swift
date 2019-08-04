@@ -8,6 +8,7 @@ final class HomeController: UIViewController {
         let view = UIStackView()
         view.axis = .vertical
         view.isLayoutMarginsRelativeArrangement = true
+        view.layoutMargins = .init(top: 0, left: 12, bottom: 0, right: 12)
         return view
     }()
 
@@ -17,11 +18,16 @@ final class HomeController: UIViewController {
 
     // MARK: - Data
 
-    private let cardViewModels = [
-        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1").toCardViewModel(),
-        User(name: "Jane", age: 18, profession: "Teacher", imageName: "2").toCardViewModel(),
-        User(name: "Maria", age: 25, profession: "Developer", imageName: "3").toCardViewModel(),
+    private lazy var models: [CardViewModelCreatable] = [
+        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1"),
+        User(name: "Jane", age: 18, profession: "Teacher", imageName: "2"),
+        User(name: "Maria", age: 25, profession: "Developer", imageName: "3"),
+        Advertiser(title: "Shutter Stock", brandName: "MXT 515", posterPhotoName: "advertiser"),
     ]
+
+    // MARK: - View models
+
+    private lazy var viewModels = models.map { $0.toCardViewModel() }
 
     // MARK: - Managing the View
 
@@ -47,8 +53,6 @@ final class HomeController: UIViewController {
             trailing: view.trailingAnchor
         )
 
-        contentStackView.layoutMargins = .init(top: 0, left: 12, bottom: 0, right: 12)
-
         [
             topStackView,
             cardsDeckView,
@@ -58,13 +62,11 @@ final class HomeController: UIViewController {
     }
 
     private func setupCardsDeckView() {
-        cardViewModels.forEach { viewModel in
+        viewModels.forEach { viewModel in
             let cardView = CardView()
-            cardView.image = UIImage(named: viewModel.imageName)
-            cardView.attributedInformation = viewModel.attributedString
-            cardView.informationAlignment = viewModel.textAlignment
+            cardView.cardViewModel = viewModel
 
-            cardsDeckView.addSubview(cardView)
+            cardsDeckView.insertSubview(cardView, at: 0)
             cardView.fillSuperview()
         }
     }

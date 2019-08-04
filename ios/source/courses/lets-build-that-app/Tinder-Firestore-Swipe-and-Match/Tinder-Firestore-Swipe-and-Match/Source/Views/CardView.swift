@@ -2,32 +2,14 @@ import UIKit
 
 final class CardView: UIView {
 
-    // MARK: - Public properties
+    // MARK: - CardViewModel
 
-    var image: UIImage? {
-        get {
-            return imageView.image
-        }
-        set {
-            imageView.image = newValue
-        }
-    }
-
-    var attributedInformation: NSAttributedString? {
-        get {
-            return informationLabel.attributedText
-        }
-        set {
-            informationLabel.attributedText = newValue
-        }
-    }
-
-    var informationAlignment: NSTextAlignment {
-        get {
-            return informationLabel.textAlignment
-        }
-        set {
-            informationLabel.textAlignment = newValue
+    var cardViewModel: CardViewModel! {
+        didSet {
+            let imageName = cardViewModel.imageNames.first ?? ""
+            imageView.image = UIImage(named: imageName)
+            informationLabel.attributedText = cardViewModel.attributedString
+            informationLabel.textAlignment = cardViewModel.textAlignment
         }
     }
 
@@ -57,6 +39,18 @@ final class CardView: UIView {
         return gesture
     }()
 
+    // MARK: - Layers
+
+    private let gradientLayer: CAGradientLayer = {
+        let layer = CAGradientLayer()
+        layer.colors = [
+            UIColor.clear.cgColor,
+            UIColor.black.cgColor,
+        ]
+        layer.locations = [0.5, 1.1]
+        return layer
+    }()
+
     // MARK: - Initialization
 
     override init(frame: CGRect) {
@@ -72,12 +66,15 @@ final class CardView: UIView {
     // MARK: - Setup UI
 
     private func setupView() {
-        addGestureRecognizer(panGesture)
+        setupSubviews()
+        setupGestures()
+        setupBarsStackView()
+    }
 
-        [
-            imageView,
-            informationLabel,
-        ].forEach(addSubview)
+    private func setupSubviews() {
+        addSubview(imageView)
+        layer.addSublayer(gradientLayer)
+        addSubview(informationLabel)
 
         imageView.fillSuperview()
         informationLabel.anchor(
@@ -89,11 +86,20 @@ final class CardView: UIView {
         )
     }
 
+    private func setupGestures() {
+        addGestureRecognizer(panGesture)
+    }
+
+    private func setupBarsStackView() {
+
+    }
+
     // MARK: - Laying out Subviews
 
     override func layoutSubviews() {
         super.layoutSubviews()
         setupCornerRadius()
+        gradientLayer.frame = bounds
     }
 
     private func setupCornerRadius() {
@@ -113,11 +119,16 @@ private extension CardView {
 
     @objc func panGestureHandler(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
+        case .began: handleBeganPanState(sender)
         case .changed: handleChangedPanState(sender)
         case .ended: handleEndedPanState(sender)
         case .cancelled: handleCancelPanState(sender)
         default: break
         }
+    }
+
+    private func handleBeganPanState(_ sender: UIPanGestureRecognizer) {
+        superview?.subviews.forEach { $0.layer.removeAllAnimations() }
     }
 
     private func handleChangedPanState(_ sender: UIPanGestureRecognizer) {

@@ -10,6 +10,13 @@ final class CardView: UIView {
             imageView.image = UIImage(named: imageName)
             informationLabel.attributedText = cardViewModel.attributedString
             informationLabel.textAlignment = cardViewModel.textAlignment
+
+            (0..<cardViewModel.imageNames.count).forEach { _ in
+                let view = UIView()
+                view.backgroundColor = Constants.deselectedBarColor
+                barsStackView.addArrangedSubview(view)
+            }
+            barsStackView.arrangedSubviews.first?.backgroundColor = Constants.selectedBarColor
         }
     }
 
@@ -29,12 +36,27 @@ final class CardView: UIView {
         return view
     }()
 
+    private let barsStackView: UIStackView = {
+        let view = UIStackView()
+        view.spacing = 4
+        view.distribution = .fillEqually
+        return view
+    }()
+
     // MARK: - Gestures
 
     private lazy var panGesture: UIPanGestureRecognizer = {
         let gesture = UIPanGestureRecognizer(
             target: self,
             action: #selector(panGestureHandler(_:))
+        )
+        return gesture
+    }()
+
+    private lazy var tapGesture: UITapGestureRecognizer = {
+        let gesture = UITapGestureRecognizer(
+            target: self,
+            action: #selector(tapGestureHandler(_:))
         )
         return gesture
     }()
@@ -50,6 +72,10 @@ final class CardView: UIView {
         layer.locations = [0.5, 1.1]
         return layer
     }()
+
+    // MARK: - Stored data
+
+    private var imageIndex = 0
 
     // MARK: - Initialization
 
@@ -88,10 +114,19 @@ final class CardView: UIView {
 
     private func setupGestures() {
         addGestureRecognizer(panGesture)
+        addGestureRecognizer(tapGesture)
     }
 
     private func setupBarsStackView() {
-
+        addSubview(barsStackView)
+        barsStackView.anchor(
+            top: topAnchor,
+            leading: leadingAnchor,
+            bottom: nil,
+            trailing: trailingAnchor,
+            padding: .init(top: 8, left: 8, bottom: 0, right: 8),
+            size: .init(width: 0, height: 4)
+        )
     }
 
     // MARK: - Laying out Subviews
@@ -117,7 +152,37 @@ final class CardView: UIView {
 
 private extension CardView {
 
-    @objc func panGestureHandler(_ sender: UIPanGestureRecognizer) {
+    // MARK: - Tap gesture
+
+    @objc
+    private func tapGestureHandler(_ sender: UITapGestureRecognizer) {
+        let tapLocation = sender.location(in: nil)
+        let shouldAdvanceNextPhoto = tapLocation.x > bounds.width / 2
+            ? true
+            : false
+
+        let previousImageIndex = imageIndex
+
+        if shouldAdvanceNextPhoto {
+            imageIndex = min(imageIndex + 1, cardViewModel.imageNames.count - 1)
+        } else {
+            imageIndex = max(0, imageIndex - 1)
+        }
+
+        let imageName = cardViewModel.imageNames[imageIndex]
+        imageView.image = UIImage(named: imageName)
+        barsStackView
+            .arrangedSubviews[previousImageIndex]
+            .backgroundColor = Constants.deselectedBarColor
+        barsStackView
+            .arrangedSubviews[imageIndex]
+            .backgroundColor = Constants.selectedBarColor
+    }
+
+    // MARK: - Pan gesture
+
+    @objc
+    private func panGestureHandler(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
         case .began: handleBeganPanState(sender)
         case .changed: handleChangedPanState(sender)
@@ -181,5 +246,14 @@ private extension CardView {
             options: .curveEaseOut,
             animations: animations,
             completion: completion)
+    }
+}
+
+// MARK: - Constants
+
+private extension CardView {
+    enum Constants {
+        static let deselectedBarColor = UIColor(white: 0, alpha: 0.1)
+        static let selectedBarColor = UIColor.white
     }
 }

@@ -4,7 +4,7 @@ struct User {
     let name: String
     let age: Int
     let profession: String
-    let imageName: String
+    let imageNames: [String]
 }
 
 // MARK: - CardViewModelCreatable
@@ -12,7 +12,7 @@ struct User {
 extension User: CardViewModelCreatable {
     func toCardViewModel() -> CardViewModel {
         return CardViewModel(
-            imageNames: [imageName],
+            imageNames: imageNames,
             attributedString: makeAttributedString(self),
             textAlignment: .left
         )

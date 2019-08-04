@@ -19,9 +19,11 @@ final class HomeController: UIViewController {
     // MARK: - Data
 
     private lazy var models: [CardViewModelCreatable] = [
-        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1"),
-        User(name: "Jane", age: 18, profession: "Teacher", imageName: "2"),
-        User(name: "Maria", age: 25, profession: "Developer", imageName: "3"),
+        User(name: "Kelly", age: 23, profession: "Music DJ", imageNames: ["k_1", "k_2", "k_3", "k_4"]),
+//        User(name: "Kelly", age: 23, profession: "Music DJ", imageNames: ["1"]),
+        User(name: "Jane", age: 18, profession: "Teacher", imageNames: ["j_1", "j_2", "j_3"]),
+//        User(name: "Jane", age: 18, profession: "Teacher", imageNames: ["2"]),
+        User(name: "Maria", age: 25, profession: "Developer", imageNames: ["3"]),
         Advertiser(title: "Shutter Stock", brandName: "MXT 515", posterPhotoName: "advertiser"),
     ]
 

@@ -37,6 +37,7 @@ final class HomeController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupSubviews()
+        setupTopStackViewObservers()
     }
 
     // MARK: - Setup UI
@@ -70,6 +71,15 @@ final class HomeController: UIViewController {
 
             cardsDeckView.insertSubview(cardView, at: 0)
             cardView.fillSuperview()
+        }
+    }
+
+    // MARK: - Setup observers
+
+    private func setupTopStackViewObservers() {
+        topStackView.profileButtonObserver = { [weak self] in
+            guard let self = self else { return }
+            // TODO: Handle profileButtonObserver
         }
     }
 }

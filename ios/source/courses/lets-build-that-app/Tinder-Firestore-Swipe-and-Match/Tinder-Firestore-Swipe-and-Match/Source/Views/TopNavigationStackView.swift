@@ -2,6 +2,10 @@ import UIKit
 
 final class TopNavigationStackView: UIStackView {
 
+    // MARK: - Observers
+
+    var profileButtonObserver: (() -> Void)?
+
     // MARK: - Initialization
 
     override init(frame: CGRect) {
@@ -13,6 +17,18 @@ final class TopNavigationStackView: UIStackView {
         super.init(coder: coder)
         setupView()
     }
+
+    // MARK: - UI properties
+
+    private lazy var profileButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .clear
+        button.setImage(.profile, for: .normal)
+        button.addTarget(self,
+                         action: #selector(profileButtonDidPress(_:)),
+                         for: .touchUpInside)
+        return button
+    }()
 
     // MARK: - Setup UI
 
@@ -33,15 +49,18 @@ final class TopNavigationStackView: UIStackView {
     }
 
     private func setupButtons() {
+        var buttons: [UIView] = [
+            profileButton,
+        ]
+
         let images: [UIImage] = [
-            .profile,
             UIImage(),
             .flame,
             UIImage(),
             .messages,
         ]
 
-        let buttons = images.map { (image) -> UIView in
+        buttons += images.map { (image) -> UIView in
             let button = UIButton(type: .system)
             button.backgroundColor = .clear
             button.setImage(image, for: .normal)
@@ -49,5 +68,12 @@ final class TopNavigationStackView: UIStackView {
         }
 
         buttons.forEach { addArrangedSubview($0) }
+    }
+
+    // MARK: - Actions
+
+    @objc
+    private func profileButtonDidPress(_ sender: UIButton) {
+        profileButtonObserver?()
     }
 }

@@ -8,7 +8,7 @@ def city_temp():
     city = input('Введите название города: ')
     try:
         observation = owm.weather_at_place(city)
-    except pyowm.exceptions.not_found_error.NotFoundError:
+    except pyowm.exceptions.api_response_error.NotFoundError:
         print('Такой город не найден, попробуйте еще.')
         city_temp()
 

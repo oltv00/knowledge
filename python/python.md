@@ -40,7 +40,7 @@
     - [Check if key in dictionary](#check-if-key-in-dictionary)
     - [Keyword `get`](#keyword-get)
   - [Exceptions](#exceptions)
-    - [Posible exeptions](#posible-exeptions)
+    - [Posible exceptions](#posible-exceptions)
     - [Use `try-except` construction to handle exception](#use-try-except-construction-to-handle-exception)
     - [You can write keyword `pass` to do nothing](#you-can-write-keyword-pass-to-do-nothing)
     - [You can except only defined exceptions](#you-can-except-only-defined-exceptions)
@@ -484,10 +484,10 @@ return 'None' if key not exist
 
 ## Exceptions
 
-### Posible exeptions
+### Posible exceptions
 
 * ImportError - wrong import
-* IndexError - out of index
+* IndexError - index out of range
 * NameError - variable is not defined
 * SyntaxError - syntax
 * TypeError - invalid argument type
@@ -596,8 +596,8 @@ Just make `raise` in except block
 try:
   stuff with exception
 except:
-  raise
   some stuff
+  raise
 ```
 
 ### To create your own exception

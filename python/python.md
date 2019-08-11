@@ -84,6 +84,20 @@
     - [`.format()`](#format)
       - [`.format() with indexes`](#format-with-indexes)
       - [`.format()` with name indexes/arguments](#format-with-name-indexesarguments)
+      - [`.format()` with name from dictionary](#format-with-name-from-dictionary)
+      - [`.format()` with auto filling](#format-with-auto-filling)
+  - [Additional funcs](#additional-funcs)
+    - [`join`](#join)
+    - [`replace`](#replace)
+    - [`startswith`](#startswith)
+    - [`endswith`](#endswith)
+    - [`lower`](#lower)
+    - [`upper`](#upper)
+    - [`split`](#split)
+    - [`min`](#min)
+    - [`max`](#max)
+    - [`abs`](#abs)
+    - [`sum`](#sum)
 
 ## Types
 
@@ -931,3 +945,80 @@ foo = '<string_value>'
 bar = <int_value>
 baz = '{foo_index}, {bar_index}'.format(foo_index = foo, bar_index = bar) # 'string_value, int_value'
 ```
+
+#### `.format()` with name from dictionary
+
+```python
+foo = {
+    'bar': 'bar_value',
+    'baz': 'baz_value'
+}
+res = '{foo[bar]}, {foo[baz]}'.format(foo = foo) # bar_value, baz_value
+```
+
+#### `.format()` with auto filling
+
+- ^ - center
+- < - right filling
+- > - left filling
+
+```python
+foo = 'FOO'
+'{0:_^11}'.format(foo) # ____FOO____
+'{0:_<11}'.format(foo) # FOO________
+'{0:_>11}'.format(foo) # ________FOO
+```
+
+```python
+# Auto filling with alignment
+import string
+
+def correct_lenth(str, attr):
+    return len(str) + (attr * 2)
+
+def random_letters():
+    letters = string.ascii_letters
+    output = []
+    for index in range(len(letters)):
+        output.append(letters[:index])
+    return output
+
+for letter in random_letters():
+    lenth = correct_lenth(letter, 5)
+    output = '{0:*^{lenth}}'.format(letter, lenth)
+    print(output)
+```
+
+## Additional funcs
+
+### `join`
+
+```python
+foo = ['one', 'two', 'three]
+bar = ', '.join(foo) # one, two, three
+```
+
+### `replace`
+
+```python
+foo = '<string_value>'
+bar = foo.replace('<string_value>', '<replacement_value>') # replacement_value
+```
+
+### `startswith`
+
+### `endswith`
+
+### `lower`
+
+### `upper`
+
+### `split`
+
+### `min`
+
+### `max`
+
+### `abs`
+
+### `sum`

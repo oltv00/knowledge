@@ -48,6 +48,42 @@
     - [Save function to variable](#save-function-to-variable)
     - [Send result of function as argument](#send-result-of-function-as-argument)
     - [Send function as argument](#send-function-as-argument)
+  - [Exceptions](#exceptions)
+    - [Posible exceptions](#posible-exceptions)
+    - [Use `try-except` construction to handle exception](#use-try-except-construction-to-handle-exception)
+    - [You can write keyword `pass` to do nothing](#you-can-write-keyword-pass-to-do-nothing)
+    - [You can except only defined exceptions](#you-can-except-only-defined-exceptions)
+    - [You can defined several except blocks](#you-can-defined-several-except-blocks)
+    - [You can except several exception_names](#you-can-except-several-exceptionnames)
+    - [`SyntaxError` and `IndentationError`](#syntaxerror-and-indentationerror)
+    - [`Finally`](#finally)
+    - [Raise your exceptions](#raise-your-exceptions)
+    - [To `raise` exception without `except`](#to-raise-exception-without-except)
+    - [To see exception in `try-except` construction](#to-see-exception-in-try-except-construction)
+    - [To create your own exception](#to-create-your-own-exception)
+    - [`AssertionError`](#assertionerror)
+  - [Work with files](#work-with-files)
+    - [Modes](#modes)
+      - [`Read`](#read)
+        - [After open file, you need to close it](#after-open-file-you-need-to-close-it)
+        - [To read length](#to-read-length)
+        - [To read not full content](#to-read-not-full-content)
+        - [Offset, if you continue read file](#offset-if-you-continue-read-file)
+        - [To read line to line](#to-read-line-to-line)
+      - [`Write`](#write)
+        - [To write content to file](#to-write-content-to-file)
+      - [`Append`](#append)
+      - [`Binary`](#binary)
+    - [Keyword `with`](#keyword-with)
+  - [Modules](#modules)
+    - [Import module `as`](#import-module-as)
+    - [`from` module import](#from-module-import)
+    - [`from` module import `as`](#from-module-import-as)
+  - [String formatting](#string-formatting)
+    - [Keyword `%`](#keyword)
+    - [`.format()`](#format)
+      - [`.format() with indexes`](#format-with-indexes)
+      - [`.format()` with name indexes/arguments](#format-with-name-indexesarguments)
 
 ## Types
 
@@ -533,21 +569,18 @@ def read_name():
 print_hello(read_name)
 ```
 
-
-```
-
 ## Exceptions
 
 ### Posible exceptions
 
-* ImportError - wrong import
-* IndexError - index out of range
-* NameError - variable is not defined
-* SyntaxError - syntax
-* TypeError - invalid argument type
-* ValueError - invalid argument value
-* ZeroDivisionError - division by zero
-* AssertionError - assert
+- ImportError - wrong import
+- IndexError - index out of range
+- NameError - variable is not defined
+- SyntaxError - syntax
+- TypeError - invalid argument type
+- ValueError - invalid argument value
+- ZeroDivisionError - division by zero
+- AssertionError - assert
 
 ### Use `try-except` construction to handle exception
 
@@ -681,10 +714,10 @@ open('<file_path>', '<read_mode>')
 
 ### Modes
 
-* r - read
-* w - write
-* a - append
-* b - binary
+- r - read
+- w - write
+- a - append
+- b - binary
 
 #### `Read`
 
@@ -800,9 +833,9 @@ f.read() # ValueError  exception
 STL - Standart library
 Three types of module
 
-* Your modules
-* Import modules
-* Modules integrated to python (random, math, os, json, sys)
+- Your modules
+- Import modules
+- Modules integrated to python (random, math, os, json, sys)
 
 `PyPi` - modules by other peoples
 To install packages use `pip3` console utility
@@ -863,11 +896,11 @@ sqrt(25)
 
 ## String formatting
 
-* %s - string
-* %d - int
-* %f - float
+- %s - string
+- %d - int
+- %f - float
 
-### `%`
+### Keyword `%`
 
 ```python
 foo = '<string_value>'

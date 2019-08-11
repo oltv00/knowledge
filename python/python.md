@@ -103,7 +103,7 @@ int('0') # 4
 float('0') # 0.0
 ```
 
-### None
+### None (NULL)
 
 Just none ( False )
 
@@ -114,6 +114,216 @@ def foo():
   print('foo body')
 bar = foo()
 print(bar) # None
+```
+
+### Lists
+
+```python
+foo = [0, 1, 2, 3, [4, 5, 6]]
+print(foo[4][0]) # 4
+```
+
+```python
+foo = [1, 2, 3]
+print(foo * 2) # [1, 2, 3, 1, 2, 3]
+print(foo + [4, 5, 6]) # [1, 2, 3, 4, 5, 6]
+```
+
+```python
+foo = 'Hello'
+print(foo[4]) # o
+```
+
+#### Keywords `if in` and `if not in`
+
+```python
+foo = ['John', 'Mike', 'Alex']
+if 'Alex' in foo:
+  print('Alex in list')
+
+if 'Samuel' not in foo:
+  print('Samuel is not in list')
+```
+
+#### append
+
+```python
+foo = []
+foo.append('Hello')
+foo.append(0)
+foo.append([1, 2, 3])
+print(foo) # ['Hello', 0, [1, 2, 3]]
+```
+
+#### len
+
+```python
+foo = [1, 2, 3, 4, 5]
+print('count: ' + str(len(foo))) # count: 5
+```
+
+#### remove
+
+```python
+foo.remove(5)
+print('count: ' + str(len(foo))) # count: 4
+```
+
+#### insert
+
+```python
+foo.insert(0, 6)
+print('count: ' + str(len(foo))) # count: 5
+print(foo) # [6, 1, 2, 3, 4]
+```
+
+#### max, min
+
+```python
+print('max: ' + str(max(foo))) # max: 6
+print('min: ' + str(min(foo))) # min: 1
+```
+
+#### count
+
+```python
+foo = [1, 1, 0, 2, 0, 2, 2, 0, 3, 4, 6, 0, 6, 7, 8, 0, 9, 9, 0, 0]
+print('count: ' + str(foo.count(0))) # count: 7
+```
+
+#### reverse
+
+```python
+foo = [1, 2, 3, 4, 5]
+foo.reverse()
+print(foo) # [5, 4, 3, 2, 1]
+```
+
+#### list, range
+
+```python
+array = list(range(10)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+array = list(range(50, 60)) # [50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+array = list(range(0, 10, 2)) # [0, 2, 4, 6, 8]
+```
+
+#### Negative index
+
+```python
+foo = [1, 2, 3, 4, 5]
+foo[-2] # 4
+```
+
+#### List indexing (Chunk)
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+foo[<start_index>:<end_index>:<step>]
+foo[<start_index>:]
+foo[:<end_index>]
+foo[::<step>]
+```
+
+##### Get chunk
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[2:5] # [3, 4, 5]
+```
+
+##### Get chunk to some index
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[:5] # [1, 2, 3, 4, 5]
+```
+
+##### Get chunk from some index
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[5:] # [6, 7, 8, 9, 0]
+```
+
+##### Get chunk with step
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[::2] # [1, 3, 5, 7, 9]
+```
+
+##### Get chunk with negative indexes
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[-4:-1] # [7, 8, 9]
+```
+
+##### Get chunk with negative step (reverse step)
+
+```python
+foo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+bar = foo[::-1] # [0, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
+
+### Dictionary
+
+Syntax:
+
+```python
+{
+simple_type: any_type
+}
+
+simple_type: Int, Float, String
+any_type: ...
+```
+
+Example:
+
+```python
+foo = {
+    'key_1': 'value_1',
+    'key_2': 'value_2'
+}
+```
+
+```python
+value = foo['key_1']
+print(value) # value_1
+```
+
+#### Check if key in dictionary
+
+```python
+if <key> in <dict>:
+  do stuff
+```
+
+#### Keyword `get`
+
+```python
+<dict>.get('key')
+return 'None' if key not exist
+```
+
+```python
+<dict>.get('key', '<return_value>')
+<return_value> - will return if key not exist
+```
+
+### Tuple
+
+```python
+# Tuple - immutable list
+foo = (1, 2, 3)
+foo[0]
+```
+
+```python
+# You can define tuple without `(`, `)`
+foo = 1, 2, 3
+foo[0]
 ```
 
 ## Operators
@@ -345,141 +555,7 @@ def read_name():
 print_hello(read_name)
 ```
 
-## Lists
 
-```python
-foo = [0, 1, 2, 3, [4, 5, 6]]
-print(foo[4][0]) # 4
-```
-
-```python
-foo = [1, 2, 3]
-print(foo * 2) # [1, 2, 3, 1, 2, 3]
-print(foo + [4, 5, 6]) # [1, 2, 3, 4, 5, 6]
-```
-
-```python
-foo = 'Hello'
-print(foo[4]) # o
-```
-
-### Keywords `if in` and `if not in`
-
-```python
-foo = ['John', 'Mike', 'Alex']
-if 'Alex' in foo:
-  print('Alex in list')
-
-if 'Samuel' not in foo:
-  print('Samuel is not in list')
-```
-
-### append
-
-```python
-foo = []
-foo.append('Hello')
-foo.append(0)
-foo.append([1, 2, 3])
-print(foo) # ['Hello', 0, [1, 2, 3]]
-```
-
-### len
-
-```python
-foo = [1, 2, 3, 4, 5]
-print('count: ' + str(len(foo))) # count: 5
-```
-
-### remove
-
-```python
-foo.remove(5)
-print('count: ' + str(len(foo))) # count: 4
-```
-
-### insert
-
-```python
-foo.insert(0, 6)
-print('count: ' + str(len(foo))) # count: 5
-print(foo) # [6, 1, 2, 3, 4]
-```
-
-### max, min
-
-```python
-print('max: ' + str(max(foo))) # max: 6
-print('min: ' + str(min(foo))) # min: 1
-```
-
-### count
-
-```python
-foo = [1, 1, 0, 2, 0, 2, 2, 0, 3, 4, 6, 0, 6, 7, 8, 0, 9, 9, 0, 0]
-print('count: ' + str(foo.count(0))) # count: 7
-```
-
-### reverse
-
-```python
-foo = [1, 2, 3, 4, 5]
-foo.reverse()
-print(foo) # [5, 4, 3, 2, 1]
-```
-
-### list, range
-
-```python
-array = list(range(10)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-array = list(range(50, 60)) # [50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
-array = list(range(0, 10, 2)) # [0, 2, 4, 6, 8]
-```
-
-## Dictionary
-
-Syntax:
-
-```python
-{
-simple_type: any_type
-}
-
-simple_type: Int, Float, String
-any_type: ...
-```
-
-Example:
-
-```python
-foo = {
-    'key_1': 'value_1',
-    'key_2': 'value_2'
-}
-```
-
-```python
-value = foo['key_1']
-print(value) # value_1
-```
-
-### Check if key in dictionary
-
-```python
-if <key> in <dict>:
-  do stuff
-```
-
-### Keyword `get`
-
-```python
-<dict>.get('key')
-return 'None' if key not exist
-```
-
-```python
-<dict>.get('key', '<return_value>')
-<return_value> - will return if key not exist
 ```
 
 ## Exceptions
@@ -805,4 +881,42 @@ To use module methods, just write method name
 ```python
 randint(0, 100) # random number 0 - 100
 sqrt(25)
+```
+
+## String formatting
+
+* %s - string
+* %d - int
+* %f - float
+
+### `%`
+
+```python
+foo = '<string_value>'
+bar = <int_value>
+baz = '%s, %d' % (foo, bar) # 'string_value, int_value'
+```
+
+### `.format()`
+
+```python
+foo = '<string_value>'
+bar = <int_value>
+baz = '{}, {}'.format(foo, bar) # 'string_value, int_value'
+```
+
+#### `.format() with indexes`
+
+```python
+foo = '<string_value>'
+bar = <int_value>
+baz = '{0}, {1}, {0}'.format(foo, bar) # 'string_value, int_value, string_value'
+```
+
+#### `.format()` with name indexes/arguments
+
+```python
+foo = '<string_value>'
+bar = <int_value>
+baz = '{foo_index}, {bar_index}'.format(foo_index = foo, bar_index = bar) # 'string_value, int_value'
 ```

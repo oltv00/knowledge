@@ -23,6 +23,9 @@
     - [03 Recap](#03-recap)
     - [Exercises 3.1 - 3.2](#exercises-31---32)
   - [04 Quicksort](#04-quicksort)
+    - [Divide and Conquer (D&C)](#divide-and-conquer-dc)
+    - [Euclid’s algorithm](#euclids-algorithm)
+    - [Exercises 4.1 - 4.4](#exercises-41---44)
 
 ### Functions
 
@@ -245,8 +248,7 @@ For example we can use `factorial` function to explain how actually call stack w
 
 What information can you give me, just based on this call stack?
 
-Answer:\
-We are now in function call `greet_2`, and we save local variable `name` with value `maggie`.
+Answer: We are now in function call `greet_2`, and we save local variable `name` with value `maggie`.
 When `greet_2` return, we will in function `greet`.
 
 3.2 Suppose you accidentally write a recursive function that runs forever. As you saw, your computer allocates memory on the stack for each function call. What happens to the stack when your recursive function runs forever?
@@ -255,3 +257,29 @@ Answer: The stack will increase while computer has memory.
 
 ## 04 Quicksort
 
+### Divide and Conquer (D&C)
+
+To solve a problem using D&C, there are two steps:
+
+1. Figure out the base case. This should be the simplest possible case.
+2. Divide or decrease your problem until it becomes the base case.
+
+### Euclid’s algorithm
+
+If you find the biggest box that will work for the size, that will be the biggest box that will work for the entire size.
+
+### Exercises 4.1 - 4.4
+
+4.1 Write out the code for the earlier sum function.\
+Answer: [04_02_recursive_sum.py](04_quicksort/04_02_recursive_sum.py)
+
+4.2 Write a recursive function to count the number of items in a list.\
+Answer: [04_03_recursive_count.py](04_quicksort/04_03_recursive_count.py)
+
+4.3 Find the maximum number in a list.\
+Answer: [04_04_recursive_max.py](04_quicksort/04_04_recursive_max.py)
+
+4.4 Remember binary search from chapter 1? It’s a divide-and-conquer algorithm, too. Can you come up with the base case and recursive case for binary search?\
+Answer: [04_05_binary_search.py](04_quicksort/04_05_binary_search.py)\
+Base case: \
+Recursive case: 

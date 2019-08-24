@@ -62,6 +62,7 @@ Pocket
 * iStat Menus 6
 * Karabiner
 * Folx
+* Gimp
 
 ```txt
 To fix mac os menu bar order

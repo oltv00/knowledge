@@ -268,6 +268,10 @@ To solve a problem using D&C, there are two steps:
 
 If you find the biggest box that will work for the size, that will be the biggest box that will work for the entire size.
 
+### Inductive proofs
+
+Each inductive proof has two steps: the base case and the inductive case.
+
 ### Exercises 4.1 - 4.4
 
 4.1 Write out the code for the earlier sum function.\
@@ -282,4 +286,4 @@ Answer: [04_04_recursive_max.py](04_quicksort/04_04_recursive_max.py)
 4.4 Remember binary search from chapter 1? It’s a divide-and-conquer algorithm, too. Can you come up with the base case and recursive case for binary search?\
 Answer: [04_05_binary_search.py](04_quicksort/04_05_binary_search.py)\
 Base case: \
-Recursive case: 
+Recursive case:

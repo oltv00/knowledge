@@ -63,6 +63,7 @@ Pocket
 * Karabiner
 * Folx
 * Gimp
+* IINA
 
 ```txt
 To fix mac os menu bar order

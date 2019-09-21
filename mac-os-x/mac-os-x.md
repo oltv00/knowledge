@@ -64,6 +64,7 @@ Pocket
 * Folx
 * Gimp
 * IINA
+* 5KPlayer
 
 ```txt
 To fix mac os menu bar order
@@ -115,6 +116,7 @@ tty
 * Docker
 * Reveal
 * [GPG Suite](https://gpgtools.org/)
+* Proxyman
 
 ## Console utilits
 

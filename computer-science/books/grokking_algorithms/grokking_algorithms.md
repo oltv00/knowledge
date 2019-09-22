@@ -272,6 +272,15 @@ If you find the biggest box that will work for the size, that will be the bigges
 
 Each inductive proof has two steps: the base case and the inductive case.
 
+### Merge sort vs. quicksort
+
+Which sort algorithm will be faster depends on what `constant` will be in the algorithm complixity.\
+Quicksort is faster in practice beacuse it hits the average case way more often than the worst case.
+
+### Average case vs. worst case
+
+
+
 ### Exercises 4.1 - 4.4
 
 4.1 Write out the code for the earlier sum function.\

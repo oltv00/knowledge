@@ -42,7 +42,7 @@ Pocket
 ## Productivity
 
 * 2Do
-* Spectacle
+* Spectacle [Deprecated - use Rectangle]
 * Yandex.Disk
 * Google.Drive
 * Amphetamine
@@ -58,13 +58,20 @@ Pocket
   * VyprVPN
   * FreeVPN [freevpn.pw](freevpn.pw)
 * Monosnap
-* Bartender 3
 * iStat Menus 6
 * Karabiner
 * Folx
 * Gimp
 * IINA
 * 5KPlayer
+
+* [Rectangle](https://github.com/rxhanson/Rectangle)
+
+```txt
+brew cask install rectangle
+```
+
+* Bartender 3
 
 ```txt
 To fix mac os menu bar order

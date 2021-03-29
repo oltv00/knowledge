@@ -42,7 +42,6 @@ Pocket
 ## Productivity
 
 * 2Do
-* Spectacle [Deprecated - use Rectangle]
 * Yandex.Disk
 * Google.Drive
 * Amphetamine
@@ -69,6 +68,14 @@ Pocket
 
 ```txt
 brew cask install rectangle
+defaults write com.knollsoft.Rectangle minimumWindowWidth -float 0.1
+defaults write com.knollsoft.Rectangle minimumWindowHeight -float 0.1
+
+defaults write com.knollsoft.Rectangle almostMaximizeHeight -float 0.9
+defaults write com.knollsoft.Rectangle almostMaximizeWidth -float 0.7
+
+defaults write com.knollsoft.Rectangle specifiedHeight -float 1050
+defaults write com.knollsoft.Rectangle specifiedWidth -float 1680
 ```
 
 * Bartender 3
@@ -94,6 +101,7 @@ tty
 ## Oragization
 
 * Notes
+* Notion
 * Evernote
 * Numbers / Keynote / Pages
 * Word / Excel / PowerPoint
@@ -124,6 +132,7 @@ tty
 * Reveal
 * [GPG Suite](https://gpgtools.org/)
 * Proxyman
+* DevCleaner
 
 ## Console utilits
 

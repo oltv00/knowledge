@@ -74,6 +74,9 @@ defaults write com.knollsoft.Rectangle minimumWindowHeight -float 0.1
 defaults write com.knollsoft.Rectangle almostMaximizeHeight -float 0.9
 defaults write com.knollsoft.Rectangle almostMaximizeWidth -float 0.7
 
+Additional functionality (https://github.com/oltv00/Rectangle/tree/feature/specified-window-action)
+CMD + OPTION + CTRL + SHIFT + C
+defaults write com.knollsoft.Rectangle specified -dict-add keyCode -float 8 modifierFlags -float 1966080
 defaults write com.knollsoft.Rectangle specifiedHeight -float 1050
 defaults write com.knollsoft.Rectangle specifiedWidth -float 1680
 ```

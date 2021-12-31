@@ -19,7 +19,7 @@
 
 Extensions:
 
-```txt
+```zsh
 1 Password
 Ghostery
 PIPer
@@ -66,7 +66,7 @@ Pocket
 
 * [Rectangle](https://github.com/rxhanson/Rectangle)
 
-```txt
+```zsh
 brew cask install rectangle
 defaults write com.knollsoft.Rectangle minimumWindowWidth -float 0.1
 defaults write com.knollsoft.Rectangle minimumWindowHeight -float 0.1
@@ -83,14 +83,14 @@ defaults write com.knollsoft.Rectangle specifiedWidth -float 1680
 
 * Bartender 3
 
-```txt
+```zsh
 To fix mac os menu bar order
 ~/Library/Preferences/com.apple.systemuiserver.plist
 ```
 
 * Alfred
 
-```txt
+```zsh
 clean_derived_data
 Safari*Assistant * for Safari
 Search Safari and Chrome Tabs * for Google Chrome
@@ -143,28 +143,52 @@ tty
 * rvm
 * fastlane
 
-```txt
+```zsh
 brew cask install fastlane
 ```
 
 * gnupg gnupg2
 
-```txt
+```zsh
 brew install gnupg gnupg2
 ```
 
 * oh my zsh
 * vim
 
-```txt
+```zsh
 brew install vim
 ```
 
 * tmux
 
-```txt
+```zsh
 brew install tmux
 ```
 
 * [Powerline fonts](https://github.com/powerline/fonts)
 * Fire Code
+
+## Additional setup
+
+* Console commands:
+
+```zsh
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g NSScrollAnimationEnabled -bool false
+defaults write -g NSWindowResizeTime -float 0.001
+defaults write -g QLPanelAnimationDuration -float 0
+defaults write -g NSScrollViewRubberbanding -bool false
+defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
+defaults write -g NSToolbarFullScreenAnimationDuration -float 0
+defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock expose-animation-duration -float 0
+defaults write com.apple.dock springboard-show-duration -float 0
+defaults write com.apple.dock springboard-hide-duration -float 0
+defaults write com.apple.dock springboard-page-duration -float 0
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.Mail DisableSendAnimations -bool true
+defaults write com.apple.Mail DisableReplyAnimations -bool true
+```
